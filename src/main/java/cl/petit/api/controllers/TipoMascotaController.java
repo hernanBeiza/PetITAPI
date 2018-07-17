@@ -1,8 +1,7 @@
 package cl.petit.api.controllers;
 
-import cl.petit.api.models.dtos.MascotaDTO;
-import cl.petit.api.services.MascotaService;
-import cl.petit.api.services.RazaService;
+import cl.petit.api.models.dtos.TipoMascotaDTO;
+import cl.petit.api.services.TipoMascotaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -13,34 +12,35 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-@RequestMapping(path = "/api")
+@RequestMapping(path = "/api/mascota")
 @RestController
-public class MascotaController {
+public class TipoMascotaController {
 
     @Autowired
-    private MascotaService mascotaService;
+    private TipoMascotaService tipoMascotaService;
 
-    @RequestMapping(path="/mascota", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/tipo", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
-        System.out.println("MascotaController: obtener();");
+        System.out.println("TipoMascotaController: obtener();");
         Map<String, Object> result = new HashMap<String,Object>();
-        ArrayList<MascotaDTO> mascotas = this.mascotaService.obtener();
-        if(mascotas.size()>0){
+        ArrayList<TipoMascotaDTO> tipos = this.tipoMascotaService.obtener();
+        if(tipos.size()>0){
             result.put("result",true);
-            result.put("mascotas",mascotas);
-            result.put("mensajes","Mascotas encontradas");
+            result.put("mensajes","Tipos de mascota encontrados");
+            result.put("tipos",tipos);
         } else {
             result.put("result",false);
-            result.put("errores","No se encontraron mascotas");
+            result.put("errores","No se encontraron tipos de mascotas");
         }
+
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/mascota/{idmascota}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/tipo/{idmascota}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Integer idmascota) {
-        System.out.println("MascotaController: obtenerConID();");
+        System.out.println("TipoMascotaController: obtenerConID();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";

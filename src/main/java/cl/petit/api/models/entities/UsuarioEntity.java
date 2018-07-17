@@ -4,48 +4,47 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="usuario")
+@Table(name = "Usuario")
 public class UsuarioEntity implements Serializable {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name = "idusuario")
-    private Long idusuario;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idUsuario")
+    private Long idUsuario;
+    /*
+    @Column(name = "idRol")
+    private Long idRol;
+    */
+    @ManyToOne
+    @JoinColumn(name="idRol")
+    private RolEntity rolEntity;
 
-    @Column(name="user")
-    private String user;
-
-    @Column(name="pass")
-    private String pass;
-
-    @Column(name="nombre")
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name="valid")
+    @Column(name = "rut")
+    private String rut;
+
+    @Column(name = "password")
+    private String password;
+
+    @Column(name = "valid")
     private int valid;
 
-    public Long getIdusuario() {
-        return idusuario;
+    public Long getIdUsuario() {
+        return idUsuario;
     }
 
-    public void setIdusuario(Long idusuario) {
-        this.idusuario = idusuario;
+    public void setIdUsuario(Long idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
-    public String getUser() {
-        return user;
+    public RolEntity getRolEntity() {
+        return rolEntity;
     }
 
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public String getPass() {
-        return pass;
-    }
-
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setRolEntity(RolEntity rolEntity) {
+        this.rolEntity = rolEntity;
     }
 
     public String getNombre() {
@@ -54,6 +53,22 @@ public class UsuarioEntity implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getRut() {
+        return rut;
+    }
+
+    public void setRut(String rut) {
+        this.rut = rut;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public int getValid() {
@@ -67,10 +82,11 @@ public class UsuarioEntity implements Serializable {
     @Override
     public String toString() {
         return "UsuarioEntity{" +
-                "idusuario=" + idusuario +
-                ", user='" + user + '\'' +
-                ", pass='" + pass + '\'' +
+                "idUsuario=" + idUsuario +
+                ", rolEntity=" + rolEntity +
                 ", nombre='" + nombre + '\'' +
+                ", rut='" + rut + '\'' +
+                ", password='" + password + '\'' +
                 ", valid=" + valid +
                 '}';
     }

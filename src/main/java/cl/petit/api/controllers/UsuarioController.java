@@ -2,6 +2,8 @@ package cl.petit.api.controllers;
 
 import cl.petit.api.models.dtos.UsuarioDTO;
 import cl.petit.api.services.UsuarioService;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -13,6 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -27,16 +30,16 @@ public class UsuarioController {
 
     @RequestMapping(path="/login", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> login(@RequestParam(value="usuario",required=false) String usuario,
+    public ResponseEntity<Map<String,Object>> login(@RequestParam(value="rut",required=false) String rut,
                                                     @RequestParam(value="contrasena",required=false) String contrasena,
                                                     HttpSession session) {
         System.out.println("UsuarioController: login();");
-        System.out.println(usuario);
+        System.out.println(rut);
         System.out.println(contrasena);
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
-        if(usuario==null){
+        if(rut==null){
             enviar = false;
             errores +="Usuario";
         }
@@ -48,9 +51,9 @@ public class UsuarioController {
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar){
             UsuarioDTO model = new UsuarioDTO();
-            model.setUser(usuario);
-            model.setPass(contrasena);
-            UsuarioDTO encontrado = this.usuarioService.buscar(model);
+            model.setRut(rut);
+            model.setPassword(contrasena);
+            UsuarioDTO encontrado = this.usuarioService.iniciarSesion(model);
             if(encontrado!=null){
                 result.put("result",true);
                 result.put("mensaje","Bienvenido al sistema de PetIT...");
@@ -58,7 +61,7 @@ public class UsuarioController {
                 // Guardar en la sessión
                 //session.setAttribute("usuario",encontrado);
                 // Generar Token
-                String jwtToken = Jwts.builder().setSubject(usuario).claim("roles", "user").setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, "SECRETKEY").compact();
+                String jwtToken = Jwts.builder().setSubject(rut).claim("roles", "user").setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, "SECRETKEY").compact();
                 System.out.println(jwtToken);
                 // Add any additional props that you want to add
                 result.put("token",jwtToken);
@@ -151,6 +154,42 @@ public class UsuarioController {
             result.put("errores","No existe sesión iniciada");
         }
         */
+        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(path="/api/usuario", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> obtener() {
+        System.out.println("UsuarioController: obtener();");
+        Map<String, Object> result = new HashMap<String,Object>();
+        ArrayList<UsuarioDTO> encontrados = this.usuarioService.obtener();
+        if(encontrados!=null){
+            result.put("result",true);
+            result.put("mensaje","Se encontraron usuarios");
+            result.put("usuarios",encontrados);
+        } else {
+            result.put("result",false);
+            result.put("errores","No se encontraron usuarios registrados");
+        }
+
+        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(path="/api/usuario/{idusuario}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable int idusuario) {
+        System.out.println("UsuarioController: obtenerConID();");
+        Map<String, Object> result = new HashMap<String,Object>();
+        UsuarioDTO encontrado = this.usuarioService.obtenerConID(idusuario);
+        if(encontrado!=null){
+            result.put("result",true);
+            result.put("mensaje","Se encontraron usuarios");
+            result.put("usuario",encontrado);
+        } else {
+            result.put("result",false);
+            result.put("errores","No se encontró usuario registrado");
+        }
+
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 

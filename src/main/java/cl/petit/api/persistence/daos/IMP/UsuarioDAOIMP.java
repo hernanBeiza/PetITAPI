@@ -7,9 +7,10 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
-@Repository("ProductoDao")
-
+@Repository("UsuarioDAO")
 public class UsuarioDAOIMP implements UsuarioDAO {
 
     @PersistenceContext
@@ -18,7 +19,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
     @Override
     public UsuarioEntity buscar(UsuarioDTO model) {
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
-        String query = "SELECT u FROM UsuarioEntity AS u WHERE u.user ='"+model.getUser()+"' AND u.pass='"+model.getPass()+"'";
+        String query = "SELECT u FROM UsuarioEntity AS u WHERE u.rut ='"+model.getRut()+"' AND u.password='"+model.getPassword()+"'";
         System.out.println(query);
         try{
             //Object result = entityManager.createQuery(query).getSingleResult();
@@ -32,16 +33,45 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public UsuarioEntity buscarPorNombre(String nombre) {
-        String query = "SELECT u.* FROM UsuarioEntity AS u WHERE u.nombre LIKE '%"+nombre+"%'";
+        String query = "SELECT u FROM UsuarioEntity AS u WHERE u.nombre LIKE '%"+nombre+"%'";
         System.out.println(query);
-        return (UsuarioEntity) entityManager.createQuery(query).getSingleResult();
+        try {
+            return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
+        } catch (Exception ex){
+            System.out.println(ex.getLocalizedMessage());
+            return null;
+        }
     }
 
     @Override
     public UsuarioEntity buscarPorRut(String rut) {
-        String query = "SELECT u.* FROM UsuarioEntity AS u WHERE u.rut = "+rut;
+        String query = "SELECT u FROM UsuarioEntity AS u WHERE u.rut = "+rut;
         System.out.println(query);
-        return (UsuarioEntity) entityManager.createQuery(query).getSingleResult();
+        try {
+            return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
+        } catch (Exception ex){
+            System.out.println(ex.getLocalizedMessage());
+            return null;
+        }
     }
 
+    @Override
+    public ArrayList<UsuarioEntity> obtener() {
+        //String query = "SELECT u FROM UsuarioEntity AS u";
+        String query = "SELECT u FROM UsuarioEntity u JOIN u.rolEntity";
+        System.out.println(query);
+        return (ArrayList<UsuarioEntity>) entityManager.createQuery(query).getResultList();
+    }
+
+    @Override
+    public UsuarioEntity obtenerConID(int idUsuario) {
+        String query = "SELECT u FROM UsuarioEntity u WHERE idUsuario="+idUsuario;
+        System.out.println(query);
+        try {
+            return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
+        } catch (Exception ex){
+            System.out.println(ex.getLocalizedMessage());
+            return null;
+        }
+    }
 }
