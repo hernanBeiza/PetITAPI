@@ -3,8 +3,29 @@
 Repositorio para almacenar los servicios REST o API para el proyecto PetIT.
 Este proyecto está realizado usando IntelliJ y  SpringBoot
 
+## Rutas 
+A continuación se presenta el listado de rutas
+
+
+#### POST /login
+- Ruta para iniciar sesión con el sistema
+- Retorna un token JWT
+ 
+#### /api/*
+- Todas las rutas que no deben ser públicas están bajo /api/
+- Para poder consultar y obtener una respuesta de estas rutas es necesario enviar el JWT en la cabecera de la petición, usando una cabecera de Autenticación Bearer 
+- ** authorization: Bearer XXXX **
+#### GET /api/comuna
+- Obtiene el listado de comunas completo 
+
+#### GET /api/comuna/{idcomuna}
+- Obtiene una comuna en particular
+- El id de la comuna se pasa por la URL 
+- idcomuna: int
+#### GET/POST/PUT/DELETE muchas rutas más :s
 ## Patrón de Diseño
-El patrón de diseño usado en este desarrollo es MVC. Sin embargo, presenta una variable en dónde se integran nuevos componentes en las capas:
+El patrón de diseño usado en este desarrollo es MVC. Sin embargo, presenta una variable en dónde se integran nuevos componentes en las capas. Un diagrama a continuación:
+![alt text](EsquemaServicioDAO.png)
 
 ### Models
 #### DTOS
@@ -30,11 +51,9 @@ Las tecnologías ocupadas para este proyecto son:
 
 - IntelliJ
 - SpringBoot
+- mvn
 
 ## Cómo aportar
 - Crear otra rama
-- Programar
+- Programar las rutas que falten
 - Subir al repositorio =)
-
-## Otros detalles
-Si queda alguna duda, revisar el diagrama de arquitectura `EsquemaServicioDAO.png`
