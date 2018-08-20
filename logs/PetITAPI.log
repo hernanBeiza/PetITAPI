@@ -383,3 +383,217 @@
 2018-08-19 23:49:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 27816 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
 2018-08-19 23:49:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
 2018-08-19 23:50:01 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.638 seconds (JVM running for 7.943)
+2018-08-20 00:20:29 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 29654 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:20:29 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:20:36 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.604 seconds (JVM running for 10.736)
+2018-08-20 00:21:44 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 29871 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:21:44 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:21:54 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.246 seconds (JVM running for 13.123)
+2018-08-20 00:22:01 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 30033 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:22:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:22:08 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.594 seconds (JVM running for 7.771)
+2018-08-20 00:22:37 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 30182 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:22:37 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:22:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 30288 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:22:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:22:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.773 seconds (JVM running for 9.198)
+2018-08-20 00:23:11 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 30439 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:23:11 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:23:17 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.41 seconds (JVM running for 7.629)
+2018-08-20 00:23:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 30579 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:23:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:23:52 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.466 seconds (JVM running for 7.684)
+2018-08-20 00:23:57 [32mINFO [m NotificacionController:26 - NotificacionController. obtener();
+2018-08-20 00:41:38 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 31407 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:41:38 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 00:41:44 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.772 seconds (JVM running for 7.959)
+2018-08-20 00:50:59 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 32051 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 00:50:59 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:02:53 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 32573 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:02:53 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:04:56 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 32736 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:04:56 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:05:38 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 406 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:05:38 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:07:52 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 604 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:07:52 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:09:44 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 784 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:09:44 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:09:50 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.688 seconds (JVM running for 7.869)
+2018-08-20 01:10:09 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 945 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:10:09 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:10:16 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 1025 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:10:16 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:10:23 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.918 seconds (JVM running for 9.167)
+2018-08-20 01:10:30 [32mINFO [m NotificacionController:30 - NotificacionController: obtener();
+2018-08-20 01:10:30 [32mINFO [m NotificacionDAOIMP:28 - NotificacionDAO: obtener();
+2018-08-20 01:12:15 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 1416 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:12:15 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:12:25 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 1538 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:12:25 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:12:31 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.646 seconds (JVM running for 7.712)
+2018-08-20 01:12:35 [32mINFO [m NotificacionController:30 - NotificacionController: obtener();
+2018-08-20 01:12:35 [32mINFO [m NotificacionDAOIMP:28 - NotificacionDAO: obtener();
+2018-08-20 01:12:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 1886 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:12:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:12:52 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.004 seconds (JVM running for 8.621)
+2018-08-20 01:13:18 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 2061 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:13:18 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:13:24 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.984 seconds (JVM running for 8.554)
+2018-08-20 01:13:38 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 2211 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:13:38 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:13:44 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.844 seconds (JVM running for 8.176)
+2018-08-20 01:14:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 2428 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:14:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:15:02 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.185 seconds (JVM running for 8.432)
+2018-08-20 01:15:06 [32mINFO [m NotificacionController:30 - NotificacionController: obtener();
+2018-08-20 01:15:06 [32mINFO [m NotificacionDAOIMP:28 - NotificacionDAO: obtener();
+2018-08-20 01:15:09 [32mINFO [m NotificacionController:52 - NotificacionController: obtenerConID();
+2018-08-20 01:15:09 [32mINFO [m NotificacionDAOIMP:45 - NotificacionDAO: obtenerConID();
+2018-08-20 01:15:22 [32mINFO [m NotificacionController:70 - NotificacionController: obtenerConUsuario();
+2018-08-20 01:15:22 [32mINFO [m NotificacionDAOIMP:63 - NotificacionDAO: obtenerConIDUsuario();
+2018-08-20 01:15:55 [32mINFO [m NotificacionController:87 - NotificacionController: marcarComoLeida();
+2018-08-20 01:16:14 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 2605 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:16:14 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:16:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.384 seconds (JVM running for 9.09)
+2018-08-20 01:16:27 [32mINFO [m NotificacionController:30 - NotificacionController: obtener();
+2018-08-20 01:16:27 [32mINFO [m NotificacionDAOIMP:28 - NotificacionDAO: obtener();
+2018-08-20 01:17:44 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 2855 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:17:44 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:17:50 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.202 seconds (JVM running for 8.65)
+2018-08-20 01:17:54 [32mINFO [m NotificacionController:30 - NotificacionController: obtener();
+2018-08-20 01:17:54 [32mINFO [m NotificacionDAOIMP:28 - NotificacionDAO: obtener();
+2018-08-20 01:27:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 3361 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:27:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:27:54 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.36 seconds (JVM running for 7.548)
+2018-08-20 01:28:07 [32mINFO [m NotificacionController:31 - NotificacionController: obtener();
+2018-08-20 01:28:07 [32mINFO [m NotificacionDAOIMP:28 - NotificacionDAO: obtener();
+2018-08-20 01:28:12 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:28:26 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:28:30 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:28:37 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:28:45 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:28:53 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:28:53 [32mINFO [m NotificacionDAOIMP:76 - NotificacionDAO: guardar();
+2018-08-20 01:29:15 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:29:15 [32mINFO [m NotificacionDAOIMP:76 - NotificacionDAO: guardar();
+2018-08-20 01:29:15 [1;31mERROR[m NotificacionDAOIMP:89 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-20 01:29:17 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:29:17 [32mINFO [m NotificacionDAOIMP:76 - NotificacionDAO: guardar();
+2018-08-20 01:29:17 [1;31mERROR[m NotificacionDAOIMP:89 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-20 01:29:21 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:29:21 [32mINFO [m NotificacionDAOIMP:76 - NotificacionDAO: guardar();
+2018-08-20 01:31:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 3788 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:31:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:31:39 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.553 seconds (JVM running for 7.72)
+2018-08-20 01:31:43 [32mINFO [m NotificacionController:113 - NotificacionController: guardar();
+2018-08-20 01:31:43 [32mINFO [m NotificacionDAOIMP:76 - NotificacionDAO: guardar();
+2018-08-20 01:31:48 [32mINFO [m NotificacionController:173 - NotificacionController: editar();
+2018-08-20 01:31:58 [32mINFO [m NotificacionController:173 - NotificacionController: editar();
+2018-08-20 01:32:18 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 3941 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:32:18 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:32:24 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.53 seconds (JVM running for 8.08)
+2018-08-20 01:32:27 [32mINFO [m NotificacionController:173 - NotificacionController: editar();
+2018-08-20 01:32:27 [32mINFO [m NotificacionDAOIMP:97 - NotificacionDAO: editar();
+2018-08-20 01:32:40 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4076 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:32:40 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:32:46 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.515 seconds (JVM running for 7.603)
+2018-08-20 01:33:03 [32mINFO [m NotificacionController:173 - NotificacionController: editar();
+2018-08-20 01:33:03 [32mINFO [m NotificacionDAOIMP:97 - NotificacionDAO: editar();
+2018-08-20 01:33:14 [32mINFO [m NotificacionController:173 - NotificacionController: editar();
+2018-08-20 01:33:14 [32mINFO [m NotificacionDAOIMP:97 - NotificacionDAO: editar();
+2018-08-20 01:35:17 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4302 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:35:17 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:35:23 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.031 seconds (JVM running for 8.23)
+2018-08-20 01:35:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4459 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:35:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:35:52 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.118 seconds (JVM running for 9.205)
+2018-08-20 01:35:55 [32mINFO [m NotificacionDAOIMP:121 - NotificacionDAO: eliminar();
+2018-08-20 01:35:55 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:36:39 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4647 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:36:39 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:36:45 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.573 seconds (JVM running for 7.733)
+2018-08-20 01:37:22 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4791 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:37:22 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:37:28 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.134 seconds (JVM running for 8.242)
+2018-08-20 01:37:32 [32mINFO [m NotificacionDAOIMP:112 - NotificacionDAO: eliminar();
+2018-08-20 01:37:32 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:37:32 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=4
+2018-08-20 01:37:34 [32mINFO [m NotificacionDAOIMP:112 - NotificacionDAO: eliminar();
+2018-08-20 01:37:34 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:37:34 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=4
+2018-08-20 01:37:48 [32mINFO [m NotificacionController:71 - NotificacionController: obtenerConUsuario();
+2018-08-20 01:37:48 [32mINFO [m NotificacionDAOIMP:54 - NotificacionDAO: obtenerConIDUsuario();
+2018-08-20 01:37:48 [32mINFO [m NotificacionDAOIMP:56 - SELECT u FROM NotificacionEntity u WHERE idUsuario=1
+2018-08-20 01:37:55 [32mINFO [m NotificacionController:53 - NotificacionController: obtenerConID();
+2018-08-20 01:37:55 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:37:55 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:37:57 [32mINFO [m NotificacionController:53 - NotificacionController: obtenerConID();
+2018-08-20 01:37:57 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:37:57 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=2
+2018-08-20 01:37:59 [32mINFO [m NotificacionController:53 - NotificacionController: obtenerConID();
+2018-08-20 01:37:59 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:37:59 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:38:00 [32mINFO [m NotificacionController:53 - NotificacionController: obtenerConID();
+2018-08-20 01:38:00 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:38:00 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:38:46 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:40:17 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:40:25 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 5091 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:40:25 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:40:32 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.547 seconds (JVM running for 9.542)
+2018-08-20 01:41:52 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 5278 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:41:52 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:41:58 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.736 seconds (JVM running for 7.839)
+2018-08-20 01:42:02 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:42:02 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:42:28 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 5423 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:42:28 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:42:34 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.037 seconds (JVM running for 8.325)
+2018-08-20 01:42:36 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:42:36 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:43:52 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 5596 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:43:52 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:43:58 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.438 seconds (JVM running for 7.548)
+2018-08-20 01:44:01 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:44:01 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:44:01 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:44:01 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:45:34 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 5788 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:45:34 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:45:39 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.378 seconds (JVM running for 7.597)
+2018-08-20 01:45:45 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:45:45 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:45:45 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:45:45 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:47:28 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:47:28 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:47:28 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:47:28 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:47:40 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:47:40 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:47:40 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:47:40 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:48:29 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 6146 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:48:29 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:48:36 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.685 seconds (JVM running for 7.819)
+2018-08-20 01:48:38 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:48:38 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:48:38 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:48:38 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:48:44 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:48:44 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:48:44 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:48:44 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=2
+2018-08-20 01:48:44 [33mWARN [m NotificacionDAOIMP:145 - No se encontró notificación con ese idnotificacion
+2018-08-20 01:48:51 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:48:51 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:48:51 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:48:51 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=1
+2018-08-20 01:49:23 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 6309 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-20 01:49:23 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 01:49:30 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.11 seconds (JVM running for 8.494)
+2018-08-20 01:49:32 [32mINFO [m NotificacionController:88 - NotificacionController: marcarComoLeida();
+2018-08-20 01:49:32 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
+2018-08-20 01:49:32 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
+2018-08-20 01:49:32 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=5

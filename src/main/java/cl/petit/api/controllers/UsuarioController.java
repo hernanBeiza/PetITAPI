@@ -178,12 +178,12 @@ public class UsuarioController {
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/api/usuario/{idusuario}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/api/usuario/{idUsuario}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable int idusuario) {
+    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable int idUsuario) {
         logger.debug("UsuarioController: obtenerConID();");
         Map<String, Object> result = new HashMap<String,Object>();
-        UsuarioDTO encontrado = this.usuarioService.obtenerConID(idusuario);
+        UsuarioDTO encontrado = this.usuarioService.obtenerConID(idUsuario);
         if(encontrado!=null){
             result.put("result",true);
             result.put("mensaje","Se encontraron usuarios");
@@ -239,7 +239,7 @@ public class UsuarioController {
     @RequestMapping(path="/api/usuario", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> guardar(@RequestParam(value="idRol",required=true) Integer idRol,
-                                                    @RequestParam(value="nombre",required=true) String nombre,
+                                                      @RequestParam(value="nombre",required=true) String nombre,
                                                       @RequestParam(value="rut",required=true) String rut,
                                                       @RequestParam(value="password",required=true) String password,
                                                     HttpSession session) {
@@ -359,13 +359,13 @@ public class UsuarioController {
     }
 
 
-    @RequestMapping(path="/api/usuario/{idusuario}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/api/usuario/{idUsuario}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> eliminar(@PathVariable Integer idusuario) {
+    public ResponseEntity<Map<String,Object>> eliminar(@PathVariable Integer idUsuario) {
         logger.debug("UsuarioController: eliminar();");
         boolean enviar = true;
         String errores = "Te faltó:\n";
-        if(idusuario==null){
+        if(idUsuario==null){
             enviar = false;
             errores +="idUsuario";
         }
@@ -373,7 +373,7 @@ public class UsuarioController {
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar){
             UsuarioDTO model = new UsuarioDTO();
-            model.setIdUsuario(Long.valueOf(idusuario));
+            model.setIdUsuario(Long.valueOf(idUsuario));
             boolean eliminado = this.usuarioService.eliminar(model);
             if(eliminado){
                 result.put("result",true);
