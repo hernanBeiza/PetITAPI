@@ -8,11 +8,18 @@ import java.util.ArrayList;
 public interface UsuarioDAO {
 
     ArrayList<UsuarioEntity> obtener();
+
     UsuarioEntity obtenerConID(int idUsuario);
 
-    UsuarioEntity buscar(UsuarioDTO model);
+    UsuarioEntity buscar(String rut, String contrasena);
 
     UsuarioEntity buscarPorNombre(String nombre);
 
     UsuarioEntity buscarPorRut(String rut);
+
+    boolean guardar(UsuarioDTO model);
+
+    boolean editar(UsuarioDTO model);
+
+    boolean eliminar(UsuarioDTO model);
 }

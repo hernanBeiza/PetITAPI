@@ -36,24 +36,14 @@ public class RolController {
 
         Map<String, Object> result = new HashMap<String, Object>();
         ArrayList<RolDTO> encontrados = this.rolService.obtener();
-        /*
-        if (encontrado != null) {
+        if (encontrados != null) {
             result.put("result", true);
-            result.put("mensaje", "Bienvenido al sistema de PetIT...");
-            result.put("usuario", encontrado);
-            // Guardar en la sessión
-            //session.setAttribute("usuario",encontrado);
-            // Generar Token
-            String jwtToken = Jwts.builder().setSubject(rut).claim("roles", "user").setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, "SECRETKEY").compact();
-            System.out.println(jwtToken);
-            // Add any additional props that you want to add
-            result.put("token", jwtToken);
-
+            result.put("mensaje", "Roles encontrados...");
+            result.put("encontrados", encontrados);
         } else {
             result.put("result", false);
-            result.put("errores", "No se encontró usuario con estos datos...");
+            result.put("errores", "No se encontraron roles en el sistema");
         }
-        */
         return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
     }
 

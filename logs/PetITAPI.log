@@ -1,0 +1,385 @@
+2018-08-19 18:33:26 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 7517 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 18:33:26 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 18:33:32 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.568 seconds (JVM running for 7.882)
+2018-08-19 19:10:40 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 3968 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:10:40 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:10:47 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.257 seconds (JVM running for 10.45)
+2018-08-19 19:11:44 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4173 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:11:44 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:11:52 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.805 seconds (JVM running for 11.039)
+2018-08-19 19:12:43 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4366 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:12:43 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:12:49 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.334 seconds (JVM running for 8.65)
+2018-08-19 19:14:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4574 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:14:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:14:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 12.935 seconds (JVM running for 15.023)
+2018-08-19 19:15:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 4767 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:15:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:15:54 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.089 seconds (JVM running for 10.785)
+2018-08-19 19:22:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 7123 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:22:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:22:09 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.638 seconds (JVM running for 8.837)
+2018-08-19 19:22:13 [1;31mERROR[m UsuarioDAOIMP:107 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:22:54 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 7309 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:22:54 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:23:08 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 7455 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:23:08 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:23:13 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.018 seconds (JVM running for 7.131)
+2018-08-19 19:23:20 [1;31mERROR[m UsuarioDAOIMP:107 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:23:20 [1;31mERROR[m UsuarioDAOIMP:108 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:24:34 [1;31mERROR[m UsuarioDAOIMP:107 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:24:34 [1;31mERROR[m UsuarioDAOIMP:108 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:25:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 7707 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:25:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:25:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.996 seconds (JVM running for 10.189)
+2018-08-19 19:26:09 [1;31mERROR[m UsuarioDAOIMP:107 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:26:09 [1;31mERROR[m UsuarioDAOIMP:108 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:27:22 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 7906 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:27:22 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:27:28 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.535 seconds (JVM running for 7.696)
+2018-08-19 19:27:31 [32mINFO [m UsuarioDAOIMP:89 - UsuarioDAOIMP: guardar();
+2018-08-19 19:27:31 [1;31mERROR[m UsuarioDAOIMP:107 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:27:31 [1;31mERROR[m UsuarioDAOIMP:108 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:27:31 [1;31mERROR[m UsuarioDAOIMP:109 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:33:30 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 8115 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 19:33:30 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 19:33:36 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.389 seconds (JVM running for 7.57)
+2018-08-19 19:33:40 [32mINFO [m UsuarioDAOIMP:89 - UsuarioDAOIMP: guardar();
+2018-08-19 19:33:40 [1;31mERROR[m UsuarioDAOIMP:106 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:33:40 [1;31mERROR[m UsuarioDAOIMP:107 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 19:33:40 [1;31mERROR[m UsuarioDAOIMP:108 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:02:59 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 13991 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:02:59 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:03:05 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.123 seconds (JVM running for 8.598)
+2018-08-19 22:03:15 [32mINFO [m UsuarioDAOIMP:91 - UsuarioDAOIMP: guardar();
+2018-08-19 22:03:15 [1;31mERROR[m UsuarioDAOIMP:113 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:03:15 [1;31mERROR[m UsuarioDAOIMP:114 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:04:52 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 14215 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:04:52 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:04:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.465 seconds (JVM running for 9.141)
+2018-08-19 22:05:12 [32mINFO [m UsuarioDAOIMP:91 - UsuarioDAOIMP: guardar();
+2018-08-19 22:08:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 14635 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:08:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:08:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 14738 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:08:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:09:02 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.207 seconds (JVM running for 8.279)
+2018-08-19 22:09:37 [32mINFO [m UsuarioDAOIMP:92 - UsuarioDAOIMP: guardar();
+2018-08-19 22:10:01 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 14956 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:10:01 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:10:07 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.864 seconds (JVM running for 8.164)
+2018-08-19 22:10:11 [32mINFO [m UsuarioDAOIMP:92 - UsuarioDAOIMP: guardar();
+2018-08-19 22:11:01 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 15126 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:11:01 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:11:07 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.831 seconds (JVM running for 6.987)
+2018-08-19 22:11:13 [32mINFO [m UsuarioDAOIMP:92 - UsuarioDAOIMP: guardar();
+2018-08-19 22:11:36 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 15332 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:11:36 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:11:42 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.483 seconds (JVM running for 7.692)
+2018-08-19 22:11:50 [32mINFO [m UsuarioDAOIMP:92 - UsuarioDAOIMP: guardar();
+2018-08-19 22:13:00 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 15585 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:13:00 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:13:05 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.961 seconds (JVM running for 7.068)
+2018-08-19 22:13:08 [32mINFO [m UsuarioDAOIMP:92 - UsuarioDAOIMP: guardar();
+2018-08-19 22:14:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 15830 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:14:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:14:53 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.274 seconds (JVM running for 7.353)
+2018-08-19 22:14:59 [32mINFO [m UsuarioDAOIMP:93 - UsuarioDAOIMP: guardar();
+2018-08-19 22:14:59 [1;31mERROR[m UsuarioDAOIMP:110 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:15:23 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 15992 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:15:23 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:15:29 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.876 seconds (JVM running for 8.162)
+2018-08-19 22:15:33 [32mINFO [m UsuarioDAOIMP:94 - UsuarioDAOIMP: guardar();
+2018-08-19 22:16:15 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 16167 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:16:15 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:16:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.579 seconds (JVM running for 7.684)
+2018-08-19 22:16:24 [32mINFO [m UsuarioDAOIMP:95 - UsuarioDAOIMP: guardar();
+2018-08-19 22:19:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 16471 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:19:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:19:53 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.459 seconds (JVM running for 7.624)
+2018-08-19 22:20:02 [32mINFO [m UsuarioDAOIMP:94 - UsuarioDAOIMP: guardar();
+2018-08-19 22:20:56 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 16645 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:20:56 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:21:01 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.253 seconds (JVM running for 7.328)
+2018-08-19 22:21:39 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 16830 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:21:39 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:21:44 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.987 seconds (JVM running for 7.066)
+2018-08-19 22:21:47 [32mINFO [m UsuarioDAOIMP:94 - UsuarioDAOIMP: guardar();
+2018-08-19 22:21:47 [1;31mERROR[m UsuarioDAOIMP:111 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:26:18 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 17181 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:26:18 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:26:23 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.268 seconds (JVM running for 7.392)
+2018-08-19 22:26:28 [32mINFO [m UsuarioDAOIMP:94 - UsuarioDAOIMP: guardar();
+2018-08-19 22:29:27 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 17540 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:29:27 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:29:33 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.591 seconds (JVM running for 7.699)
+2018-08-19 22:29:49 [32mINFO [m UsuarioDAOIMP:94 - UsuarioDAOIMP: guardar();
+2018-08-19 22:29:49 [1;31mERROR[m UsuarioDAOIMP:111 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:30:58 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 17738 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:30:58 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:31:03 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.071 seconds (JVM running for 7.252)
+2018-08-19 22:31:24 [32mINFO [m UsuarioDAOIMP:95 - UsuarioDAOIMP: guardar();
+2018-08-19 22:31:25 [1;31mERROR[m UsuarioDAOIMP:112 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:32:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 17962 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:32:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:32:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.594 seconds (JVM running for 7.695)
+2018-08-19 22:33:15 [32mINFO [m UsuarioDAOIMP:95 - UsuarioDAOIMP: guardar();
+2018-08-19 22:33:15 [1;31mERROR[m UsuarioDAOIMP:112 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:33:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 18143 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:33:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:33:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.985 seconds (JVM running for 8.508)
+2018-08-19 22:37:14 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 18475 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:37:14 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:37:19 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.327 seconds (JVM running for 7.48)
+2018-08-19 22:37:23 [32mINFO [m UsuarioDAOIMP:96 - UsuarioDAOIMP: guardar();
+2018-08-19 22:37:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 18644 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:37:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:38:00 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.93 seconds (JVM running for 6.952)
+2018-08-19 22:39:50 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 18957 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:39:50 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:39:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.218 seconds (JVM running for 7.425)
+2018-08-19 22:39:58 [32mINFO [m UsuarioDAOIMP:96 - UsuarioDAOIMP: guardar();
+2018-08-19 22:39:58 [1;31mERROR[m UsuarioDAOIMP:113 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:39:58 [1;31mERROR[m UsuarioDAOIMP:118 - exception on update: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:41:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 19163 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:41:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:41:09 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.103 seconds (JVM running for 7.294)
+2018-08-19 22:41:12 [32mINFO [m UsuarioDAOIMP:96 - UsuarioDAOIMP: guardar();
+2018-08-19 22:41:12 [1;31mERROR[m UsuarioDAOIMP:113 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:41:12 [1;31mERROR[m UsuarioDAOIMP:118 - exception on update: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:42:42 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 19392 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:42:42 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:42:51 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.075 seconds (JVM running for 10.129)
+2018-08-19 22:42:56 [32mINFO [m UsuarioDAOIMP:97 - UsuarioDAOIMP: guardar();
+2018-08-19 22:42:56 [1;31mERROR[m UsuarioDAOIMP:114 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:42:56 [1;31mERROR[m UsuarioDAOIMP:119 - exception on update: org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:46:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 19651 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:46:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:46:08 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.753 seconds (JVM running for 8.043)
+2018-08-19 22:46:13 [32mINFO [m UsuarioDAOIMP:97 - UsuarioDAOIMP: guardar();
+2018-08-19 22:46:13 [1;31mERROR[m UsuarioDAOIMP:114 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:46:34 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 19847 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:46:34 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:46:40 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.23 seconds (JVM running for 7.313)
+2018-08-19 22:47:12 [32mINFO [m UsuarioDAOIMP:98 - UsuarioDAOIMP: guardar();
+2018-08-19 22:47:37 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 20014 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:47:37 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:47:43 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.349 seconds (JVM running for 8.864)
+2018-08-19 22:48:53 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 20262 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:48:53 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:48:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.198 seconds (JVM running for 7.266)
+2018-08-19 22:49:04 [32mINFO [m UsuarioDAOIMP:98 - UsuarioDAOIMP: guardar();
+2018-08-19 22:49:25 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 20416 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:49:25 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:49:32 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.661 seconds (JVM running for 8.979)
+2018-08-19 22:51:41 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 20725 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:51:41 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:51:46 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.917 seconds (JVM running for 6.998)
+2018-08-19 22:51:51 [32mINFO [m UsuarioDAOIMP:97 - UsuarioDAOIMP: guardar();
+2018-08-19 22:52:16 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 20897 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:52:16 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:52:23 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.352 seconds (JVM running for 8.66)
+2018-08-19 22:55:50 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 21182 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:55:50 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:55:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.548 seconds (JVM running for 7.8)
+2018-08-19 22:55:59 [32mINFO [m UsuarioDAOIMP:97 - UsuarioDAOIMP: guardar();
+2018-08-19 22:55:59 [1;31mERROR[m UsuarioDAOIMP:120 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:56:59 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 21384 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:56:59 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:57:05 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.424 seconds (JVM running for 7.596)
+2018-08-19 22:57:08 [32mINFO [m UsuarioDAOIMP:97 - UsuarioDAOIMP: guardar();
+2018-08-19 22:57:08 [32mINFO [m UsuarioDAOIMP:104 - Usuario rut 16692668-8 no encontrado
+2018-08-19 22:57:09 [1;31mERROR[m UsuarioDAOIMP:121 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 22:57:43 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 21566 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:57:43 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:57:49 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.109 seconds (JVM running for 7.218)
+2018-08-19 22:58:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 21708 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:58:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:58:08 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.032 seconds (JVM running for 7.073)
+2018-08-19 22:58:11 [32mINFO [m UsuarioDAOIMP:97 - UsuarioDAOIMP: guardar();
+2018-08-19 22:58:51 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 21869 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 22:58:51 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 22:58:57 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.587 seconds (JVM running for 7.647)
+2018-08-19 22:59:00 [32mINFO [m UsuarioDAOIMP:98 - UsuarioDAOIMP: guardar();
+2018-08-19 22:59:00 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 22:59:17 [32mINFO [m UsuarioDAOIMP:98 - UsuarioDAOIMP: guardar();
+2018-08-19 22:59:17 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 22:59:24 [32mINFO [m UsuarioDAOIMP:98 - UsuarioDAOIMP: guardar();
+2018-08-19 22:59:24 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 23:00:09 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 22110 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:00:09 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:00:16 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.015 seconds (JVM running for 9.344)
+2018-08-19 23:00:51 [32mINFO [m UsuarioDAOIMP:99 - UsuarioDAOIMP: guardar();
+2018-08-19 23:00:51 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 23:00:51 [33mWARN [m UsuarioDAOIMP:66 - No entity found for query
+2018-08-19 23:01:16 [32mINFO [m UsuarioDAOIMP:99 - UsuarioDAOIMP: guardar();
+2018-08-19 23:01:16 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 23:01:16 [33mWARN [m UsuarioDAOIMP:66 - No entity found for query
+2018-08-19 23:02:10 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 22373 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:02:10 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:02:17 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.287 seconds (JVM running for 8.413)
+2018-08-19 23:02:42 [32mINFO [m UsuarioDAOIMP:99 - UsuarioDAOIMP: guardar();
+2018-08-19 23:02:42 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 23:02:42 [33mWARN [m UsuarioDAOIMP:66 - No entity found for query
+2018-08-19 23:03:52 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 22596 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:03:52 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:03:58 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.65 seconds (JVM running for 7.694)
+2018-08-19 23:04:01 [32mINFO [m UsuarioDAOIMP:99 - UsuarioDAOIMP: guardar();
+2018-08-19 23:04:01 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 23:04:01 [33mWARN [m UsuarioDAOIMP:66 - No entity found for query
+2018-08-19 23:04:01 [32mINFO [m UsuarioDAOIMP:107 - Usuario rut 16692668-8 no encontrado
+2018-08-19 23:04:10 [32mINFO [m UsuarioDAOIMP:99 - UsuarioDAOIMP: guardar();
+2018-08-19 23:04:10 [32mINFO [m UsuarioDAOIMP:60 - UsuarioController(); buscarPorRut
+2018-08-19 23:04:10 [33mWARN [m UsuarioDAOIMP:66 - No entity found for query
+2018-08-19 23:04:10 [32mINFO [m UsuarioDAOIMP:107 - Usuario rut 16692668-8 no encontrado
+2018-08-19 23:05:25 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 22815 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:05:25 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:05:32 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.649 seconds (JVM running for 9.068)
+2018-08-19 23:05:57 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 22988 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:05:57 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:06:04 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.036 seconds (JVM running for 8.141)
+2018-08-19 23:06:16 [32mINFO [m UsuarioDAOIMP:102 - UsuarioDAOIMP: guardar();
+2018-08-19 23:06:16 [32mINFO [m UsuarioDAOIMP:106 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:06:16 [32mINFO [m UsuarioDAOIMP:107 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:06:34 [32mINFO [m UsuarioDAOIMP:102 - UsuarioDAOIMP: guardar();
+2018-08-19 23:06:34 [33mWARN [m UsuarioDAOIMP:69 - No entity found for query
+2018-08-19 23:06:34 [32mINFO [m UsuarioDAOIMP:110 - Usuario rut 16692668-7 no encontrado
+2018-08-19 23:09:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 23381 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:09:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:09:12 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.222 seconds (JVM running for 9.871)
+2018-08-19 23:09:26 [32mINFO [m UsuarioDAOIMP:102 - UsuarioDAOIMP: guardar();
+2018-08-19 23:09:26 [33mWARN [m UsuarioDAOIMP:69 - No entity found for query
+2018-08-19 23:09:26 [32mINFO [m UsuarioDAOIMP:110 - Usuario rut 16692668-7 no encontrado
+2018-08-19 23:09:31 [32mINFO [m UsuarioDAOIMP:102 - UsuarioDAOIMP: guardar();
+2018-08-19 23:09:31 [32mINFO [m UsuarioDAOIMP:106 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:09:31 [32mINFO [m UsuarioDAOIMP:107 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:09:34 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:09:45 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 23570 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:09:45 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:09:52 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.15 seconds (JVM running for 8.424)
+2018-08-19 23:10:34 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:10:34 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:10:34 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:10:39 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:10:39 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:10:39 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:11:40 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 23838 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:11:40 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:11:46 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.889 seconds (JVM running for 8.22)
+2018-08-19 23:11:49 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:11:49 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:11:49 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:11:55 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:11:55 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:11:55 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:11:58 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:11:58 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:11:58 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:13:04 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:13:04 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:13:04 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:14:08 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:14:08 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:14:08 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:14:12 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:14:12 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:14:12 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:14:15 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:14:15 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:14:15 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:14:39 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:14:39 [32mINFO [m UsuarioDAOIMP:140 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:14:39 [32mINFO [m UsuarioDAOIMP:141 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:15:52 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 24159 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:15:52 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:15:57 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.95 seconds (JVM running for 7.083)
+2018-08-19 23:16:01 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:16:01 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:16:01 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:16:01 [1;31mERROR[m UsuarioDAOIMP:159 - org.hibernate.PersistentObjectException: detached entity passed to persist: cl.petit.api.models.entities.UsuarioEntity
+2018-08-19 23:16:17 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 24316 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:16:17 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:16:23 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.126 seconds (JVM running for 7.193)
+2018-08-19 23:16:32 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:16:32 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:16:32 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:16:35 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:16:35 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:16:35 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:16:35 [1;31mERROR[m UsuarioDAOIMP:159 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 23:16:39 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:16:39 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:16:39 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:16:39 [1;31mERROR[m UsuarioDAOIMP:159 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 23:16:55 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:16:55 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=1}
+2018-08-19 23:16:55 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:16:57 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:16:57 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=0}
+2018-08-19 23:16:57 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:17:06 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:17:06 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=0}
+2018-08-19 23:17:06 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:17:08 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:17:08 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=0}
+2018-08-19 23:17:08 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:17:13 [32mINFO [m UsuarioDAOIMP:135 - UsuarioDAOIMP: editar();
+2018-08-19 23:17:13 [32mINFO [m UsuarioDAOIMP:139 - UsuarioEntity{idUsuario=37, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-7', password='9040207', valid=0}
+2018-08-19 23:17:13 [32mINFO [m UsuarioDAOIMP:140 - Usuario rut 16692668-7 encontrado
+2018-08-19 23:18:28 [32mINFO [m UsuarioDAOIMP:172 - UsuarioDAOIMP: eliminar();
+2018-08-19 23:18:35 [32mINFO [m UsuarioDAOIMP:172 - UsuarioDAOIMP: eliminar();
+2018-08-19 23:18:42 [32mINFO [m UsuarioDAOIMP:172 - UsuarioDAOIMP: eliminar();
+2018-08-19 23:20:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 24981 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:20:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:20:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.339 seconds (JVM running for 9.573)
+2018-08-19 23:38:15 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 26120 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:38:15 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:38:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.41 seconds (JVM running for 8.017)
+2018-08-19 23:38:56 [32mINFO [m UsuarioController:224 - UsuarioController: buscarPorNombre();
+2018-08-19 23:39:02 [32mINFO [m UsuarioController:224 - UsuarioController: buscarPorNombre();
+2018-08-19 23:39:06 [32mINFO [m UsuarioController:224 - UsuarioController: buscarPorNombre();
+2018-08-19 23:39:16 [32mINFO [m UsuarioController:205 - UsuarioController: buscarPorRut();
+2018-08-19 23:39:16 [33mWARN [m UsuarioDAOIMP:61 - No entity found for query
+2018-08-19 23:39:18 [32mINFO [m UsuarioController:205 - UsuarioController: buscarPorRut();
+2018-08-19 23:39:18 [33mWARN [m UsuarioDAOIMP:61 - No entity found for query
+2018-08-19 23:39:21 [32mINFO [m UsuarioController:205 - UsuarioController: buscarPorRut();
+2018-08-19 23:39:21 [33mWARN [m UsuarioDAOIMP:61 - No entity found for query
+2018-08-19 23:39:22 [32mINFO [m UsuarioController:205 - UsuarioController: buscarPorRut();
+2018-08-19 23:39:22 [33mWARN [m UsuarioDAOIMP:61 - No entity found for query
+2018-08-19 23:39:37 [32mINFO [m UsuarioController:205 - UsuarioController: buscarPorRut();
+2018-08-19 23:39:37 [33mWARN [m UsuarioDAOIMP:61 - No entity found for query
+2018-08-19 23:39:51 [32mINFO [m UsuarioController:205 - UsuarioController: buscarPorRut();
+2018-08-19 23:40:59 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 26524 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:40:59 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:41:05 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.81 seconds (JVM running for 7.971)
+2018-08-19 23:41:11 [32mINFO [m UsuarioDAOIMP:127 - UsuarioDAOIMP: editar();
+2018-08-19 23:41:11 [33mWARN [m UsuarioDAOIMP:61 - No entity found for query
+2018-08-19 23:41:17 [32mINFO [m UsuarioDAOIMP:127 - UsuarioDAOIMP: editar();
+2018-08-19 23:41:18 [32mINFO [m UsuarioDAOIMP:131 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:41:18 [32mINFO [m UsuarioDAOIMP:132 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:41:18 [1;31mERROR[m UsuarioDAOIMP:151 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 23:42:39 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 26824 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:42:39 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:42:44 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.037 seconds (JVM running for 7.173)
+2018-08-19 23:42:57 [32mINFO [m UsuarioDAOIMP:127 - UsuarioDAOIMP: editar();
+2018-08-19 23:42:57 [32mINFO [m UsuarioDAOIMP:131 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:42:57 [32mINFO [m UsuarioDAOIMP:132 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:42:57 [1;31mERROR[m UsuarioDAOIMP:151 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 23:44:51 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 27059 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:44:51 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:45:00 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.666 seconds (JVM running for 11.392)
+2018-08-19 23:45:03 [32mINFO [m UsuarioDAOIMP:127 - UsuarioDAOIMP: editar();
+2018-08-19 23:45:03 [32mINFO [m UsuarioDAOIMP:131 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:45:03 [32mINFO [m UsuarioDAOIMP:132 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:45:03 [1;31mERROR[m UsuarioDAOIMP:151 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-19 23:45:46 [32mINFO [m UsuarioDAOIMP:127 - UsuarioDAOIMP: editar();
+2018-08-19 23:45:46 [32mINFO [m UsuarioDAOIMP:131 - UsuarioEntity{idUsuario=1, rolEntity=RolEntity{idRol=1, nombre='Admin', valid=1}, nombre='SUper Hernán', rut='16692668-8', password='9040207', valid=0}
+2018-08-19 23:45:46 [32mINFO [m UsuarioDAOIMP:132 - Usuario rut 16692668-8 encontrado
+2018-08-19 23:46:24 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 27327 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:46:24 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:46:30 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.677 seconds (JVM running for 7.818)
+2018-08-19 23:46:54 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 27532 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:46:54 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:47:01 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.136 seconds (JVM running for 8.279)
+2018-08-19 23:49:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntuBook with PID 27816 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-08-19 23:49:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-19 23:50:01 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.638 seconds (JVM running for 7.943)

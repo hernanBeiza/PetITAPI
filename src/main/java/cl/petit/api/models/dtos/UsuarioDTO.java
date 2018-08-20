@@ -65,6 +65,14 @@ public class UsuarioDTO {
         this.valid = valid;
     }
 
+    public RolDTO getRol() {
+        return rol;
+    }
+
+    public void setRol(RolDTO rol) {
+        this.rol = rol;
+    }
+
     @Override
     public String toString() {
         return "UsuarioDTO{" +

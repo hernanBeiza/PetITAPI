@@ -78,7 +78,81 @@ public class DuenoMascotaController {
         }
     }
 
+    @RequestMapping(path="/dueno", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> guardar() {
+        System.out.println("DuenoMascotaController: guardar();");
 
+        Map<String, Object> result = new HashMap<String,Object>();
+        /*
+        ArrayList<DuenoMascotaDTO> duenos = this.duenoMascotaService.obtener();
+        if(duenos !=null){
+            if(duenos.size()>0){
+                result.put("result",true);
+                result.put("duenos",duenos);
+                result.put("mensajes","Dueños de mascotas encontrados");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se encontraron mascotas");
+            }
+        } else {
+            result.put("result",false);
+            result.put("errores","No se encontraron dueños de mascotas");
+        }
+        */
+        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(path="/dueno", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> editar() {
+        System.out.println("DuenoMascotaController: editar();");
+
+        Map<String, Object> result = new HashMap<String,Object>();
+        /*
+        ArrayList<DuenoMascotaDTO> duenos = this.duenoMascotaService.obtener();
+        if(duenos !=null){
+            if(duenos.size()>0){
+                result.put("result",true);
+                result.put("duenos",duenos);
+                result.put("mensajes","Dueños de mascotas encontrados");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se encontraron mascotas");
+            }
+        } else {
+            result.put("result",false);
+            result.put("errores","No se encontraron dueños de mascotas");
+        }
+        */
+        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(path="/dueno", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> eliminar() {
+        System.out.println("DuenoMascotaController: eliminar();");
+
+        Map<String, Object> result = new HashMap<String,Object>();
+        /*
+        ArrayList<DuenoMascotaDTO> duenos = this.duenoMascotaService.obtener();
+        if(duenos !=null){
+            if(duenos.size()>0){
+                result.put("result",true);
+                result.put("duenos",duenos);
+                result.put("mensajes","Dueños de mascotas encontrados");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se encontraron mascotas");
+            }
+        } else {
+            result.put("result",false);
+            result.put("errores","No se encontraron dueños de mascotas");
+        }
+        */
+
+        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
 
 
 

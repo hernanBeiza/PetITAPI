@@ -27,8 +27,13 @@ public class RolServiceIMP implements RolService {
         if(entities!=null){
             System.out.println(entities.toString());
             System.out.println("Entidades encontradas");
-            return null;
-            //return new UsuarioDTO(entity);
+            ArrayList<RolDTO> encontrados = new ArrayList<RolDTO>();
+            for (RolEntity entity : entities) {
+                RolDTO dto = new RolDTO(entity);
+                encontrados.add(dto);
+            }
+            return encontrados;
+
         } else {
             return null;
         }

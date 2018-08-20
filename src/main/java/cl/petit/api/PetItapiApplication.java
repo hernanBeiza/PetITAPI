@@ -3,9 +3,11 @@ package cl.petit.api;
 import cl.petit.api.config.JwtFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import org.apache.catalina.connector.Connector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -20,6 +22,17 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 @EnableJpaAuditing
 
 public class PetItapiApplication {
+
+    @Bean
+    public TomcatServletWebServerFactory tomcatEmbeddedServletContainerFactory() {
+        return new TomcatServletWebServerFactory(){
+            @Override
+            protected void customizeConnector(Connector connector) {
+                super.customizeConnector(connector);
+                connector.setParseBodyMethods("POST,PUT,DELETE");
+            }
+        };
+    }
 
     @Bean
     public FilterRegistrationBean jwtFilter() {

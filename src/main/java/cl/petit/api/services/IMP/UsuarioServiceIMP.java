@@ -18,30 +18,18 @@ public class UsuarioServiceIMP implements UsuarioService {
     private UsuarioDAO usuarioDAO;
 
     @Override
-    public UsuarioDTO iniciarSesion(UsuarioDTO model) {
-        UsuarioEntity entity = this.usuarioDAO.buscar(model);
-        if(entity!=null){
-            System.out.println(entity.toString());
-            return new UsuarioDTO(entity);
-        } else {
-            return null;
-        }
-    }
-
-    @Override
     public ArrayList<UsuarioDTO> obtener() {
         ArrayList<UsuarioEntity> entities = this.usuarioDAO.obtener();
         if(entities!=null){
-            System.out.println("Usuarios encontrados");
+            System.out.println("Usuarios encontrados:" + entities.size());
             ArrayList<UsuarioDTO> encontrados = new ArrayList<UsuarioDTO>();
             for (UsuarioEntity entity : entities) {
                 UsuarioDTO dto = new UsuarioDTO(entity);
-                //System.out.println(dto.toString());
+                System.out.println(dto.toString());
                 encontrados.add(dto);
             }
             return encontrados;
         } else {
-            System.out.println("No se encontraron usuarios");
             return null;
         }
     }
@@ -50,14 +38,62 @@ public class UsuarioServiceIMP implements UsuarioService {
     public UsuarioDTO obtenerConID(int idusuario) {
         UsuarioEntity entity = this.usuarioDAO.obtenerConID(idusuario);
         if(entity!=null){
-            System.out.println("Usuario encontrado");
             //System.out.println(entity);
             UsuarioDTO dto = new UsuarioDTO(entity);
             return dto;
         } else {
-            System.out.println("No se encontraron usuarios");
             return null;
         }
+    }
 
+    @Override
+    public UsuarioDTO buscar(String rut, String contrasena) {
+        UsuarioEntity entity = this.usuarioDAO.buscar(rut,contrasena);
+        if(entity!=null){
+            System.out.println("Usuario encontrado: " + entity.toString());
+            return new UsuarioDTO(entity);
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public UsuarioDTO buscarPorNombre(String nombre) {
+        UsuarioEntity entity = this.usuarioDAO.buscarPorNombre(nombre);
+        if(entity!=null){
+            UsuarioDTO dto = new UsuarioDTO(entity);
+            return dto;
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public UsuarioDTO buscarPorRut(String rut) {
+        UsuarioEntity entity = this.usuarioDAO.buscarPorRut(rut);
+        if(entity!=null){
+            UsuarioDTO dto = new UsuarioDTO(entity);
+            return dto;
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public boolean guardar(UsuarioDTO model) {
+        boolean result = this.usuarioDAO.guardar(model);
+        return result;
+    }
+
+    @Override
+    public boolean editar(UsuarioDTO model) {
+        boolean result = this.usuarioDAO.editar(model);
+        return result;
+    }
+
+    @Override
+    public boolean eliminar(UsuarioDTO model){
+        boolean result = this.usuarioDAO.eliminar(model);
+        return result;
     }
 }

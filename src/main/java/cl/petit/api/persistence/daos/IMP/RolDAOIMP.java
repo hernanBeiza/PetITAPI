@@ -26,8 +26,6 @@ public class RolDAOIMP implements RolDAO {
         String query = "SELECT r FROM RolEntity AS r";
         System.out.println(query);
         try {
-            //Object result = entityManager.createQuery(query).getSingleResult();
-            //System.out.println(result.toString());
             return (ArrayList<RolEntity>) entityManager.createQuery(query).getResultList();
         } catch (Exception e){
             System.out.println(e.getLocalizedMessage());

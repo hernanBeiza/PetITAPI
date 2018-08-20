@@ -1,5 +1,6 @@
 package cl.petit.api.controllers;
 
+import cl.petit.api.models.dtos.RolDTO;
 import cl.petit.api.models.dtos.UsuarioDTO;
 import cl.petit.api.services.UsuarioService;
 import com.fasterxml.jackson.core.JsonParser;
@@ -8,6 +9,8 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.SignatureException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -25,17 +28,17 @@ import java.util.Map;
 @RestController
 public class UsuarioController {
 
+    private static final Logger logger = LogManager.getLogger(UsuarioController.class);
+
     @Autowired
     private UsuarioService usuarioService;
 
     @RequestMapping(path="/login", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> login(@RequestParam(value="rut",required=false) String rut,
-                                                    @RequestParam(value="contrasena",required=false) String contrasena,
+                                                    @RequestParam(value="password",required=false) String password,
                                                     HttpSession session) {
-        System.out.println("UsuarioController: login();");
-        System.out.println(rut);
-        System.out.println(contrasena);
+        logger.debug("UsuarioController: login();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
@@ -43,7 +46,7 @@ public class UsuarioController {
             enviar = false;
             errores +="Usuario";
         }
-        if(contrasena==null){
+        if(password==null){
             enviar = false;
             errores +="Contraseña";
         }
@@ -52,8 +55,8 @@ public class UsuarioController {
         if(enviar){
             UsuarioDTO model = new UsuarioDTO();
             model.setRut(rut);
-            model.setPassword(contrasena);
-            UsuarioDTO encontrado = this.usuarioService.iniciarSesion(model);
+            model.setPassword(password);
+            UsuarioDTO encontrado = this.usuarioService.buscar(model.getRut(),model.getPassword());
             if(encontrado!=null){
                 result.put("result",true);
                 result.put("mensaje","Bienvenido al sistema de PetIT...");
@@ -86,7 +89,7 @@ public class UsuarioController {
     @RequestMapping(path="/verificar", method = {RequestMethod.GET,RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> verificarToken(@RequestHeader("authorization") String authHeader){
-        System.out.println("verificarToken()");
+        logger.debug("verificarToken()");
         Map<String, Object> result = new HashMap<String,Object>();
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             System.out.println("Missing or invalid Authorization header");
@@ -142,7 +145,7 @@ public class UsuarioController {
     @RequestMapping(path="/logout", method = {RequestMethod.GET,RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> logout(HttpSession session){
-        System.out.println("UsuarioController: logout()");
+        logger.debug("UsuarioController: logout()");
         Map<String, Object> result = new HashMap<String,Object>();
         /*
         if(session.getAttribute("usuario")!=null){
@@ -160,7 +163,7 @@ public class UsuarioController {
     @RequestMapping(path="/api/usuario", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
-        System.out.println("UsuarioController: obtener();");
+        logger.debug("UsuarioController: obtener();");
         Map<String, Object> result = new HashMap<String,Object>();
         ArrayList<UsuarioDTO> encontrados = this.usuarioService.obtener();
         if(encontrados!=null){
@@ -178,7 +181,7 @@ public class UsuarioController {
     @RequestMapping(path="/api/usuario/{idusuario}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable int idusuario) {
-        System.out.println("UsuarioController: obtenerConID();");
+        logger.debug("UsuarioController: obtenerConID();");
         Map<String, Object> result = new HashMap<String,Object>();
         UsuarioDTO encontrado = this.usuarioService.obtenerConID(idusuario);
         if(encontrado!=null){
@@ -191,6 +194,202 @@ public class UsuarioController {
         }
 
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
+
+
+    @RequestMapping(path="/api/usuario/rut/{rut}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> buscarPorRut(@PathVariable String rut) {
+        logger.debug("UsuarioController: buscarPorRut();");
+        Map<String, Object> result = new HashMap<String,Object>();
+        UsuarioDTO encontrado = this.usuarioService.buscarPorRut(rut);
+        if(encontrado!=null){
+            result.put("result",true);
+            result.put("mensaje","Se encontraro usuario con ese rut");
+            result.put("usuario",encontrado);
+        } else {
+            result.put("result",false);
+            result.put("errores","No se encontraró usuario con ese rut");
+        }
+
+        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
+
+
+    @RequestMapping(path="/api/usuario/nombre/{nombre}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> buscarPorNombre(@PathVariable String nombre) {
+        logger.debug("UsuarioController: buscarPorNombre();");
+        Map<String, Object> result = new HashMap<String,Object>();
+        UsuarioDTO encontrado = this.usuarioService.buscarPorNombre(nombre);
+        if(encontrado!=null){
+            result.put("result",true);
+            result.put("mensaje","Se encontró usuario con ese nombre");
+            result.put("usuario",encontrado);
+        } else {
+            result.put("result",false);
+            result.put("errores","No se encontró usuario con ese nombre");
+        }
+
+        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+    }
+
+
+
+    @RequestMapping(path="/api/usuario", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> guardar(@RequestParam(value="idRol",required=true) Integer idRol,
+                                                    @RequestParam(value="nombre",required=true) String nombre,
+                                                      @RequestParam(value="rut",required=true) String rut,
+                                                      @RequestParam(value="password",required=true) String password,
+                                                    HttpSession session) {
+        logger.debug("UsuarioController: guardar();");
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idRol==null){
+            enviar = false;
+            errores +="idRol";
+        }
+        if(nombre==null){
+            enviar = false;
+            errores +="Nombre";
+        }
+        if(rut==null){
+            enviar = false;
+            errores +="Rut";
+        }
+        if(password==null){
+            enviar = false;
+            errores +="Contraseña";
+        }
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar){
+            RolDTO rolModel = new RolDTO();
+            rolModel.setIdRol(idRol.longValue());
+            UsuarioDTO model = new UsuarioDTO();
+            model.setRol(rolModel);
+            model.setNombre(nombre);
+            model.setRut(rut);
+            model.setPassword(password);
+            model.setValid(1);
+            boolean guardado = this.usuarioService.guardar(model);
+            if(guardado){
+                result.put("result",true);
+                result.put("mensaje","Usuario guardado correctamente");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se pudo guardar el usuario");
+            }
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+        } else {
+            System.out.println(errores);
+            result.put("result",false);
+            result.put("errores",errores);
+            // Add any additional props that you want to add
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
+        }
+
+    }
+
+    @RequestMapping(path="/api/usuario", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> editar(@RequestParam(value="idUsuario",required=true) Integer idUsuario,
+                                                        @RequestParam(value="idRol",required=true) Integer idRol,
+                                                        @RequestParam(value="nombre",required=true) String nombre,
+                                                        @RequestParam(value="rut",required=true) String rut,
+                                                        @RequestParam(value="password",required=true) String password,
+                                                        @RequestParam(value="valid",required=true) Integer valid,
+                                                     HttpSession session) {
+        logger.debug("UsuarioController: editar();");
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idUsuario==null){
+            enviar = false;
+            errores +="idUsuario";
+        }
+
+        if(idRol==null){
+            enviar = false;
+            errores +="idRol";
+        }
+        if(nombre==null){
+            enviar = false;
+            errores +="Nombre";
+        }
+        if(rut==null){
+            enviar = false;
+            errores +="Rut";
+        }
+        if(password==null){
+            enviar = false;
+            errores +="Contraseña";
+        }
+        if(valid==null){
+            enviar = false;
+            errores +="Valid";
+        }
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar){
+            RolDTO rolModel = new RolDTO();
+            rolModel.setIdRol(Long.valueOf(idRol));
+            UsuarioDTO model = new UsuarioDTO();
+            model.setIdUsuario(Long.valueOf(idUsuario));
+            model.setRol(rolModel);
+            model.setNombre(nombre);
+            model.setRut(rut);
+            model.setPassword(password);
+            model.setValid(valid);
+            boolean guardado = this.usuarioService.editar(model);
+            if(guardado){
+                result.put("result",true);
+                result.put("mensaje","Usuario editado correctamente");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se pudo editar el usuario");
+            }
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+        } else {
+            System.out.println(errores);
+            result.put("result",false);
+            result.put("errores",errores);
+            // Add any additional props that you want to add
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
+        }
+
+    }
+
+
+    @RequestMapping(path="/api/usuario/{idusuario}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> eliminar(@PathVariable Integer idusuario) {
+        logger.debug("UsuarioController: eliminar();");
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idusuario==null){
+            enviar = false;
+            errores +="idUsuario";
+        }
+
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar){
+            UsuarioDTO model = new UsuarioDTO();
+            model.setIdUsuario(Long.valueOf(idusuario));
+            boolean eliminado = this.usuarioService.eliminar(model);
+            if(eliminado){
+                result.put("result",true);
+                result.put("mensaje","Usuario eliminado correctamente...");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se pudo eliminar el usuario con estos datos...");
+            }
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+        } else {
+            result.put("result",false);
+            result.put("errores",errores);
+            // Add any additional props that you want to add
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
+        }
+
     }
 
 }

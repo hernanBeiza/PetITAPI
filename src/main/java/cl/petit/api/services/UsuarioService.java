@@ -7,7 +7,18 @@ import java.util.ArrayList;
 public interface UsuarioService {
 
     ArrayList<UsuarioDTO> obtener();
+
     UsuarioDTO obtenerConID(int idusuario);
 
-    UsuarioDTO iniciarSesion(UsuarioDTO model);
+    UsuarioDTO buscar(String rut, String contrasena);
+
+    UsuarioDTO buscarPorNombre(String nombre);
+
+    UsuarioDTO buscarPorRut(String rut);
+
+    boolean guardar(UsuarioDTO model);
+
+    boolean editar(UsuarioDTO model);
+
+    boolean eliminar(UsuarioDTO model);
 }
