@@ -22,14 +22,14 @@ import java.util.Map;
 
 
 @CrossOrigin(origins = "http://localhost", maxAge = 3600)
-@RequestMapping(path = "/api")
+@RequestMapping(path = "/api/rol")
 @RestController
 public class RolController {
 
     @Autowired
     private RolService rolService;
 
-    @RequestMapping(path="/rol", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
         System.out.println("RolController: obtener();");
@@ -47,7 +47,7 @@ public class RolController {
         return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/rol/{idRol}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{idRol}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Long idRol) {
         System.out.println("RolController: obtenerConID(); "+ idRol);

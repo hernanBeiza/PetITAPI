@@ -597,3 +597,125 @@
 2018-08-20 01:49:32 [32mINFO [m NotificacionDAOIMP:131 - NotificacionDAO: marcarComoLeida();
 2018-08-20 01:49:32 [32mINFO [m NotificacionDAOIMP:41 - NotificacionDAO: obtenerConID();
 2018-08-20 01:49:32 [32mINFO [m NotificacionDAOIMP:43 - SELECT u FROM NotificacionEntity u WHERE idNotificacion=5
+2018-08-20 17:27:10 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1496 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:27:10 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:27:50 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1542 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:27:50 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:27:58 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.767 seconds (JVM running for 10.264)
+2018-08-20 17:32:43 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1864 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:32:43 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:32:50 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.732 seconds (JVM running for 9.087)
+2018-08-20 17:35:14 [32mINFO [m NotificacionController:117 - NotificacionController: guardar();
+2018-08-20 17:35:57 [32mINFO [m NotificacionController:117 - NotificacionController: guardar();
+2018-08-20 17:35:57 [32mINFO [m NotificacionController:146 - DVI D Dual Link.PNG
+2018-08-20 17:35:57 [32mINFO [m NotificacionController:147 - 7438
+2018-08-20 17:35:57 [32mINFO [m NotificacionDAOIMP:67 - NotificacionDAO: guardar();
+2018-08-20 17:35:58 [1;31mERROR[m NotificacionDAOIMP:80 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-20 17:36:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2130 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:36:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:36:54 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.517 seconds (JVM running for 11.195)
+2018-08-20 17:45:10 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2698 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:45:10 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:45:18 [32mINFO [m ArchivoServiceIMP:27 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:45:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.879 seconds (JVM running for 14.939)
+2018-08-20 17:46:00 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2758 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:46:00 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:46:06 [32mINFO [m ArchivoServiceIMP:27 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:46:08 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.174 seconds (JVM running for 12.655)
+2018-08-20 17:46:57 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2818 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:46:57 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:47:02 [32mINFO [m ArchivoServiceIMP:27 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:47:04 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.738 seconds (JVM running for 9.498)
+2018-08-20 17:47:09 [32mINFO [m NotificacionController:118 - NotificacionController: guardar();
+2018-08-20 17:47:09 [32mINFO [m NotificacionController:145 - DVI D Dual Link.PNG
+2018-08-20 17:47:09 [32mINFO [m NotificacionController:146 - 7438
+2018-08-20 17:48:29 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2920 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:48:29 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:48:34 [32mINFO [m ArchivoServiceIMP:26 - ArchivoService:
+2018-08-20 17:48:34 [32mINFO [m ArchivoServiceIMP:28 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:48:36 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.191 seconds (JVM running for 8.397)
+2018-08-20 17:48:43 [32mINFO [m NotificacionController:118 - NotificacionController: guardar();
+2018-08-20 17:48:43 [32mINFO [m NotificacionController:145 - DVI D Dual Link.PNG
+2018-08-20 17:48:43 [32mINFO [m NotificacionController:146 - 7438
+2018-08-20 17:49:27 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2983 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:49:27 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:49:32 [32mINFO [m ArchivoServiceIMP:28 - ArchivoService:
+2018-08-20 17:49:32 [32mINFO [m ArchivoServiceIMP:30 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:49:34 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.585 seconds (JVM running for 11.657)
+2018-08-20 17:49:38 [32mINFO [m NotificacionController:118 - NotificacionController: guardar();
+2018-08-20 17:49:38 [32mINFO [m NotificacionController:145 - DVI D Dual Link.PNG
+2018-08-20 17:49:38 [32mINFO [m NotificacionController:146 - 7438
+2018-08-20 17:50:45 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3070 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:50:45 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:50:51 [32mINFO [m ArchivoServiceIMP:28 - ArchivoService:
+2018-08-20 17:50:51 [32mINFO [m ArchivoServiceIMP:30 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:50:54 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.878 seconds (JVM running for 13.192)
+2018-08-20 17:51:07 [32mINFO [m NotificacionController:118 - NotificacionController: guardar();
+2018-08-20 17:51:07 [32mINFO [m NotificacionController:145 - DVI D Dual Link.PNG
+2018-08-20 17:51:07 [32mINFO [m NotificacionController:146 - 7438
+2018-08-20 17:51:07 [32mINFO [m ArchivoServiceIMP:41 - ArchivoService: guardar();
+2018-08-20 17:51:07 [32mINFO [m ArchivoServiceIMP:44 - DVI D Dual Link.PNG
+2018-08-20 17:51:07 [32mINFO [m NotificacionController:149 - DVI D Dual Link.PNG
+2018-08-20 17:52:50 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3211 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:52:50 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:52:54 [32mINFO [m ArchivoServiceIMP:28 - ArchivoService:
+2018-08-20 17:52:54 [32mINFO [m ArchivoServiceIMP:30 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:52:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.855 seconds (JVM running for 7.78)
+2018-08-20 17:53:04 [32mINFO [m NotificacionController:119 - NotificacionController: guardar();
+2018-08-20 17:53:04 [32mINFO [m NotificacionController:146 - DVI D Dual Link.PNG
+2018-08-20 17:53:04 [32mINFO [m NotificacionController:147 - 7438
+2018-08-20 17:53:04 [32mINFO [m ArchivoServiceIMP:41 - ArchivoService: guardar();
+2018-08-20 17:53:04 [32mINFO [m ArchivoServiceIMP:44 - DVI D Dual Link.PNG
+2018-08-20 17:53:04 [32mINFO [m ArchivoServiceIMP:55 - ArchivoService: guardar archivo en la ruta
+2018-08-20 17:53:04 [32mINFO [m ArchivoServiceIMP:57 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img/DVI D Dual Link.PNG
+2018-08-20 17:53:04 [32mINFO [m NotificacionController:150 - DVI D Dual Link.PNG
+2018-08-20 17:53:29 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3255 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 17:53:29 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 17:53:33 [32mINFO [m ArchivoServiceIMP:28 - ArchivoService:
+2018-08-20 17:53:33 [32mINFO [m ArchivoServiceIMP:30 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 17:53:34 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.609 seconds (JVM running for 6.71)
+2018-08-20 17:53:40 [32mINFO [m NotificacionController:119 - NotificacionController: guardar();
+2018-08-20 17:53:40 [32mINFO [m NotificacionController:146 - DVI D Dual Link.PNG
+2018-08-20 17:53:40 [32mINFO [m NotificacionController:147 - 7438
+2018-08-20 17:53:40 [32mINFO [m ArchivoServiceIMP:41 - ArchivoService: guardar();
+2018-08-20 17:53:40 [32mINFO [m ArchivoServiceIMP:44 - DVI D Dual Link.PNG
+2018-08-20 17:53:40 [32mINFO [m ArchivoServiceIMP:55 - ArchivoService: guardar archivo en la ruta
+2018-08-20 17:53:40 [32mINFO [m ArchivoServiceIMP:57 - file:///Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img/DVI%20D%20Dual%20Link.PNG
+2018-08-20 17:53:40 [32mINFO [m NotificacionController:150 - DVI D Dual Link.PNG
+2018-08-20 18:01:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3803 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 18:01:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 18:01:54 [32mINFO [m ArchivoServiceIMP:28 - ArchivoService:
+2018-08-20 18:01:54 [32mINFO [m ArchivoServiceIMP:30 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 18:01:57 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.971 seconds (JVM running for 12.352)
+2018-08-20 18:03:08 [32mINFO [m NotificacionController:119 - NotificacionController: guardar();
+2018-08-20 18:03:26 [32mINFO [m NotificacionController:119 - NotificacionController: guardar();
+2018-08-20 18:03:26 [32mINFO [m NotificacionController:146 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:03:26 [32mINFO [m NotificacionController:147 - 215172
+2018-08-20 18:03:26 [32mINFO [m ArchivoServiceIMP:41 - ArchivoService: guardar();
+2018-08-20 18:03:26 [32mINFO [m ArchivoServiceIMP:44 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:03:26 [32mINFO [m ArchivoServiceIMP:55 - ArchivoService: guardar archivo en la ruta
+2018-08-20 18:03:26 [32mINFO [m ArchivoServiceIMP:57 - file:///Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img/Screen%20Shot%202018-08-20%20at%202.32.51%20PM.png
+2018-08-20 18:03:26 [32mINFO [m NotificacionController:150 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:03:26 [32mINFO [m NotificacionDAOIMP:67 - NotificacionDAO: guardar();
+2018-08-20 18:03:26 [1;31mERROR[m NotificacionDAOIMP:80 - org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-08-20 18:03:41 [32mINFO [m NotificacionController:119 - NotificacionController: guardar();
+2018-08-20 18:03:41 [32mINFO [m NotificacionController:146 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:03:41 [32mINFO [m NotificacionController:147 - 215172
+2018-08-20 18:03:41 [32mINFO [m ArchivoServiceIMP:41 - ArchivoService: guardar();
+2018-08-20 18:03:41 [32mINFO [m ArchivoServiceIMP:44 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:03:41 [32mINFO [m ArchivoServiceIMP:55 - ArchivoService: guardar archivo en la ruta
+2018-08-20 18:03:41 [32mINFO [m ArchivoServiceIMP:57 - file:///Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img/Screen%20Shot%202018-08-20%20at%202.32.51%20PM.png
+2018-08-20 18:03:41 [32mINFO [m NotificacionController:150 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:03:41 [32mINFO [m NotificacionDAOIMP:67 - NotificacionDAO: guardar();
+2018-08-20 18:06:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 4094 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-20 18:06:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-20 18:06:09 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 5.505 seconds (JVM running for 7.465)
+2018-08-20 18:06:17 [32mINFO [m NotificacionController:119 - NotificacionController: guardar();
+2018-08-20 18:06:17 [32mINFO [m NotificacionController:146 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:06:17 [32mINFO [m NotificacionController:147 - 215172
+2018-08-20 18:06:17 [32mINFO [m ArchivoServiceIMP:39 - ArchivoService: guardar();
+2018-08-20 18:06:17 [32mINFO [m ArchivoServiceIMP:42 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:06:17 [32mINFO [m ArchivoServiceIMP:53 - ArchivoService: guardar archivo en la ruta
+2018-08-20 18:06:17 [32mINFO [m ArchivoServiceIMP:54 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
+2018-08-20 18:06:17 [32mINFO [m NotificacionController:150 - Screen Shot 2018-08-20 at 2.32.51 PM.png
+2018-08-20 18:06:17 [32mINFO [m NotificacionDAOIMP:67 - NotificacionDAO: guardar();

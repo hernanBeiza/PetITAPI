@@ -12,14 +12,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-@RequestMapping(path = "/api/mascota")
+@RequestMapping(path = "/api/mascota/tipo")
 @RestController
 public class TipoMascotaController {
 
     @Autowired
     private TipoMascotaService tipoMascotaService;
 
-    @RequestMapping(path="/tipo", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
         System.out.println("TipoMascotaController: obtener();");
@@ -37,7 +37,7 @@ public class TipoMascotaController {
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/tipo/{idmascota}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{idmascota}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Integer idmascota) {
         System.out.println("TipoMascotaController: obtenerConID();");

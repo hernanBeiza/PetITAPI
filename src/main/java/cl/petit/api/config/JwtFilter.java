@@ -19,7 +19,7 @@ public class JwtFilter extends GenericFilterBean {
 
 
     public void doFilter(final ServletRequest req, final ServletResponse res, final FilterChain chain) throws IOException, ServletException {
-        System.out.println("JwtFilter: doFilter();");
+        logger.debug("JwtFilter: doFilter();");
         final HttpServletRequest request = (HttpServletRequest) req;
         final HttpServletResponse response = (HttpServletResponse) res;
         final String authHeader = request.getHeader("authorization");
@@ -31,7 +31,7 @@ public class JwtFilter extends GenericFilterBean {
         } else {
 
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-                System.out.println("Missing or inalid Authorization header");
+                logger.warn("Missing or inalid Authorization header");
                 throw new ServletException("Missing or invalid Authorization header");
             }
 
@@ -41,8 +41,8 @@ public class JwtFilter extends GenericFilterBean {
                 final Claims claims = Jwts.parser().setSigningKey("SECRETKEY").parseClaimsJws(token).getBody();
                 request.setAttribute("claims", claims);
             } catch (final SignatureException e) {
-                System.out.println(e.getLocalizedMessage());
-                System.out.println("Invalid token");
+                logger.error("Invalid token");
+                logger.error(e.getLocalizedMessage());
                 throw new ServletException("Invalid token");
             }
 

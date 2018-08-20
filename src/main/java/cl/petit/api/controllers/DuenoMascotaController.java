@@ -14,14 +14,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-@RequestMapping(path = "/api")
+@RequestMapping(path = "/api/dueno")
 @RestController
 public class DuenoMascotaController {
 
     @Autowired
     private DuenoMascotaService duenoMascotaService;
 
-    @RequestMapping(path="/dueno", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
         System.out.println("DuenoMascotaController: obtener();");
@@ -43,7 +43,7 @@ public class DuenoMascotaController {
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/dueno/{rutDueno}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{rutDueno}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable String rutDueno) {
         System.out.println("DuenoMascotaController: obtenerConID();");
@@ -78,7 +78,7 @@ public class DuenoMascotaController {
         }
     }
 
-    @RequestMapping(path="/dueno", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> guardar() {
         System.out.println("DuenoMascotaController: guardar();");
@@ -103,7 +103,7 @@ public class DuenoMascotaController {
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/dueno", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> editar() {
         System.out.println("DuenoMascotaController: editar();");
@@ -128,7 +128,7 @@ public class DuenoMascotaController {
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/dueno", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> eliminar() {
         System.out.println("DuenoMascotaController: eliminar();");

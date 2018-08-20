@@ -2,6 +2,7 @@ package cl.petit.api.controllers;
 
 import cl.petit.api.models.dtos.NotificacionDTO;
 import cl.petit.api.models.dtos.UsuarioDTO;
+import cl.petit.api.services.ArchivoService;
 import cl.petit.api.services.NotificacionService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,6 +25,9 @@ public class NotificacionController {
 
     @Autowired
     private NotificacionService notificacionService;
+    //Servicio para guardar y obtener los archivos hacia y edesde el servidor
+    @Autowired
+    private ArchivoService archivoService;
 
 
     @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -107,10 +112,12 @@ public class NotificacionController {
     @ResponseBody
     public ResponseEntity<Map<String,Object>> guardar(@RequestParam(value="idUsuario",required=false) Integer idUsuario,
                                                       @RequestParam(value="titulo",required=false) String titulo,
-                                                      @RequestParam(value="imagen",required=false) String imagen,
+                                                      //@RequestParam(value="imagen",required=false) String imagen,
+                                                      @RequestParam(value="imagen", required=false) MultipartFile imagen,
                                                       @RequestParam(value="mensaje",required=false) String mensaje,
                                                       @RequestParam(value="fecha",required=false) String fecha) {
         logger.info("NotificacionController: guardar();");
+
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
@@ -136,12 +143,18 @@ public class NotificacionController {
         }
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar) {
+            logger.info(imagen.getOriginalFilename());
+            logger.info(imagen.getSize());
+
+            String rutaArchivo = archivoService.guardar(imagen);
+            logger.info(rutaArchivo);
+
             UsuarioDTO usuarioModel = new UsuarioDTO();
             usuarioModel.setIdUsuario(idUsuario.longValue());
             NotificacionDTO model = new NotificacionDTO();
             model.setUsuario(usuarioModel);
             model.setTitulo(titulo);
-            model.setImagen(imagen);
+            model.setImagen(rutaArchivo);
             model.setMensaje(mensaje);
             model.setFecha(fecha);
             model.setValid(2);

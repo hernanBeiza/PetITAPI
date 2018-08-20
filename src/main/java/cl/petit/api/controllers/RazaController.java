@@ -16,14 +16,14 @@ import java.util.Map;
 
 
 @CrossOrigin(origins = "http://localhost", maxAge = 3600)
-@RequestMapping(path = "/api")
+@RequestMapping(path = "/api/raza")
 @RestController
 public class RazaController {
 
     @Autowired
     private RazaService razaService;
 
-    @RequestMapping(path="/raza", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
         System.out.println("RazaController: obtener();");
@@ -41,7 +41,7 @@ public class RazaController {
         return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/raza/{idRaza}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{idRaza}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Long idRaza) {
         System.out.println("RazaController: obtenerConID(); "+ idRaza);
