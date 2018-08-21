@@ -744,3 +744,50 @@
 2018-08-21 17:31:43 [32mINFO [m TipoMascotaDAOIMP:41 - SELECT r FROM TipoMascotaEntity AS r WHERE r.idTipoMascota = 1
 2018-08-21 17:31:44 [32mINFO [m TipoMascotaDAOIMP:41 - SELECT r FROM TipoMascotaEntity AS r WHERE r.idTipoMascota = 2
 2018-08-21 17:31:51 [32mINFO [m TipoMascotaDAOIMP:27 - SELECT t FROM TipoMascotaEntity AS t
+2018-08-21 17:51:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 13260 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:51:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:51:39 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.467 seconds (JVM running for 10.281)
+2018-08-21 17:51:42 [32mINFO [m NotificacionDAOIMP:27 - SELECT r FROM ComunaEntity AS r
+2018-08-21 17:51:42 [32mINFO [m NotificacionDAOIMP:33 - Comunas encontradas
+2018-08-21 17:51:44 [32mINFO [m NotificacionDAOIMP:41 - SELECT r FROM ComunaEntity AS r WHERE r.idComuna = 1
+2018-08-21 17:51:51 [32mINFO [m NotificacionDAOIMP:27 - SELECT r FROM ComunaEntity AS r
+2018-08-21 17:51:51 [32mINFO [m NotificacionDAOIMP:33 - Comunas encontradas
+2018-08-21 17:52:30 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 13265 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:52:30 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:52:38 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.594 seconds (JVM running for 11.523)
+2018-08-21 17:52:44 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 1
+2018-08-21 17:52:44 [32mINFO [m NotificacionDAOIMP:61 - Comunas encontradas con idProvincia 1
+2018-08-21 17:52:47 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 2
+2018-08-21 17:52:47 [32mINFO [m NotificacionDAOIMP:61 - Comunas encontradas con idProvincia 2
+2018-08-21 17:52:48 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 3
+2018-08-21 17:52:48 [32mINFO [m NotificacionDAOIMP:61 - Comunas encontradas con idProvincia 3
+2018-08-21 17:52:49 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 4
+2018-08-21 17:52:49 [32mINFO [m NotificacionDAOIMP:61 - Comunas encontradas con idProvincia 4
+2018-08-21 17:52:49 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 5
+2018-08-21 17:52:49 [32mINFO [m NotificacionDAOIMP:61 - Comunas encontradas con idProvincia 5
+2018-08-21 17:52:50 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 1
+2018-08-21 17:52:50 [32mINFO [m NotificacionDAOIMP:61 - Comunas encontradas con idProvincia 1
+2018-08-21 17:52:51 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 0
+2018-08-21 17:52:51 [32mINFO [m NotificacionDAOIMP:61 - Comunas encontradas con idProvincia 0
+2018-08-21 17:54:31 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 13275 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:54:31 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:54:40 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.668 seconds (JVM running for 13.022)
+2018-08-21 17:55:14 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 13285 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:55:14 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:55:20 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.998 seconds (JVM running for 8.333)
+2018-08-21 17:55:22 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 0
+2018-08-21 17:55:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 13290 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:55:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:55:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.61 seconds (JVM running for 10.48)
+2018-08-21 17:55:57 [32mINFO [m NotificacionDAOIMP:54 - SELECT r FROM ComunaEntity AS r WHERE idProvincia = 0
+2018-08-21 18:07:44 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 13453 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 18:07:44 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 18:07:51 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.725 seconds (JVM running for 11.48)
+2018-08-21 18:08:16 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 13460 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 18:08:16 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 18:08:22 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.493 seconds (JVM running for 8.923)
+2018-08-21 18:08:25 [32mINFO [m NotificacionDAOIMP:24 - SELECT r FROM RegionEntity AS r
+2018-08-21 18:08:25 [32mINFO [m NotificacionDAOIMP:31 - Regiones encontradas
+2018-08-21 18:08:31 [32mINFO [m NotificacionDAOIMP:36 - SELECT r FROM RegionEntity AS r WHERE r.idRegion = 15
+2018-08-21 18:08:33 [32mINFO [m NotificacionDAOIMP:36 - SELECT r FROM RegionEntity AS r WHERE r.idRegion = 16
+2018-08-21 18:08:33 [1;31mERROR[m NotificacionDAOIMP:40 - No entity found for query

@@ -9,4 +9,6 @@ public interface ComunaService {
     ArrayList<ComunaDTO> obtener();
 
     ComunaDTO obtenerConID(Long idComuna);
+
+    ArrayList<ComunaDTO> obtenerConIDProvincia(Long idProvincia);
 }

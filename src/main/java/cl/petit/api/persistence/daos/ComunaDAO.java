@@ -10,4 +10,6 @@ public interface ComunaDAO {
     ArrayList<ComunaEntity> obtener();
 
     ComunaEntity obtenerConID(Long idComuna);
+
+    ArrayList<ComunaEntity> obtenerConIDProvincia(Long idProvincia);
 }

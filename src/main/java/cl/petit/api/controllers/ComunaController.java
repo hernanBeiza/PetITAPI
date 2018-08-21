@@ -26,8 +26,6 @@ public class ComunaController {
     @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
-        System.out.println("ComunaController: obtener();");
-
         Map<String, Object> result = new HashMap<String, Object>();
         ArrayList<ComunaDTO> encontradas = this.comunaService.obtener();
         if (encontradas != null) {
@@ -36,7 +34,7 @@ public class ComunaController {
             result.put("razas", encontradas);
         } else {
             result.put("result", false);
-            result.put("errores", "No se encontró raza con estos datos...");
+            result.put("errores", "No se encontró comuna con estos datos...");
         }
         return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
     }
@@ -44,7 +42,6 @@ public class ComunaController {
     @RequestMapping(path="/{idComuna}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Long idComuna) {
-        System.out.println("ComunaController: obtenerConID(); "+ idComuna);
         boolean enviar = true;
         String errores = "Te faltó:\n";
         if(idComuna==null){
@@ -61,6 +58,32 @@ public class ComunaController {
             } else {
                 result.put("result", false);
                 result.put("errores", "No se encontró comuna con estos datos...");
+            }
+        } else {
+            result.put("result", false);
+            result.put("errores", errores);
+        }
+        return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+    }
+    @RequestMapping(path="/provincia/{idProvincia}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> obtenerConIDProvincia(@PathVariable Long idProvincia) {
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idProvincia==null){
+            enviar = false;
+            errores +="ID de la provincia";
+        }
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar) {
+            ArrayList<ComunaDTO> encontradas = this.comunaService.obtenerConIDProvincia(idProvincia);
+            if (encontradas != null) {
+                result.put("result", true);
+                result.put("mensaje", "Comunas encontradas de la provincia " + idProvincia);
+                result.put("comunas", encontradas);
+            } else {
+                result.put("result", false);
+                result.put("errores", "No se encontraron comunas de la provincia " + idProvincia);
             }
         } else {
             result.put("result", false);
