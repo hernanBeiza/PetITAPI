@@ -719,3 +719,28 @@
 2018-08-20 18:06:17 [32mINFO [m ArchivoServiceIMP:54 - /Users/hernanBeiza/Documents/GitHub/PetITAPI/notificaciones/img
 2018-08-20 18:06:17 [32mINFO [m NotificacionController:150 - Screen Shot 2018-08-20 at 2.32.51 PM.png
 2018-08-20 18:06:17 [32mINFO [m NotificacionDAOIMP:67 - NotificacionDAO: guardar();
+2018-08-21 17:24:01 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12898 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:24:01 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:24:08 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.756 seconds (JVM running for 10.25)
+2018-08-21 17:28:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12921 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:28:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:28:14 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.554 seconds (JVM running for 12.571)
+2018-08-21 17:28:58 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12929 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:28:58 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:29:09 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 12.729 seconds (JVM running for 15.116)
+2018-08-21 17:30:06 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12944 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:30:06 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:30:13 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.372 seconds (JVM running for 8.874)
+2018-08-21 17:31:00 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12950 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:31:00 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:31:06 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.37 seconds (JVM running for 8.282)
+2018-08-21 17:31:09 [32mINFO [m TipoMascotaDAOIMP:41 - SELECT r FROM TipoMascotaEntity AS r WHERE r.idTipoMascota = 3
+2018-08-21 17:31:09 [1;31mERROR[m TipoMascotaDAOIMP:45 - No entity found for query
+2018-08-21 17:31:31 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12957 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 17:31:31 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 17:31:37 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 6.753 seconds (JVM running for 8.326)
+2018-08-21 17:31:42 [32mINFO [m TipoMascotaDAOIMP:41 - SELECT r FROM TipoMascotaEntity AS r WHERE r.idTipoMascota = 3
+2018-08-21 17:31:42 [1;31mERROR[m TipoMascotaDAOIMP:45 - No entity found for query
+2018-08-21 17:31:43 [32mINFO [m TipoMascotaDAOIMP:41 - SELECT r FROM TipoMascotaEntity AS r WHERE r.idTipoMascota = 1
+2018-08-21 17:31:44 [32mINFO [m TipoMascotaDAOIMP:41 - SELECT r FROM TipoMascotaEntity AS r WHERE r.idTipoMascota = 2
+2018-08-21 17:31:51 [32mINFO [m TipoMascotaDAOIMP:27 - SELECT t FROM TipoMascotaEntity AS t

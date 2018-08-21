@@ -38,16 +38,15 @@ public class TipoMascotaServiceIMP implements TipoMascotaService {
 
     @Override
     public TipoMascotaDTO obtenerConID(TipoMascotaDTO model) {
-        return null;
-        /*
-        MascotaEntity entity = this.mascotaDAO.obtenerConID(model);
+        TipoMascotaEntity entity = this.tipoMascotaDAO.obtenerConID(model);
         if(entity!=null){
-            System.out.println(entity.toString());
-            return new MascotaDTO(entity);
+            System.out.println("Tipo de mascota encontrada");
+            TipoMascotaDTO encontrado = new TipoMascotaDTO(entity);
+            return encontrado;
         } else {
+            System.out.println("No se encontraron mascotas");
             return null;
         }
-        */
     }
 
 }

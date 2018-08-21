@@ -37,40 +37,35 @@ public class TipoMascotaController {
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/{idmascota}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{idTipoMascota}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Integer idmascota) {
+    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Integer idTipoMascota) {
         System.out.println("TipoMascotaController: obtenerConID();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
-        if(idmascota==null){
+        if(idTipoMascota==null){
             enviar = false;
-            errores +="ID de mascota";
+            errores +="ID del tipo de mascota";
         }
 
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar){
-            /*
-            UsuarioDTO model = new UsuarioDTO();
-            model.setUser(usuario);
-            model.setPass(contrasena);
-            UsuarioDTO encontrado = this.usuarioService.buscar(model);
+            TipoMascotaDTO model = new TipoMascotaDTO();
+            model.setIdTipoMascota(idTipoMascota.longValue());
 
+            TipoMascotaDTO encontrado = this.tipoMascotaService.obtenerConID(model);
             if(encontrado!=null){
                 result.put("result",true);
-                result.put("mensaje","Bienvenido al sistema...");
+                result.put("mensaje","Tipo de mascota encontrado");
                 result.put("mascota",encontrado);
 
             } else {
                 result.put("result",false);
-                result.put("errores","No se encontró usuario con estos datos...");
+                result.put("errores","No se encontró tipo de mascota con ese id");
             }
-            */
-            result.put("result",true);
             return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
         } else {
-            System.out.println(errores);
             result.put("result",false);
             result.put("errores",errores);
             // Add any additional props that you want to add
