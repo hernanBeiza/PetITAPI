@@ -3,9 +3,8 @@
 Repositorio para almacenar los servicios REST o API para el proyecto PetIT.
 Este proyecto está realizado usando IntelliJ y  SpringBoot
 
-## Rutas 
+## Rutas
 A continuación se presenta el listado de rutas
-
 
 #### POST /login
 - Ruta para iniciar sesión con el sistema
@@ -15,6 +14,7 @@ A continuación se presenta el listado de rutas
 - Todas las rutas que no deben ser públicas están bajo /api/
 - Para poder consultar y obtener una respuesta de estas rutas es necesario enviar el JWT en la cabecera de la petición, usando una cabecera de Autenticación Bearer 
 - ** authorization: Bearer XXXX **
+
 #### GET /api/comuna
 - Obtiene el listado de comunas completo 
 
@@ -22,12 +22,16 @@ A continuación se presenta el listado de rutas
 - Obtiene una comuna en particular
 - El id de la comuna se pasa por la URL 
 - idcomuna: int
+
 #### GET/POST/PUT/DELETE muchas rutas más :s
+
 ## Patrón de Diseño
 El patrón de diseño usado en este desarrollo es MVC. Sin embargo, presenta una variable en dónde se integran nuevos componentes en las capas. Un diagrama a continuación:
-![alt text](EsquemaServicioDAO.png)
+
+![alt text](docs/EsquemaServicioDAO.png)
 
 ### Models
+
 #### DTOS
 - Estas clases son finalmente objetos de transporte de datos
 - Su objetivo es compartir datos en la aplicación, transportar, compartir entre las distintas capas
@@ -38,6 +42,7 @@ El patrón de diseño usado en este desarrollo es MVC. Sin embargo, presenta una
 - Además se agregan las relaciones como una propiedad en la clase (revisar)
 
 ### Persistence
+
 #### DAOS
 El objetivo de esta capa es:
 - Obtiene los datos usando el JPA
