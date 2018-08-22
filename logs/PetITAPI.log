@@ -791,3 +791,31 @@
 2018-08-21 18:08:31 [32mINFO [m NotificacionDAOIMP:36 - SELECT r FROM RegionEntity AS r WHERE r.idRegion = 15
 2018-08-21 18:08:33 [32mINFO [m NotificacionDAOIMP:36 - SELECT r FROM RegionEntity AS r WHERE r.idRegion = 16
 2018-08-21 18:08:33 [1;31mERROR[m NotificacionDAOIMP:40 - No entity found for query
+2018-08-21 23:51:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1101 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 23:51:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 23:51:11 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.045 seconds (JVM running for 12.592)
+2018-08-21 23:54:41 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1344 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 23:54:41 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 23:54:48 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.831 seconds (JVM running for 10.664)
+2018-08-21 23:54:57 [32mINFO [m ProvinciaDAOIMP:26 - SELECT r FROM ProvinciaEntity AS r
+2018-08-21 23:54:57 [32mINFO [m NotificacionDAOIMP:34 - Regiones encontradas
+2018-08-21 23:55:35 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1401 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 23:55:35 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 23:55:47 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 12.705 seconds (JVM running for 15.649)
+2018-08-21 23:56:18 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1453 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 23:56:18 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 23:56:25 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.076 seconds (JVM running for 8.539)
+2018-08-21 23:56:30 [32mINFO [m ProvinciaDAOIMP:26 - SELECT r FROM ProvinciaEntity AS r
+2018-08-21 23:56:30 [32mINFO [m ProvinciaServiceIMP:29 - Provincias encontradas
+2018-08-21 23:56:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 1492 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-08-21 23:56:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-08-21 23:57:01 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.216 seconds (JVM running for 8.862)
+2018-08-21 23:57:06 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 1
+2018-08-21 23:57:10 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 2
+2018-08-21 23:57:11 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 2
+2018-08-21 23:57:12 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 3
+2018-08-21 23:57:13 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 4
+2018-08-21 23:57:49 [32mINFO [m ProvinciaDAOIMP:50 - SELECT r FROM ProvinciaEntity AS r WHERE r.idRegion = 4
+2018-08-21 23:57:49 [32mINFO [m ProvinciaServiceIMP:60 - Provincias encontradas
+2018-08-21 23:57:56 [32mINFO [m ProvinciaDAOIMP:50 - SELECT r FROM ProvinciaEntity AS r WHERE r.idRegion = 4
+2018-08-21 23:57:56 [32mINFO [m ProvinciaServiceIMP:60 - Provincias encontradas
