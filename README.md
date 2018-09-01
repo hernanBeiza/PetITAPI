@@ -1,14 +1,24 @@
 # PetITAPI
 
-Repositorio para almacenar los servicios REST o API para el proyecto PetIT.
+Repositorio para almacenar los servicios **REST o API** para el proyecto PetIT.
 Este proyecto está realizado usando IntelliJ y  SpringBoot
+
+
+## Tecnologías
+Las tecnologías ocupadas para este proyecto son:
+
+- Oracle Java 8 (tener muy en cuenta)
+- IntelliJ
+- SpringBoot
+- mvn
 
 ## Rutas
 A continuación se presenta el listado de rutas
 
 #### POST /login
-- Ruta para iniciar sesión con el sistema
-- Retorna un token JWT
+- Ruta para iniciar sesión con el sistema. Retorna un token y los datos del usuario
+- rut: rut del usuario
+- password: contraseña del usuario
  
 #### /api/*
 - Todas las rutas que no deben ser públicas están bajo /api/
@@ -18,10 +28,119 @@ A continuación se presenta el listado de rutas
 #### GET /api/comuna
 - Obtiene el listado de comunas completo 
 
-#### GET /api/comuna/{idcomuna}
+#### GET /api/comuna/{idComuna}
 - Obtiene una comuna en particular
 - El id de la comuna se pasa por la URL 
 - idcomuna: int
+
+#### GET /api/comuna/provincia/{idProvincia}
+- Obtiene las comunas de una provincia en particular
+- El id de la provincia se pasa por la URL 
+- idprovincia: int
+
+#### GET /api/region
+- Obtiene el listado de comunas completo 
+
+#### GET /api/region/{idRegion}
+- Obtiene una región en particular
+- El id de la región se pasa por la URL 
+- idregion: int
+
+#### GET /api/provincia
+- Obtiene el listado de las provincias completo 
+
+#### GET /api/provincia/{idProvincia}
+- Obtiene una provincia en particular
+- El id de la provincia se pasa por la URL 
+- idprovincia: int
+
+#### GET /api/provincia/region/{idRegion}
+- Obtiene las provincias de una región en particular
+- El id de la región se pasa por la URL 
+- idregion: int
+
+#### GET /api/rol
+- Obtiene el listado de los roles registados por defecto en el sistema
+
+#### GET /api/rol/{idrol}
+- Obtiene una rol en particular
+- El id del rol se pasa por la URL 
+- idrol: int
+
+#### GET /api/raza
+- Obtiene el listado de los roles registados por defecto en el sistema
+
+#### GET /api/raza/{idRaza}
+- Obtiene una raza en particular
+- El id de raza se pasa por la URL 
+- idraza: int
+
+#### GET /api/dueno
+- Obtiene el listado de los dueños de mascotas registados en el sistema
+
+#### GET /api/dueno/{idDueno}
+- Obtiene un dueño en particular
+- El id del dueño se pasa por la URL 
+- iddueno: int
+
+#### POST /api/dueno/
+- SIN IMPLEMENTAR
+- Guarda un dueño en particular
+
+####PUT /api/dueno/{idDueno}
+- SIN IMPLEMENTAR
+- Edita un dueño en particular
+- El id del dueño se pasa por la URL 
+- iddueno: int
+
+####DELETE /api/dueno/{idDueno}
+- SIN IMPLEMENTAR
+- Elimina un dueño en particular
+- El id del dueño se pasa por la URL 
+- iddueno: int
+
+#### GET /api/mascota
+- Obtiene el listado de las mascotas registradas el sistema
+
+#### GET /api/mascota/{idmascota}
+- Obtiene una mascota en particular
+- El id de la mascota se pasa por la URL 
+- idmascota: int
+
+#### GET /api/notificacion
+- Obtiene todas las notificaciones del sistema
+
+#### GET /api/notificacion/{idNotificacion}
+- Obtiene una notificación específica del sistema
+- El id de la notificación se pasa por la URL 
+- idnotificacion: int
+
+#### PUT /api/notificacion/marcar/{idNotificacion}
+- Marca como leía  una notificación específica del sistema
+- El id de la notificación se pasa por la URL 
+- idnotificacion: int
+
+#### POST /api/notificacion/
+- Guarda una notificación en el sistema
+
+#### PUT /api/notificacion/{idNotificacion}
+- Edita una notificación específica del sistema
+- El id de la notificación se pasa por la URL 
+- idnotificacion: int
+
+#### DELETE /api/notificacion/{idNotificacion}
+- Elimina una notificación específica del sistema
+- El id de la notificación se pasa por la URL 
+- idnotificacion: int
+
+mascota/tipo
+#### GET /api/mascota/tipo
+- Obtiene el listado de los tipos de mascotas registradas el sistema por defecto
+
+#### GET /api/mascota/tipo/{idTipoMascota}
+- Obtiene un tipo de mascota en particular
+- El id del tipo de mascota se pasa por la URL 
+- idTipoMascota: int
 
 #### GET/POST/PUT/DELETE muchas rutas más :s
 
@@ -51,12 +170,6 @@ El objetivo de esta capa es:
 El objetivo de esta capa es:
 - Obtiene los datos consultando a los DAOS
 
-## Tecnologías
-Las tecnologías ocupadas para este proyecto son:
-
-- IntelliJ
-- SpringBoot
-- mvn
 
 ## Cómo aportar
 - Crear otra rama

@@ -26,13 +26,13 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
         String query = "SELECT u FROM UsuarioEntity AS u WHERE u.rut ='"+rut+"' AND u.password='"+contrasena+"'";
-        System.out.println(query);
+        logger.debug(query);
         try{
             //Object result = entityManager.createQuery(query).getSingleResult();
             //System.out.println(result.toString());
             return (UsuarioEntity) entityManager.createQuery(query).getSingleResult();
         } catch (Exception e){
-            System.out.println(e.getLocalizedMessage());
+            logger.warn(e.getLocalizedMessage());
             return null;
         }
     }
@@ -41,11 +41,11 @@ public class UsuarioDAOIMP implements UsuarioDAO {
     public UsuarioEntity buscarPorNombre(String nombre) {
         logger.debug("UsuarioController(); buscarPorNombre");
         String query = "SELECT u FROM UsuarioEntity AS u WHERE u.nombre LIKE '%"+nombre+"%'";
-        System.out.println(query);
+        logger.debug(query);
         try {
             return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
         } catch (Exception ex){
-            System.out.println(ex.getLocalizedMessage());
+            logger.warn(ex.getLocalizedMessage());
             return null;
         }
     }
@@ -54,7 +54,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
     public UsuarioEntity buscarPorRut(String rut) {
         logger.debug("UsuarioController(); buscarPorRut");
         String query = "SELECT u FROM UsuarioEntity AS u WHERE u.rut = '"+rut+"'";
-        System.out.println(query);
+        logger.debug(query);
         try {
             return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
         } catch (Exception ex){

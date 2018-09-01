@@ -34,7 +34,7 @@ public class DuenoMascotaController {
                 result.put("mensajes","Dueños de mascotas encontrados");
             } else {
                 result.put("result",false);
-                result.put("errores","No se encontraron mascotas");
+                result.put("errores","No se encontraron dueños de mascotas");
             }
         } else {
             result.put("result",false);
