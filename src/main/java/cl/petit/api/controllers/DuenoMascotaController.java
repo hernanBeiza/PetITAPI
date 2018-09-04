@@ -1,9 +1,11 @@
 package cl.petit.api.controllers;
 
+import cl.petit.api.models.dtos.ComunaDTO;
 import cl.petit.api.models.dtos.DuenoMascotaDTO;
-import cl.petit.api.models.dtos.MascotaDTO;
+import cl.petit.api.models.dtos.UsuarioDTO;
 import cl.petit.api.services.DuenoMascotaService;
-import cl.petit.api.services.MascotaService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,6 +19,8 @@ import java.util.Map;
 @RequestMapping(path = "/api/dueno")
 @RestController
 public class DuenoMascotaController {
+
+    private static final Logger logger = LogManager.getLogger(DuenoMascotaController.class);
 
     @Autowired
     private DuenoMascotaService duenoMascotaService;
@@ -80,80 +84,225 @@ public class DuenoMascotaController {
 
     @RequestMapping(path="", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> guardar() {
-        System.out.println("DuenoMascotaController: guardar();");
+    public ResponseEntity<Map<String,Object>> guardar(
+        @RequestParam(value="idUsuario",required=false) Integer idUsuario,
+        @RequestParam(value="rut",required=false) String rut,
+        @RequestParam(value="nombres",required=false) String nombres,
+        @RequestParam(value="apellidoPaterno",required=false) String paterno,
+        @RequestParam(value="apellidoMaterno",required=false) String materno,
+        @RequestParam(value="idComuna",required=false) Integer idComuna,
+        @RequestParam(value="direccion",required=false) String direccion,
+        @RequestParam(value="telefono",required=false) String telefono,
+        @RequestParam(value="correo",required=false) String correo) {
+        logger.info("DuenoMascotaController: guardar();");
 
         Map<String, Object> result = new HashMap<String,Object>();
-        /*
-        ArrayList<DuenoMascotaDTO> duenos = this.duenoMascotaService.obtener();
-        if(duenos !=null){
-            if(duenos.size()>0){
-                result.put("result",true);
-                result.put("duenos",duenos);
-                result.put("mensajes","Dueños de mascotas encontrados");
+
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idUsuario==null){
+            enviar = false;
+            errores +="idUsuario\n";
+        }
+        if(rut==null){
+            enviar = false;
+            errores +="rut\n";
+        }
+
+        if(nombres==null){
+            enviar = false;
+            errores +="Nombres\n";
+        }
+        if(paterno==null){
+            enviar = false;
+            errores +="Apellido Paterno\n";
+        }
+        if(materno==null){
+            enviar = false;
+            errores +="Apellido Materno\n";
+        }
+        if(idComuna==null){
+            enviar = false;
+            errores +="Comuna\n";
+        }
+        if(direccion==null){
+            enviar = false;
+            errores +="Dirección\n";
+        }
+        if(telefono==null){
+            enviar = false;
+            errores +="Teléfono\n";
+        }
+        if(correo==null){
+            enviar = false;
+            errores +="Correo\n";
+        }
+        if(enviar) {
+
+            DuenoMascotaDTO duenoMascotaDTO = new DuenoMascotaDTO();
+            duenoMascotaDTO.setRutDueno(rut);
+            duenoMascotaDTO.setNombres(nombres);
+            duenoMascotaDTO.setApellidoPaterno(paterno);
+            duenoMascotaDTO.setApellidoMaterno(materno);
+
+            UsuarioDTO usuarioDTO = new UsuarioDTO();
+            usuarioDTO.setIdUsuario(idUsuario.longValue());
+            duenoMascotaDTO.setUsuario(usuarioDTO);
+
+            ComunaDTO comunaDTO = new ComunaDTO();
+            comunaDTO.setIdComuna(idComuna.longValue());
+            duenoMascotaDTO.setComuna(comunaDTO);
+
+            duenoMascotaDTO.setDireccion(direccion);
+            duenoMascotaDTO.setTelefono(telefono);
+            duenoMascotaDTO.setCorreo(correo);
+            boolean guardado = this.duenoMascotaService.guardar(duenoMascotaDTO);
+            if (guardado) {
+                result.put("result", true);
+                result.put("mensaje", "Dueño de mascota guardado correctamente");
             } else {
-                result.put("result",false);
-                result.put("errores","No se encontraron mascotas");
+                result.put("result", false);
+                result.put("errores", "No se pudo guardar el dueño de mascota");
             }
+            return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
         } else {
             result.put("result",false);
-            result.put("errores","No se encontraron dueños de mascotas");
+            result.put("errores",errores);
+            // Add any additional props that you want to add
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
         }
-        */
-        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
     @RequestMapping(path="", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> editar() {
-        System.out.println("DuenoMascotaController: editar();");
+    public ResponseEntity<Map<String,Object>> editar(
+        @RequestParam(value="idUsuario",required=false) Integer idUsuario,
+        @RequestParam(value="rut",required=false) String rut,
+        @RequestParam(value="nombres",required=false) String nombres,
+        @RequestParam(value="apellidoPaterno",required=false) String paterno,
+        @RequestParam(value="apellidoMaterno",required=false) String materno,
+        @RequestParam(value="idComuna",required=false) Integer idComuna,
+        @RequestParam(value="direccion",required=false) String direccion,
+        @RequestParam(value="telefono",required=false) String telefono,
+        @RequestParam(value="correo",required=false) String correo,
+        @RequestParam(value="valid",required=false) Integer valid) {
+        logger.info("DuenoMascotaController: editar();");
 
-        Map<String, Object> result = new HashMap<String,Object>();
-        /*
-        ArrayList<DuenoMascotaDTO> duenos = this.duenoMascotaService.obtener();
-        if(duenos !=null){
-            if(duenos.size()>0){
-                result.put("result",true);
-                result.put("duenos",duenos);
-                result.put("mensajes","Dueños de mascotas encontrados");
-            } else {
-                result.put("result",false);
-                result.put("errores","No se encontraron mascotas");
-            }
-        } else {
-            result.put("result",false);
-            result.put("errores","No se encontraron dueños de mascotas");
+        Map<String, Object> result = new HashMap<String, Object>();
+
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if (idUsuario == null) {
+            enviar = false;
+            errores += "idUsuario\n";
         }
-        */
-        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+        if (rut == null) {
+            enviar = false;
+            errores += "rut\n";
+        }
+
+        if (nombres == null) {
+            enviar = false;
+            errores += "Nombres\n";
+        }
+        if (paterno == null) {
+            enviar = false;
+            errores += "Apellido Paterno\n";
+        }
+        if (materno == null) {
+            enviar = false;
+            errores += "Apellido Materno\n";
+        }
+        if (idComuna == null) {
+            enviar = false;
+            errores += "Comuna\n";
+        }
+        if (direccion == null) {
+            enviar = false;
+            errores += "Dirección\n";
+        }
+        if (telefono == null) {
+            enviar = false;
+            errores += "Teléfono\n";
+        }
+        if (correo == null) {
+            enviar = false;
+            errores += "Correo\n";
+        }
+        if (valid == null) {
+            enviar = false;
+            errores += "Valid\n";
+        }
+        if (enviar) {
+
+            DuenoMascotaDTO duenoMascotaDTO = new DuenoMascotaDTO();
+            duenoMascotaDTO.setRutDueno(rut);
+            duenoMascotaDTO.setNombres(nombres);
+            duenoMascotaDTO.setApellidoPaterno(paterno);
+            duenoMascotaDTO.setApellidoMaterno(materno);
+
+            UsuarioDTO usuarioDTO = new UsuarioDTO();
+            usuarioDTO.setIdUsuario(idUsuario.longValue());
+            duenoMascotaDTO.setUsuario(usuarioDTO);
+
+            ComunaDTO comunaDTO = new ComunaDTO();
+            comunaDTO.setIdComuna(idComuna.longValue());
+            duenoMascotaDTO.setComuna(comunaDTO);
+
+            duenoMascotaDTO.setDireccion(direccion);
+            duenoMascotaDTO.setTelefono(telefono);
+            duenoMascotaDTO.setCorreo(correo);
+            duenoMascotaDTO.setValid(valid);
+            boolean guardado = this.duenoMascotaService.editar(duenoMascotaDTO);
+            if (guardado) {
+                result.put("result", true);
+                result.put("mensaje", "Dueño de mascota editado correctamente");
+            } else {
+                result.put("result", false);
+                result.put("errores", "No se pudo editar el dueño de mascota");
+            }
+            return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+        } else {
+            result.put("result", false);
+            result.put("errores", errores);
+            // Add any additional props that you want to add
+            return new ResponseEntity<Map<String, Object>>(result, HttpStatus.BAD_REQUEST);
+        }
     }
 
-    @RequestMapping(path="", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{rutDueno}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> eliminar() {
+    public ResponseEntity<Map<String,Object>> eliminar(@PathVariable String rutDueno) {
         System.out.println("DuenoMascotaController: eliminar();");
 
+
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(rutDueno==null){
+            enviar = false;
+            errores +="rut del dueño";
+        }
+
         Map<String, Object> result = new HashMap<String,Object>();
-        /*
-        ArrayList<DuenoMascotaDTO> duenos = this.duenoMascotaService.obtener();
-        if(duenos !=null){
-            if(duenos.size()>0){
+        if(enviar){
+            DuenoMascotaDTO model = new DuenoMascotaDTO();
+            model.setRutDueno(rutDueno);
+            boolean eliminado = this.duenoMascotaService.eliminar(model);
+            if(eliminado){
                 result.put("result",true);
-                result.put("duenos",duenos);
-                result.put("mensajes","Dueños de mascotas encontrados");
+                result.put("mensaje","Dueño de mascota eliminado correctamente...");
             } else {
                 result.put("result",false);
-                result.put("errores","No se encontraron mascotas");
+                result.put("errores","No se pudo eliminar el dueño de mascota...");
             }
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
         } else {
             result.put("result",false);
-            result.put("errores","No se encontraron dueños de mascotas");
+            result.put("errores",errores);
+            // Add any additional props that you want to add
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
         }
-        */
 
-        return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
-
-
 
 }

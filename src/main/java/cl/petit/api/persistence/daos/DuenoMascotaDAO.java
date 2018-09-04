@@ -10,4 +10,10 @@ public interface DuenoMascotaDAO {
     ArrayList<DuenoMascotaEntity> obtener();
 
     DuenoMascotaEntity obtenerConRut(DuenoMascotaDTO dto);
+
+    boolean guardar(DuenoMascotaDTO dto);
+
+    boolean editar(DuenoMascotaDTO dto);
+
+    boolean eliminar(DuenoMascotaDTO dto);
 }

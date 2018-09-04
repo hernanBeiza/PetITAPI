@@ -88,13 +88,11 @@ A continuación se presenta el listado de rutas
 - Guarda un dueño en particular
 
 ####PUT /api/dueno/{idDueno}
-- SIN IMPLEMENTAR
 - Edita un dueño en particular
 - El id del dueño se pasa por la URL 
 - iddueno: int
 
 ####DELETE /api/dueno/{idDueno}
-- SIN IMPLEMENTAR
 - Elimina un dueño en particular
 - El id del dueño se pasa por la URL 
 - iddueno: int
@@ -133,7 +131,6 @@ A continuación se presenta el listado de rutas
 - El id de la notificación se pasa por la URL 
 - idnotificacion: int
 
-mascota/tipo
 #### GET /api/mascota/tipo
 - Obtiene el listado de los tipos de mascotas registradas el sistema por defecto
 

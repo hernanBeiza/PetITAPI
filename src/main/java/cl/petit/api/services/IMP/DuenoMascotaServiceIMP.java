@@ -53,8 +53,8 @@ public class DuenoMascotaServiceIMP implements DuenoMascotaService {
     }
 
     @Override
-    public DuenoMascotaDTO obtenerConRut(DuenoMascotaDTO model) {
-        DuenoMascotaEntity entity = this.duenoMascotaDAO.obtenerConRut(model);
+    public DuenoMascotaDTO obtenerConRut(DuenoMascotaDTO dto) {
+        DuenoMascotaEntity entity = this.duenoMascotaDAO.obtenerConRut(dto);
         if(entity!=null){
             return new DuenoMascotaDTO(entity);
         } else {
@@ -93,4 +93,18 @@ public class DuenoMascotaServiceIMP implements DuenoMascotaService {
     }
     */
 
+    @Override
+    public boolean guardar(DuenoMascotaDTO dto) {
+        return this.duenoMascotaDAO.guardar(dto);
+    }
+
+    @Override
+    public boolean editar(DuenoMascotaDTO dto) {
+        return this.duenoMascotaDAO.editar(dto);
+    }
+
+    @Override
+    public boolean eliminar(DuenoMascotaDTO dto) {
+        return this.duenoMascotaDAO.eliminar(dto);
+    }
 }

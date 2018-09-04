@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class DuenoMascotaEntity implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "rutDueno")
     private String rutDueno;
     @OneToOne
