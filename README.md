@@ -149,10 +149,12 @@ El patrón de diseño usado en este desarrollo es MVC. Sin embargo, presenta una
 ### Models
 
 #### DTOS
+
 - Estas clases son finalmente objetos de transporte de datos
 - Su objetivo es compartir datos en la aplicación, transportar, compartir entre las distintas capas
 
 #### Entities
+
 - Estas clases están direcamente relacionadas con las entidades de la base de datos
 - Son una repressentación de la base de datos fidedignamente
 - Además se agregan las relaciones como una propiedad en la clase (revisar)
@@ -160,11 +162,15 @@ El patrón de diseño usado en este desarrollo es MVC. Sin embargo, presenta una
 ### Persistence
 
 #### DAOS
+
 El objetivo de esta capa es:
+
 - Obtiene los datos usando el JPA
 
 ### Services
+
 El objetivo de esta capa es:
+
 - Obtiene los datos consultando a los DAOS
 
 
