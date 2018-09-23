@@ -15,7 +15,7 @@ import java.util.ArrayList;
 @Repository("ComunaDAO")
 public class ComunaDAOIMP implements ComunaDAO {
 
-    private static final Logger logger = LogManager.getLogger(NotificacionDAOIMP.class);
+    private static final Logger logger = LogManager.getLogger(ComunaDAOIMP.class);
 
     @PersistenceContext
     EntityManager entityManager;

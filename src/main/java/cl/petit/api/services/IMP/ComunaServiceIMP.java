@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @Service
 public class ComunaServiceIMP implements ComunaService {
 
-    private static final Logger logger = LogManager.getLogger(NotificacionDAOIMP.class);
+    private static final Logger logger = LogManager.getLogger(ComunaServiceIMP.class);
 
     @Autowired
     private ComunaDAO comunaDAO;
