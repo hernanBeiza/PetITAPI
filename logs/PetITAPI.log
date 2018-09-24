@@ -1024,3 +1024,8 @@
 2018-09-23 22:40:57 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 16445 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
 2018-09-23 22:40:57 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
 2018-09-23 22:41:05 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.757 seconds (JVM running for 10.91)
+2018-09-24 13:35:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 4521 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-24 13:35:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 13:36:00 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 14.097 seconds (JVM running for 16.735)
+2018-09-24 13:36:04 [32mINFO [m EspecialistaDAOIMP:26 - SELECT r FROM EspecialistaEntity AS r
+2018-09-24 13:36:06 [32mINFO [m EspecialistaServiceIMP:33 - Especialistas encontrados
