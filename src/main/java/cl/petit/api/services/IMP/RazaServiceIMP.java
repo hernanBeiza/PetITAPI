@@ -40,8 +40,8 @@ public class RazaServiceIMP implements RazaService {
     }
 
     @Override
-    public RazaDTO obtenerConID(Long idRaza) {
-        RazaEntity entity = this.razaDAO.obtenerConID(idRaza);
+    public RazaDTO obtenerConID(RazaDTO razaDTO) {
+        RazaEntity entity = this.razaDAO.obtenerConID(razaDTO);
         if(entity!=null){
             System.out.println(entity.toString());
             return new RazaDTO(entity);

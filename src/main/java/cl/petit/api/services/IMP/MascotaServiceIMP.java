@@ -26,7 +26,6 @@ public class MascotaServiceIMP implements MascotaService {
 
     @Override
     public ArrayList<MascotaDTO> obtener() {
-        logger.info("obtener();");
         ArrayList<MascotaEntity> entities = this.mascotaDAO.obtener();
         if(entities!=null){
             System.out.println("Mascotas encontradas");
@@ -44,7 +43,6 @@ public class MascotaServiceIMP implements MascotaService {
 
     @Override
     public ArrayList<MascotaDTO> obtenerConPagina(Integer pagina) {
-        logger.info("obtener();");
         ArrayList<MascotaEntity> entities = this.mascotaDAO.obtenerConPagina(pagina);
         if(entities!=null){
             System.out.println("Mascotas encontradas");
@@ -62,7 +60,6 @@ public class MascotaServiceIMP implements MascotaService {
 
     @Override
     public MascotaDTO obtenerConRut(MascotaDTO mascotaDTO) {
-        logger.info("obtenerConRut();");
         MascotaEntity mascotaEntity = this.mascotaDAO.obtenerConRut(mascotaDTO);
         if(mascotaEntity!=null){
             MascotaDTO mascotaEncontrada = new MascotaDTO(mascotaEntity);
@@ -75,8 +72,6 @@ public class MascotaServiceIMP implements MascotaService {
 
     @Override
     public ArrayList<MascotaDTO> obtenerConRutDueno(DuenoMascotaDTO duenoMascotaDTO) {
-        logger.info("obtenerConRutDueno();");
-
         ArrayList<MascotaEntity> entities = this.mascotaDAO.obtenerConRutDueno(duenoMascotaDTO);
         if(entities!=null){
             ArrayList<MascotaDTO> encontradas = new ArrayList<MascotaDTO>();
@@ -89,5 +84,36 @@ public class MascotaServiceIMP implements MascotaService {
             logger.warn("No se encontraron mascotas");
             return null;
         }
+    }
+
+    @Override
+    public ArrayList<MascotaDTO> buscarPorNombre(MascotaDTO mascotaDTO) {
+        ArrayList<MascotaEntity> entities = this.mascotaDAO.buscarPorNombre(mascotaDTO);
+        if(entities!=null){
+            ArrayList<MascotaDTO> encontradas = new ArrayList<MascotaDTO>();
+            for (MascotaEntity entity : entities) {
+                MascotaDTO dto = new MascotaDTO(entity);
+                encontradas.add(dto);
+            }
+            return encontradas;
+        } else {
+            logger.warn("No se encontraron mascotas");
+            return null;
+        }
+    }
+
+    @Override
+    public boolean guardar(MascotaDTO mascotaDTO) {
+        return this.mascotaDAO.guardar(mascotaDTO);
+    }
+
+    @Override
+    public boolean editar(MascotaDTO mascotaDTO) {
+        return this.mascotaDAO.editar(mascotaDTO);
+    }
+
+    @Override
+    public boolean eliminar(MascotaDTO mascotaDTO) {
+        return this.mascotaDAO.eliminar(mascotaDTO);
     }
 }

@@ -13,4 +13,12 @@ public interface MascotaService {
     MascotaDTO obtenerConRut(MascotaDTO mascotaDTO);
 
     ArrayList<MascotaDTO> obtenerConRutDueno(DuenoMascotaDTO duenoMascotaDTO);
+
+    ArrayList<MascotaDTO> buscarPorNombre(MascotaDTO mascotaDTO);
+
+    boolean guardar(MascotaDTO mascotaDTO);
+
+    boolean editar(MascotaDTO mascotaDTO);
+
+    boolean eliminar(MascotaDTO mascotaDTO);
 }

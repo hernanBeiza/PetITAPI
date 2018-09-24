@@ -1,5 +1,6 @@
 package cl.petit.api.persistence.daos;
 
+import cl.petit.api.models.dtos.RazaDTO;
 import cl.petit.api.models.entities.RazaEntity;
 import cl.petit.api.models.entities.RolEntity;
 
@@ -9,5 +10,5 @@ public interface RazaDAO {
 
     ArrayList<RazaEntity> obtener();
 
-    RazaEntity obtenerConID(Long idRol);
+    RazaEntity obtenerConID(RazaDTO razaDTO);
 }

@@ -15,4 +15,12 @@ public interface MascotaDAO {
     MascotaEntity obtenerConRut(MascotaDTO mascotaDTO);
 
     ArrayList<MascotaEntity> obtenerConRutDueno(DuenoMascotaDTO duenoMascotaDTO);
+
+    ArrayList<MascotaEntity> buscarPorNombre(MascotaDTO mascotaDTO);
+
+    boolean guardar(MascotaDTO mascotaDTO);
+
+    boolean editar(MascotaDTO mascotaDTO);
+
+    boolean eliminar(MascotaDTO mascotaDTO);
 }

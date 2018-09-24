@@ -6,9 +6,9 @@ import java.io.Serializable;
 @Entity
 @Table(name = "Mascota")
 public class MascotaEntity implements Serializable {
-
+    //TODO Tener cuidado con la generación en el llave primaria, en este caso no es autoincremental y la maneja el usuario (rut único)
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "rutMascota")
     private String rutMascota;
     @ManyToOne

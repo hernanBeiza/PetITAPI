@@ -1,5 +1,6 @@
 package cl.petit.api.persistence.daos.IMP;
 
+import cl.petit.api.models.dtos.RazaDTO;
 import cl.petit.api.models.entities.RazaEntity;
 import cl.petit.api.persistence.daos.RazaDAO;
 import cl.petit.api.persistence.daos.RolDAO;
@@ -32,8 +33,8 @@ public class RazaDAOIMP implements RazaDAO {
     }
 
     @Override
-    public RazaEntity obtenerConID(Long idRaza) {
-        String query = "SELECT r FROM RazaEntity AS r WHERE r.idRaza = "+idRaza;
+    public RazaEntity obtenerConID(RazaDTO razaDTO) {
+        String query = "SELECT r FROM RazaEntity AS r WHERE r.idRaza = "+razaDTO.getIdRaza();
         System.out.println(query);
         try {
             return (RazaEntity) entityManager.createQuery(query).getSingleResult();

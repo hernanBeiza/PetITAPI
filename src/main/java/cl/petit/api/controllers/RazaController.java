@@ -53,7 +53,9 @@ public class RazaController {
         }
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar) {
-            RazaDTO encontrada = this.razaService.obtenerConID(idRaza);
+            RazaDTO dto = new RazaDTO();
+            dto.setIdRaza(idRaza);
+            RazaDTO encontrada = this.razaService.obtenerConID(dto);
             if (encontrada != null) {
                 result.put("result", true);
                 result.put("mensaje", "Raza encontrada");

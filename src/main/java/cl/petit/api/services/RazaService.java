@@ -9,5 +9,5 @@ public interface RazaService {
 
     ArrayList<RazaDTO> obtener();
 
-    RazaDTO obtenerConID(Long idRaza);
+    RazaDTO obtenerConID(RazaDTO razaDTO);
 }
