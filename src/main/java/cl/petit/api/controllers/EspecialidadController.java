@@ -46,7 +46,7 @@ public class EspecialidadController {
         String errores = "Te faltó:\n";
         if(idEspecialidad==null){
             enviar = false;
-            errores +="ID de la comuna";
+            errores +="ID de la especialidad";
         }
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar) {
