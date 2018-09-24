@@ -1,6 +1,10 @@
 package cl.petit.api.services.IMP;
 
 import cl.petit.api.config.ArchivoConfig;
+import cl.petit.api.models.dtos.NotificacionDTO;
+import cl.petit.api.models.entities.NotificacionEntity;
+import cl.petit.api.persistence.daos.ComunaDAO;
+import cl.petit.api.persistence.daos.NotificacionDAO;
 import cl.petit.api.services.ArchivoService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,7 +40,7 @@ public class ArchivoServiceIMP implements ArchivoService {
     }
 
     public String guardar(MultipartFile archivo) {
-        logger.info("ArchivoService: guardar();");
+        logger.info("guardar();");
         // Normalize file name
         String nombrearchivo = StringUtils.cleanPath(archivo.getOriginalFilename());
         logger.info(nombrearchivo);
@@ -50,7 +54,7 @@ public class ArchivoServiceIMP implements ArchivoService {
             }
 
             // Copy file to the target location (Replacing existing file with the same name)
-            logger.info("ArchivoService: guardar archivo en la ruta");
+            logger.info("guardar archivo en la ruta");
             logger.info(this.archivoRuta);
             Path targetLocation = this.archivoRuta.resolve(nombrearchivo);
 
@@ -67,8 +71,22 @@ public class ArchivoServiceIMP implements ArchivoService {
 
     }
 
+    public boolean eliminar(String nombrearchivo) {
+        logger.info("eliminar();");
+        try {
+            Path targetLocation = this.archivoRuta.resolve(nombrearchivo);
+            logger.info(targetLocation.toString());
+            Files.delete(targetLocation);
+            return true;
+
+        } catch (IOException ex){
+            logger.error(ex.getLocalizedMessage());
+            return false;
+        }
+    }
+
     public Resource cargarComoRecurso(String nombreArchivo) {
-        logger.info("ArchivoService: cargarComoRecurso();");
+        logger.info("cargarComoRecurso();");
         logger.info(nombreArchivo);
 
         try {
@@ -87,6 +105,5 @@ public class ArchivoServiceIMP implements ArchivoService {
             //throw new MyFileNotFoundException("File not found " + fileName, ex);
             return null;
         }
-
     }
 }

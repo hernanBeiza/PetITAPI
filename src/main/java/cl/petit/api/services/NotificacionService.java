@@ -9,15 +9,15 @@ public interface NotificacionService {
 
     ArrayList<NotificacionDTO> obtener();
 
-    NotificacionDTO obtenerConID(int idNotificacion);
+    NotificacionDTO obtenerConID(NotificacionDTO notificacionDTO);
 
-    ArrayList<NotificacionDTO> obtenerConIDUsuario(int idUsuario);
+    ArrayList<NotificacionDTO> obtenerConIDUsuario(UsuarioDTO usuarioDTO);
 
-    boolean guardar(NotificacionDTO model);
+    boolean guardar(NotificacionDTO notificacionDTO);
 
-    boolean editar(NotificacionDTO model);
+    boolean editar(NotificacionDTO notificacionDTO);
 
-    boolean eliminar(NotificacionDTO model);
+    boolean eliminar(NotificacionDTO notificacionDTO);
 
-    boolean marcarComoLeida(NotificacionDTO model);
+    boolean marcarComoLeida(NotificacionDTO notificacionDTO);
 }

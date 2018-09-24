@@ -4,6 +4,7 @@ import cl.petit.api.models.dtos.NotificacionDTO;
 import cl.petit.api.models.dtos.UsuarioDTO;
 import cl.petit.api.models.entities.NotificacionEntity;
 import cl.petit.api.persistence.daos.NotificacionDAO;
+import cl.petit.api.services.ArchivoService;
 import cl.petit.api.services.NotificacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,6 +19,9 @@ public class NotificacionServiceIMP implements NotificacionService {
 
     @Autowired
     private NotificacionDAO notificacionDAO;
+
+    @Autowired
+    private ArchivoService archivoService;
 
     @Override
     public ArrayList<NotificacionDTO> obtener() {
@@ -36,8 +40,8 @@ public class NotificacionServiceIMP implements NotificacionService {
     }
 
     @Override
-    public NotificacionDTO obtenerConID(int idNotificacion) {
-        NotificacionEntity entity = this.notificacionDAO.obtenerConID(idNotificacion);
+    public NotificacionDTO obtenerConID(NotificacionDTO notificacionDTO) {
+        NotificacionEntity entity = this.notificacionDAO.obtenerConID(notificacionDTO);
         if(entity!=null){
             NotificacionDTO dto = new NotificacionDTO(entity);
             return dto;
@@ -47,8 +51,8 @@ public class NotificacionServiceIMP implements NotificacionService {
     }
 
     @Override
-    public ArrayList<NotificacionDTO> obtenerConIDUsuario(int idUsuario) {
-        ArrayList<NotificacionEntity> entities = this.notificacionDAO.obtenerConIDUsuario(idUsuario);
+    public ArrayList<NotificacionDTO> obtenerConIDUsuario(UsuarioDTO usuarioDTO) {
+        ArrayList<NotificacionEntity> entities = this.notificacionDAO.obtenerConIDUsuario(usuarioDTO);
         if(entities!=null){
             System.out.println("Notificaciones encontradas:" + entities.size());
             ArrayList<NotificacionDTO> encontradas = new ArrayList<NotificacionDTO>();
@@ -63,26 +67,26 @@ public class NotificacionServiceIMP implements NotificacionService {
     }
 
     @Override
-    public boolean guardar(NotificacionDTO model) {
-        boolean result = this.notificacionDAO.guardar(model);
+    public boolean guardar(NotificacionDTO notificacionDTO) {
+        boolean result = this.notificacionDAO.guardar(notificacionDTO);
         return result;
     }
 
     @Override
-    public boolean editar(NotificacionDTO model) {
-        boolean result = this.notificacionDAO.editar(model);
+    public boolean editar(NotificacionDTO notificacionDTO) {
+        boolean result = this.notificacionDAO.editar(notificacionDTO);
         return result;
     }
 
     @Override
-    public boolean eliminar(NotificacionDTO model){
-        boolean result = this.notificacionDAO.eliminar(model);
+    public boolean eliminar(NotificacionDTO notificacionDTO){
+        boolean result = this.notificacionDAO.eliminar(notificacionDTO);
         return result;
     }
 
     @Override
-    public boolean marcarComoLeida(NotificacionDTO model) {
-        boolean result = this.notificacionDAO.marcarComoLeida(model);
+    public boolean marcarComoLeida(NotificacionDTO notificacionDTO) {
+        boolean result = this.notificacionDAO.marcarComoLeida(notificacionDTO);
         return result;
     }
 }

@@ -33,7 +33,7 @@ public class NotificacionController {
     @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
-        logger.info("NotificacionController: obtener();");
+        logger.info("obtener();");
         Map<String, Object> result = new HashMap<String,Object>();
         ArrayList<NotificacionDTO> notificaciones = this.notificacionService.obtener();
         if(notificaciones!=null){
@@ -54,10 +54,12 @@ public class NotificacionController {
 
     @RequestMapping(path="/{idNotificacion}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable int idNotificacion) {
-        logger.info("NotificacionController: obtenerConID();");
+    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Long idNotificacion) {
+        logger.info("obtenerConID();");
         Map<String, Object> result = new HashMap<String,Object>();
-        NotificacionDTO notificacion = this.notificacionService.obtenerConID(idNotificacion);
+        NotificacionDTO model = new NotificacionDTO();
+        model.setIdNotificacion(idNotificacion);
+        NotificacionDTO notificacion = this.notificacionService.obtenerConID(model);
         if(notificacion!=null){
             result.put("result",true);
             result.put("mensajes","Notificación encontrada");
@@ -72,10 +74,12 @@ public class NotificacionController {
 
     @RequestMapping(path="/usuario/{idUsuario}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> obtenerConUsuario(@PathVariable Integer idUsuario) {
-        logger.info("NotificacionController: obtenerConUsuario();");
+    public ResponseEntity<Map<String,Object>> obtenerConIDUsuario(@PathVariable Long idUsuario) {
+        logger.info("obtenerConIDUsuario();");
         Map<String, Object> result = new HashMap<String,Object>();
-        ArrayList<NotificacionDTO> notificaciones = this.notificacionService.obtenerConIDUsuario(idUsuario);
+        UsuarioDTO model = new UsuarioDTO();
+        model.setIdUsuario(idUsuario);
+        ArrayList<NotificacionDTO> notificaciones = this.notificacionService.obtenerConIDUsuario(model);
         if(notificaciones.size()>0){
             result.put("result",true);
             result.put("mensajes","Notificaciones encontradas");
@@ -90,7 +94,7 @@ public class NotificacionController {
     @RequestMapping(path="/marcar/{idNotificacion}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> marcarComoLeida(@PathVariable Integer idNotificacion) {
-        logger.info("NotificacionController: marcarComoLeida();");
+        logger.info("marcarComoLeida();");
         Map<String, Object> result = new HashMap<String,Object>();
 
         NotificacionDTO model = new NotificacionDTO();
@@ -116,7 +120,7 @@ public class NotificacionController {
                                                       @RequestParam(value="imagen", required=false) MultipartFile imagen,
                                                       @RequestParam(value="mensaje",required=false) String mensaje,
                                                       @RequestParam(value="fecha",required=false) String fecha) {
-        logger.info("NotificacionController: guardar();");
+        logger.info("guardar();");
 
 
         boolean enviar = true;
@@ -143,9 +147,9 @@ public class NotificacionController {
         }
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar) {
+            //TODO cambiar esta lógica
             logger.info(imagen.getOriginalFilename());
             logger.info(imagen.getSize());
-
             String rutaArchivo = archivoService.guardar(imagen);
             logger.info(rutaArchivo);
 
@@ -170,7 +174,6 @@ public class NotificacionController {
         } else {
             result.put("result",false);
             result.put("errores",errores);
-            // Add any additional props that you want to add
             return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
         }
     }
@@ -179,12 +182,12 @@ public class NotificacionController {
     @ResponseBody
     public ResponseEntity<Map<String,Object>> editar(@RequestParam(value="idNotificacion",required=false) Integer idNotificacion,
                                                      @RequestParam(value="idUsuario",required=false) Integer idUsuario,
-                                                      @RequestParam(value="titulo",required=false) String titulo,
-                                                      @RequestParam(value="imagen",required=false) String imagen,
-                                                      @RequestParam(value="mensaje",required=false) String mensaje,
-                                                      @RequestParam(value="fecha",required=false) String fecha,
+                                                     @RequestParam(value="titulo",required=false) String titulo,
+                                                     @RequestParam(value="imagen", required=false) MultipartFile imagen,
+                                                     @RequestParam(value="mensaje",required=false) String mensaje,
+                                                     @RequestParam(value="fecha",required=false) String fecha,
                                                      @RequestParam(value="valid",required=false) Integer valid) {
-        logger.info("NotificacionController: editar();");
+        logger.info("editar();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
@@ -218,18 +221,26 @@ public class NotificacionController {
         }
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar) {
+            //TODO cambiar esta lógica
+            logger.info(imagen.getOriginalFilename());
+            logger.info(imagen.getSize());
+            String rutaArchivo = archivoService.guardar(imagen);
+            logger.info(rutaArchivo);
+
             UsuarioDTO usuarioModel = new UsuarioDTO();
             usuarioModel.setIdUsuario(idUsuario.longValue());
             NotificacionDTO model = new NotificacionDTO();
             model.setIdNotificacion(idNotificacion.longValue());
             model.setUsuario(usuarioModel);
             model.setTitulo(titulo);
-            model.setImagen(imagen);
+            model.setImagen(rutaArchivo);
             model.setMensaje(mensaje);
             model.setFecha(fecha);
             model.setValid(valid);
+
             boolean guardado = this.notificacionService.editar(model);
             if (guardado) {
+
                 result.put("result", true);
                 result.put("mensaje", "Notificación editada correctamente");
             } else {
@@ -240,7 +251,6 @@ public class NotificacionController {
         } else {
             result.put("result",false);
             result.put("errores",errores);
-            // Add any additional props that you want to add
             return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
         }
     }
@@ -249,7 +259,7 @@ public class NotificacionController {
     @RequestMapping(path="/{idNotificacion}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> eliminar(@PathVariable Integer idNotificacion) {
-        logger.debug("NotificacionController: eliminar();");
+        logger.debug("eliminar();");
         boolean enviar = true;
         String errores = "Te faltó:\n";
         if(idNotificacion==null){
@@ -273,7 +283,6 @@ public class NotificacionController {
         } else {
             result.put("result",false);
             result.put("errores",errores);
-            // Add any additional props that you want to add
             return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
         }
 

@@ -7,8 +7,10 @@ import cl.petit.api.models.entities.RolEntity;
 import cl.petit.api.models.entities.UsuarioEntity;
 import cl.petit.api.persistence.daos.NotificacionDAO;
 import cl.petit.api.persistence.daos.UsuarioDAO;
+import cl.petit.api.services.ArchivoService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -23,9 +25,12 @@ public class NotificacionDAOIMP implements NotificacionDAO {
     @PersistenceContext
     EntityManager entityManager;
 
+    @Autowired
+    private ArchivoService archivoService;
+
     @Override
     public ArrayList<NotificacionEntity> obtener() {
-        logger.info("NotificacionDAO: obtener();");
+        logger.info("obtener();");
         String query = "SELECT u FROM NotificacionEntity u JOIN u.usuarioEntity";
         logger.info(query);
         ArrayList<NotificacionEntity> encontrados = (ArrayList<NotificacionEntity>) entityManager.createQuery(query).getResultList();
@@ -37,9 +42,9 @@ public class NotificacionDAOIMP implements NotificacionDAO {
     }
 
     @Override
-    public NotificacionEntity obtenerConID(int idNotificacion) {
-        logger.info("NotificacionDAO: obtenerConID();");
-        String query = "SELECT u FROM NotificacionEntity u WHERE idNotificacion="+idNotificacion;
+    public NotificacionEntity obtenerConID(NotificacionDTO notificacionDTO) {
+        logger.info("obtenerConID();");
+        String query = "SELECT u FROM NotificacionEntity u WHERE idNotificacion="+notificacionDTO.getIdNotificacion();
         logger.info(query);
         try {
             return (NotificacionEntity)entityManager.createQuery(query).getSingleResult();
@@ -50,9 +55,9 @@ public class NotificacionDAOIMP implements NotificacionDAO {
     }
 
     @Override
-    public ArrayList<NotificacionEntity> obtenerConIDUsuario(int idUsuario) {
+    public ArrayList<NotificacionEntity> obtenerConIDUsuario(UsuarioDTO usuarioDTO) {
         logger.info("NotificacionDAO: obtenerConIDUsuario();");
-        String query = "SELECT u FROM NotificacionEntity u WHERE idUsuario="+idUsuario;
+        String query = "SELECT u FROM NotificacionEntity u WHERE idUsuario="+usuarioDTO.getIdUsuario();
         logger.info(query);
         ArrayList<NotificacionEntity> encontrados = (ArrayList<NotificacionEntity>) entityManager.createQuery(query).getResultList();
         if (encontrados.size()>0){
@@ -63,18 +68,21 @@ public class NotificacionDAOIMP implements NotificacionDAO {
     }
 
     @Override
-    public boolean guardar(NotificacionDTO model) {
-        logger.info("NotificacionDAO: guardar();");
+    public boolean guardar(NotificacionDTO notificacionDTO) {
+        logger.info("guardar();");
         NotificacionEntity notificacionEntity = new NotificacionEntity();
         UsuarioEntity usuarioEntity = new UsuarioEntity();
-        usuarioEntity.setIdUsuario(model.getUsuario().getIdUsuario());
+        usuarioEntity.setIdUsuario(notificacionDTO.getUsuario().getIdUsuario());
         notificacionEntity.setUsuarioEntity(usuarioEntity);
-        notificacionEntity.setTitulo(model.getTitulo());
-        notificacionEntity.setMensaje(model.getMensaje());
-        notificacionEntity.setImagen(model.getImagen());
+        notificacionEntity.setTitulo(notificacionDTO.getTitulo());
+        notificacionEntity.setMensaje(notificacionDTO.getMensaje());
+        notificacionEntity.setImagen(notificacionDTO.getImagen());
 
         try {
             entityManager.persist(notificacionEntity);
+            //Eliminar archivo de la notificación
+            boolean eliminada = this.archivoService.eliminar(notificacionDTO.getImagen());
+
             return true;
         } catch (Exception e) {
             logger.error(e.getLocalizedMessage());
@@ -84,36 +92,47 @@ public class NotificacionDAOIMP implements NotificacionDAO {
     }
 
     @Override
-    public boolean editar(NotificacionDTO model) {
-        logger.info("NotificacionDAO: editar();");
-        NotificacionEntity notificacionEntity = new NotificacionEntity();
-        notificacionEntity.setIdNotificacion(model.getIdNotificacion());
-        UsuarioEntity usuarioEntity = new UsuarioEntity();
-        usuarioEntity.setIdUsuario(model.getUsuario().getIdUsuario());
-        notificacionEntity.setUsuarioEntity(usuarioEntity);
-        notificacionEntity.setTitulo(model.getTitulo());
-        notificacionEntity.setMensaje(model.getMensaje());
-        notificacionEntity.setImagen(model.getImagen());
-        notificacionEntity.setValid(model.getValid());
+    public boolean editar(NotificacionDTO notificacionDTO) {
+        logger.info("editar();");
+        NotificacionEntity notificacionEntity = this.obtenerConID(notificacionDTO);
+        if (notificacionEntity!=null){
+            String imagenAntigua = notificacionEntity.getImagen();
+            //notificacionEntity.setIdNotificacion(notificacionDTO.getIdNotificacion());
+            UsuarioEntity usuarioEntity = new UsuarioEntity();
+            usuarioEntity.setIdUsuario(notificacionDTO.getUsuario().getIdUsuario());
+            notificacionEntity.setUsuarioEntity(usuarioEntity);
+            notificacionEntity.setTitulo(notificacionDTO.getTitulo());
+            notificacionEntity.setMensaje(notificacionDTO.getMensaje());
+            notificacionEntity.setImagen(notificacionDTO.getImagen());
+            notificacionEntity.setValid(notificacionDTO.getValid());
 
-        try {
-            entityManager.merge(notificacionEntity);
-            return true;
-        } catch (Exception e) {
-            logger.error(e.getLocalizedMessage());
-            logger.error(e.getMessage());
-            logger.error(e.getCause());
+            try {
+                entityManager.merge(notificacionEntity);
+                this.archivoService.eliminar(imagenAntigua);
+
+                return true;
+            } catch (Exception e) {
+                logger.error(e.getLocalizedMessage());
+                logger.error(e.getMessage());
+                logger.error(e.getCause());
+                return false;
+            }
+        } else {
+            logger.warn("Notificación con id " + notificacionDTO.getIdNotificacion() + " no existe. No se puede editar");
             return false;
         }
     }
 
     @Override
-    public boolean eliminar(NotificacionDTO model) {
-        logger.info("NotificacionDAO: eliminar();");
-        NotificacionEntity notificacionEntity = this.obtenerConID(model.getIdNotificacion().intValue());
+    public boolean eliminar(NotificacionDTO notificacionDTO) {
+        logger.info("eliminar();");
+        NotificacionEntity notificacionEntity = this.obtenerConID(notificacionDTO);
         if(notificacionEntity!=null){
             try {
                 entityManager.remove(notificacionEntity);
+                //Eliminar archivo de la notificación
+                boolean eliminada = this.archivoService.eliminar(notificacionEntity.getImagen());
+
                 return true;
             } catch (Exception ex){
                 logger.error(ex.getLocalizedMessage());
@@ -127,9 +146,9 @@ public class NotificacionDAOIMP implements NotificacionDAO {
     }
 
     @Override
-    public boolean marcarComoLeida(NotificacionDTO model) {
-        logger.info("NotificacionDAO: marcarComoLeida();");
-        NotificacionEntity notificacionEntity = this.obtenerConID(model.getIdNotificacion().intValue());
+    public boolean marcarComoLeida(NotificacionDTO notificacionDTO) {
+        logger.info("marcarComoLeida();");
+        NotificacionEntity notificacionEntity = this.obtenerConID(notificacionDTO);
         if(notificacionEntity!=null){
             notificacionEntity.setValid(1);
             try {
