@@ -16,7 +16,7 @@ import java.util.Map;
 
 
 @CrossOrigin(origins = "http://localhost", maxAge = 3600)
-@RequestMapping(path = "/api/raza")
+@RequestMapping(path = "/api/mascota/raza")
 @RestController
 public class RazaController {
 

@@ -1,11 +1,14 @@
 package cl.petit.api.services.IMP;
 
+import cl.petit.api.models.dtos.DuenoMascotaDTO;
 import cl.petit.api.models.dtos.MascotaDTO;
 import cl.petit.api.models.dtos.UsuarioDTO;
 import cl.petit.api.models.entities.MascotaEntity;
 import cl.petit.api.models.entities.UsuarioEntity;
 import cl.petit.api.persistence.daos.MascotaDAO;
 import cl.petit.api.services.MascotaService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,11 +19,14 @@ import java.util.ArrayList;
 @Service
 public class MascotaServiceIMP implements MascotaService {
 
+    private static final Logger logger = LogManager.getLogger(MascotaServiceIMP.class);
+
     @Autowired
     private MascotaDAO mascotaDAO;
 
     @Override
     public ArrayList<MascotaDTO> obtener() {
+        logger.info("obtener();");
         ArrayList<MascotaEntity> entities = this.mascotaDAO.obtener();
         if(entities!=null){
             System.out.println("Mascotas encontradas");
@@ -31,54 +37,57 @@ public class MascotaServiceIMP implements MascotaService {
             }
             return encontradas;
         } else {
-            System.out.println("No se encontraron mascotas");
+            logger.warn("No se encontraron mascotas");
             return null;
         }
     }
 
     @Override
-    public MascotaDTO obtenerConID(MascotaDTO dto) {
-        return null;
-        /*
-        MascotaEntity entity = this.mascotaDAO.obtenerConID(model);
-        if(entity!=null){
-            System.out.println(entity.toString());
-            return new MascotaDTO(entity);
-        } else {
-            return null;
-        }
-        */
-    }
-
-    /*
-    @Override
-    public UsuarioDTO buscar(UsuarioDTO model) {
-        UsuarioEntity entity = this.usuarioDAO.buscar(model);
-        if(entity!=null){
-            System.out.println(entity.toString());
-            return new UsuarioDTO(entity);
-        } else {
-            return null;
-        }
-    }
-
-    @Override
-    public ArrayList<UsuarioDTO> obtener() {
-        ArrayList<UsuarioEntity> entities = this.usuarioDAO.obtener();
+    public ArrayList<MascotaDTO> obtenerConPagina(Integer pagina) {
+        logger.info("obtener();");
+        ArrayList<MascotaEntity> entities = this.mascotaDAO.obtenerConPagina(pagina);
         if(entities!=null){
-            System.out.println("Usuarios encontrados");
-            ArrayList<UsuarioDTO> encontrados = new ArrayList<UsuarioDTO>();
-            for (UsuarioEntity entity : entities) {
-                UsuarioDTO dto = new UsuarioDTO(entity);
-                System.out.println(dto.toString());
-                encontrados.add(dto);
+            System.out.println("Mascotas encontradas");
+            ArrayList<MascotaDTO> encontradas = new ArrayList<MascotaDTO>();
+            for (MascotaEntity entity : entities) {
+                MascotaDTO dto = new MascotaDTO(entity);
+                encontradas.add(dto);
             }
-            return encontrados;
+            return encontradas;
         } else {
-            System.out.println("No se encontraron usuarios");
+            logger.warn("No se encontraron mascotas");
             return null;
         }
     }
-    */
 
+    @Override
+    public MascotaDTO obtenerConRut(MascotaDTO mascotaDTO) {
+        logger.info("obtenerConRut();");
+        MascotaEntity mascotaEntity = this.mascotaDAO.obtenerConRut(mascotaDTO);
+        if(mascotaEntity!=null){
+            MascotaDTO mascotaEncontrada = new MascotaDTO(mascotaEntity);
+            return mascotaEncontrada;
+        } else {
+            logger.warn("No se encontró mascota con ese rut de mascota");
+            return null;
+        }
+    }
+
+    @Override
+    public ArrayList<MascotaDTO> obtenerConRutDueno(DuenoMascotaDTO duenoMascotaDTO) {
+        logger.info("obtenerConRutDueno();");
+
+        ArrayList<MascotaEntity> entities = this.mascotaDAO.obtenerConRutDueno(duenoMascotaDTO);
+        if(entities!=null){
+            ArrayList<MascotaDTO> encontradas = new ArrayList<MascotaDTO>();
+            for (MascotaEntity entity : entities) {
+                MascotaDTO dto = new MascotaDTO(entity);
+                encontradas.add(dto);
+            }
+            return encontradas;
+        } else {
+            logger.warn("No se encontraron mascotas");
+            return null;
+        }
+    }
 }

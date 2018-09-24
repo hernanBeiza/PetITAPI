@@ -819,3 +819,208 @@
 2018-08-21 23:57:49 [32mINFO [m ProvinciaServiceIMP:60 - Provincias encontradas
 2018-08-21 23:57:56 [32mINFO [m ProvinciaDAOIMP:50 - SELECT r FROM ProvinciaEntity AS r WHERE r.idRegion = 4
 2018-08-21 23:57:56 [32mINFO [m ProvinciaServiceIMP:60 - Provincias encontradas
+2018-09-23 21:10:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 8498 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:10:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:10:40 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.319 seconds (JVM running for 9.397)
+2018-09-23 21:11:15 [32mINFO [m ComunaDAOIMP:27 - SELECT r FROM ComunaEntity AS r
+2018-09-23 21:11:15 [32mINFO [m ComunaServiceIMP:34 - Comunas encontradas
+2018-09-23 21:11:17 [32mINFO [m ComunaDAOIMP:27 - SELECT r FROM ComunaEntity AS r
+2018-09-23 21:11:17 [32mINFO [m ComunaServiceIMP:34 - Comunas encontradas
+2018-09-23 21:11:19 [32mINFO [m ComunaDAOIMP:41 - SELECT r FROM ComunaEntity AS r WHERE r.idComuna = 1
+2018-09-23 21:11:19 [1;31mERROR[m ComunaDAOIMP:45 - No entity found for query
+2018-09-23 21:11:23 [32mINFO [m ComunaDAOIMP:41 - SELECT r FROM ComunaEntity AS r WHERE r.idComuna = 4981
+2018-09-23 21:11:23 [1;31mERROR[m ComunaDAOIMP:45 - No entity found for query
+2018-09-23 21:11:32 [32mINFO [m ComunaDAOIMP:41 - SELECT r FROM ComunaEntity AS r WHERE r.idComuna = 4901
+2018-09-23 21:11:49 [32mINFO [m ProvinciaDAOIMP:26 - SELECT r FROM ProvinciaEntity AS r
+2018-09-23 21:11:49 [32mINFO [m ProvinciaServiceIMP:29 - Provincias encontradas
+2018-09-23 21:11:50 [32mINFO [m ProvinciaDAOIMP:26 - SELECT r FROM ProvinciaEntity AS r
+2018-09-23 21:11:50 [32mINFO [m ProvinciaServiceIMP:29 - Provincias encontradas
+2018-09-23 21:11:52 [32mINFO [m ProvinciaDAOIMP:26 - SELECT r FROM ProvinciaEntity AS r
+2018-09-23 21:11:52 [32mINFO [m ProvinciaServiceIMP:29 - Provincias encontradas
+2018-09-23 21:11:54 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 58
+2018-09-23 21:11:54 [1;31mERROR[m ProvinciaDAOIMP:42 - No entity found for query
+2018-09-23 21:11:58 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 48
+2018-09-23 21:11:58 [1;31mERROR[m ProvinciaDAOIMP:42 - No entity found for query
+2018-09-23 21:12:03 [32mINFO [m ProvinciaDAOIMP:38 - SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = 50
+2018-09-23 21:12:15 [32mINFO [m NotificacionDAOIMP:24 - SELECT r FROM RegionEntity AS r
+2018-09-23 21:12:16 [32mINFO [m NotificacionDAOIMP:31 - Regiones encontradas
+2018-09-23 21:12:17 [32mINFO [m NotificacionDAOIMP:24 - SELECT r FROM RegionEntity AS r
+2018-09-23 21:12:17 [32mINFO [m NotificacionDAOIMP:31 - Regiones encontradas
+2018-09-23 21:12:25 [32mINFO [m NotificacionDAOIMP:24 - SELECT r FROM RegionEntity AS r
+2018-09-23 21:12:25 [32mINFO [m NotificacionDAOIMP:31 - Regiones encontradas
+2018-09-23 21:27:22 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 9370 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:27:22 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:27:33 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.525 seconds (JVM running for 13.196)
+2018-09-23 21:29:12 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 9629 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:29:12 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:29:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.35 seconds (JVM running for 10.507)
+2018-09-23 21:29:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 9785 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:29:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:29:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.949 seconds (JVM running for 10.252)
+2018-09-23 21:45:51 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 10609 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:45:51 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:45:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.971 seconds (JVM running for 9.113)
+2018-09-23 21:46:20 [32mINFO [m MascotaServiceIMP:47 - obtenerConRut();
+2018-09-23 21:46:20 [32mINFO [m MascotaDAOIMP:40 - SELECT r FROM MascotaEntity AS r WHERE r.rutMascota = 10774554-8
+2018-09-23 21:46:20 [1;31mERROR[m MascotaDAOIMP:44 - No entity found for query
+2018-09-23 21:46:20 [33mWARN [m MascotaServiceIMP:53 - No se encontró mascota con ese rut de mascota
+2018-09-23 21:46:47 [32mINFO [m MascotaServiceIMP:47 - obtenerConRut();
+2018-09-23 21:46:47 [32mINFO [m MascotaDAOIMP:40 - SELECT r FROM MascotaEntity AS r WHERE r.rutMascota = 10774554-8
+2018-09-23 21:46:47 [1;31mERROR[m MascotaDAOIMP:44 - No entity found for query
+2018-09-23 21:46:47 [33mWARN [m MascotaServiceIMP:53 - No se encontró mascota con ese rut de mascota
+2018-09-23 21:47:07 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 10818 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:47:07 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:47:15 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.312 seconds (JVM running for 9.503)
+2018-09-23 21:47:26 [32mINFO [m MascotaServiceIMP:47 - obtenerConRut();
+2018-09-23 21:47:26 [32mINFO [m MascotaDAOIMP:40 - SELECT r FROM MascotaEntity AS r WHERE r.rutMascota = 10774554-8
+2018-09-23 21:47:26 [1;31mERROR[m MascotaDAOIMP:44 - No entity found for query
+2018-09-23 21:47:26 [33mWARN [m MascotaServiceIMP:53 - No se encontró mascota con ese rut de mascota
+2018-09-23 21:47:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 10963 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:47:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:47:53 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 11032 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:47:53 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:48:01 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.494 seconds (JVM running for 9.606)
+2018-09-23 21:48:06 [32mINFO [m MascotaServiceIMP:47 - obtenerConRut();
+2018-09-23 21:48:06 [32mINFO [m MascotaDAOIMP:40 - SELECT r FROM MascotaEntity AS r WHERE r.rutMascota = '10774554-8'
+2018-09-23 21:49:08 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 21:49:08 [32mINFO [m MascotaDAOIMP:52 - SELECT r FROM MascotaEntity AS r WHERE r.Dueno.rutDueno='10774554-8'
+2018-09-23 21:49:08 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 21:49:39 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 21:49:39 [32mINFO [m MascotaDAOIMP:52 - SELECT r FROM MascotaEntity AS r WHERE r.Dueno.rutDueno='18637971-3'
+2018-09-23 21:49:39 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 21:50:09 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 11234 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:50:09 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:50:18 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.018 seconds (JVM running for 10.193)
+2018-09-23 21:50:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 11392 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:50:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:50:40 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.191 seconds (JVM running for 10.778)
+2018-09-23 21:51:04 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 21:51:04 [32mINFO [m MascotaDAOIMP:52 - SELECT r FROM MascotaEntity AS r WHERE r.DuenoMascotaEntity.rutDueno='18637971-3'
+2018-09-23 21:51:04 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 21:51:37 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 11608 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:51:37 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:51:45 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.268 seconds (JVM running for 9.359)
+2018-09-23 21:51:49 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 21:51:49 [32mINFO [m MascotaDAOIMP:52 - SELECT r FROM MascotaEntity AS r WHERE r.DuenoMascotaEntity.rutDueno='18637971-3'
+2018-09-23 21:51:49 [1;31mERROR[m MascotaDAOIMP:56 - org.hibernate.QueryException: could not resolve property: DuenoMascotaEntity of: cl.petit.api.models.entities.MascotaEntity [SELECT r FROM cl.petit.api.models.entities.MascotaEntity AS r WHERE r.DuenoMascotaEntity.rutDueno='18637971-3']
+2018-09-23 21:51:49 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 21:52:22 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 11787 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 21:52:22 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 21:52:29 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.447 seconds (JVM running for 8.482)
+2018-09-23 21:53:37 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 21:53:37 [32mINFO [m MascotaDAOIMP:52 - SELECT r FROM MascotaEntity AS r WHERE r.rutDueno='18637971-3'
+2018-09-23 21:53:37 [1;31mERROR[m MascotaDAOIMP:56 - org.hibernate.QueryException: could not resolve property: rutDueno of: cl.petit.api.models.entities.MascotaEntity [SELECT r FROM cl.petit.api.models.entities.MascotaEntity AS r WHERE r.rutDueno='18637971-3']
+2018-09-23 21:53:37 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:03:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 12460 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:03:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:03:12 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.287 seconds (JVM running for 9.563)
+2018-09-23 22:03:22 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:03:22 [32mINFO [m MascotaDAOIMP:60 - SELECT m,d FROM MascotaEntity AS m, DuenoMascotaEntity AS d WHERE m.rutDueno = d.rutDueno AND d.rutDueno ='18637971-3'
+2018-09-23 22:03:22 [1;31mERROR[m MascotaDAOIMP:64 - org.hibernate.QueryException: could not resolve property: rutDueno of: cl.petit.api.models.entities.MascotaEntity [SELECT m,d FROM cl.petit.api.models.entities.MascotaEntity AS m, cl.petit.api.models.entities.DuenoMascotaEntity AS d WHERE m.rutDueno = d.rutDueno AND d.rutDueno ='18637971-3']
+2018-09-23 22:03:22 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:04:36 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 12638 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:04:36 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:04:43 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.915 seconds (JVM running for 9.002)
+2018-09-23 22:04:46 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:04:46 [32mINFO [m MascotaDAOIMP:60 - SELECT m,d FROM MascotaEntity m, DuenoMascotaEntity d WHERE m.rutDueno = d.rutDueno
+2018-09-23 22:04:46 [1;31mERROR[m MascotaDAOIMP:64 - org.hibernate.QueryException: could not resolve property: rutDueno of: cl.petit.api.models.entities.MascotaEntity [SELECT m,d FROM cl.petit.api.models.entities.MascotaEntity m, cl.petit.api.models.entities.DuenoMascotaEntity d WHERE m.rutDueno = d.rutDueno]
+2018-09-23 22:04:46 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:09:16 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 12939 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:09:16 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:09:25 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.134 seconds (JVM running for 11.527)
+2018-09-23 22:09:56 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:09:56 [32mINFO [m MascotaDAOIMP:59 - SELECT m FROM MascotaEntity AS m WHERE m.DuenoMascotaEntity.rutDueno='18637971-3'
+2018-09-23 22:09:56 [1;31mERROR[m MascotaDAOIMP:63 - org.hibernate.QueryException: could not resolve property: DuenoMascotaEntity of: cl.petit.api.models.entities.MascotaEntity [SELECT m FROM cl.petit.api.models.entities.MascotaEntity AS m WHERE m.DuenoMascotaEntity.rutDueno='18637971-3']
+2018-09-23 22:09:56 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:10:19 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 13204 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:10:19 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:10:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 13317 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:10:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:10:41 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.581 seconds (JVM running for 11.928)
+2018-09-23 22:10:45 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:10:45 [32mINFO [m MascotaDAOIMP:59 - SELECT m FROM MascotaEntity AS m INNER JOIN DuenoMascotaEntity AS d WHERE d.rutDueno='18637971-3'
+2018-09-23 22:10:46 [1;31mERROR[m MascotaDAOIMP:63 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-23 22:10:46 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:11:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 13547 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:11:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:12:04 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.029 seconds (JVM running for 10.083)
+2018-09-23 22:12:45 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 13727 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:12:45 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:12:53 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.719 seconds (JVM running for 10.114)
+2018-09-23 22:13:26 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:13:26 [32mINFO [m MascotaDAOIMP:60 - SELECT m FROM MascotaEntity AS m INNER JOIN DuenoMascotaEntity
+2018-09-23 22:13:26 [1;31mERROR[m MascotaDAOIMP:64 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-23 22:13:26 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:14:29 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 13916 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:14:30 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:14:37 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.231 seconds (JVM running for 9.331)
+2018-09-23 22:14:41 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:14:41 [32mINFO [m MascotaDAOIMP:60 - SELECT m FROM MascotaEntity AS m INNER JOIN m.DuenoMascotaEntity dm
+2018-09-23 22:14:41 [1;31mERROR[m MascotaDAOIMP:64 - org.hibernate.QueryException: could not resolve property: DuenoMascotaEntity of: cl.petit.api.models.entities.MascotaEntity [SELECT m FROM cl.petit.api.models.entities.MascotaEntity AS m INNER JOIN m.DuenoMascotaEntity dm]
+2018-09-23 22:14:41 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:15:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 14070 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:15:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:15:09 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.304 seconds (JVM running for 10.394)
+2018-09-23 22:15:11 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:15:11 [32mINFO [m MascotaDAOIMP:60 - SELECT m FROM MascotaEntity AS m INNER JOIN m.DuenoMascota dm
+2018-09-23 22:15:11 [1;31mERROR[m MascotaDAOIMP:64 - org.hibernate.QueryException: could not resolve property: DuenoMascota of: cl.petit.api.models.entities.MascotaEntity [SELECT m FROM cl.petit.api.models.entities.MascotaEntity AS m INNER JOIN m.DuenoMascota dm]
+2018-09-23 22:15:11 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:15:54 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 14222 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:15:54 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:16:02 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.464 seconds (JVM running for 9.715)
+2018-09-23 22:16:07 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:16:07 [32mINFO [m MascotaDAOIMP:60 - SELECT m FROM MascotaEntity AS m INNER JOIN m.rutDueno dm
+2018-09-23 22:16:07 [1;31mERROR[m MascotaDAOIMP:64 - org.hibernate.QueryException: could not resolve property: rutDueno of: cl.petit.api.models.entities.MascotaEntity [SELECT m FROM cl.petit.api.models.entities.MascotaEntity AS m INNER JOIN m.rutDueno dm]
+2018-09-23 22:16:07 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:17:51 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 14483 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:17:51 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:17:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.382 seconds (JVM running for 10.652)
+2018-09-23 22:18:04 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:18:04 [32mINFO [m MascotaDAOIMP:60 - SELECT m FROM MascotaEntity AS m INNER JOIN duenoMascota AS dm WHERE dm.rutDueno='18637971-3'
+2018-09-23 22:18:04 [1;31mERROR[m MascotaDAOIMP:64 - org.hibernate.hql.internal.ast.QuerySyntaxException: Path expected for join! [SELECT m FROM cl.petit.api.models.entities.MascotaEntity AS m INNER JOIN duenoMascota AS dm WHERE dm.rutDueno='18637971-3']
+2018-09-23 22:18:04 [33mWARN [m MascotaServiceIMP:71 - No se encontraron mascotas
+2018-09-23 22:19:45 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 14687 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:19:45 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:19:53 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.875 seconds (JVM running for 11.349)
+2018-09-23 22:20:16 [32mINFO [m MascotaServiceIMP:60 - obtenerConRutDueno();
+2018-09-23 22:20:16 [32mINFO [m MascotaDAOIMP:57 - SELECT m FROM MascotaEntity AS m INNER JOIN m.duenoMascota AS dm WHERE dm.rutDueno='18637971-3'
+2018-09-23 22:29:23 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 15134 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:29:23 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:29:33 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.592 seconds (JVM running for 11.725)
+2018-09-23 22:32:58 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 15446 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:32:58 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:33:07 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.523 seconds (JVM running for 11.652)
+2018-09-23 22:33:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 15674 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:33:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:33:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.836 seconds (JVM running for 8.966)
+2018-09-23 22:34:03 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:34:03 [32mINFO [m MascotaDAOIMP:41 - SELECT r FROM MascotaEntity AS r LIMIT 5 OFFSET 5
+2018-09-23 22:34:03 [1;31mERROR[m MascotaDAOIMP:45 - org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: LIMIT near line 1, column 63 [SELECT r FROM cl.petit.api.models.entities.MascotaEntity AS r LIMIT 5 OFFSET 5]
+2018-09-23 22:34:03 [33mWARN [m MascotaServiceIMP:58 - No se encontraron mascotas
+2018-09-23 22:34:30 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:34:30 [32mINFO [m MascotaDAOIMP:41 - SELECT r FROM MascotaEntity AS r LIMIT 5 OFFSET 10
+2018-09-23 22:34:30 [1;31mERROR[m MascotaDAOIMP:45 - org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: LIMIT near line 1, column 63 [SELECT r FROM cl.petit.api.models.entities.MascotaEntity AS r LIMIT 5 OFFSET 10]
+2018-09-23 22:34:30 [33mWARN [m MascotaServiceIMP:58 - No se encontraron mascotas
+2018-09-23 22:39:30 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 16096 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:39:30 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:39:39 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.62 seconds (JVM running for 9.687)
+2018-09-23 22:39:42 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:39:42 [32mINFO [m MascotaDAOIMP:42 - SELECT r FROM MascotaEntity AS r
+2018-09-23 22:40:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 16255 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:40:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:40:12 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.641 seconds (JVM running for 9.886)
+2018-09-23 22:40:15 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:40:15 [32mINFO [m MascotaDAOIMP:42 - SELECT r FROM MascotaEntity AS r
+2018-09-23 22:40:25 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:40:25 [32mINFO [m MascotaDAOIMP:42 - SELECT r FROM MascotaEntity AS r
+2018-09-23 22:40:31 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:40:31 [32mINFO [m MascotaDAOIMP:42 - SELECT r FROM MascotaEntity AS r
+2018-09-23 22:40:35 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:40:35 [32mINFO [m MascotaDAOIMP:42 - SELECT r FROM MascotaEntity AS r
+2018-09-23 22:40:42 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:40:42 [32mINFO [m MascotaDAOIMP:42 - SELECT r FROM MascotaEntity AS r
+2018-09-23 22:40:47 [32mINFO [m MascotaServiceIMP:47 - obtener();
+2018-09-23 22:40:47 [32mINFO [m MascotaDAOIMP:42 - SELECT r FROM MascotaEntity AS r
+2018-09-23 22:40:57 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 16445 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-09-23 22:40:57 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-23 22:41:05 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.757 seconds (JVM running for 10.91)
