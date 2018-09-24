@@ -9,11 +9,13 @@ public interface DuenoMascotaDAO {
 
     ArrayList<DuenoMascotaEntity> obtener();
 
-    DuenoMascotaEntity obtenerConRut(DuenoMascotaDTO dto);
+    DuenoMascotaEntity obtenerConRut(DuenoMascotaDTO duenoMascotaDTO);
 
-    boolean guardar(DuenoMascotaDTO dto);
+    ArrayList<DuenoMascotaEntity> buscarPorNombre(DuenoMascotaDTO duenoMascotaDTO);
 
-    boolean editar(DuenoMascotaDTO dto);
+    boolean guardar(DuenoMascotaDTO duenoMascotaDTO);
 
-    boolean eliminar(DuenoMascotaDTO dto);
+    boolean editar(DuenoMascotaDTO duenoMascotaDTO);
+
+    boolean eliminar(DuenoMascotaDTO duenoMascotaDTO);
 }

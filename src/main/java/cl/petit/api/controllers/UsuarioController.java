@@ -238,10 +238,10 @@ public class UsuarioController {
 
     @RequestMapping(path="/api/usuario", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> guardar(@RequestParam(value="idRol",required=true) Integer idRol,
-                                                      @RequestParam(value="nombre",required=true) String nombre,
-                                                      @RequestParam(value="rut",required=true) String rut,
-                                                      @RequestParam(value="password",required=true) String password,
+    public ResponseEntity<Map<String,Object>> guardar(@RequestParam(value="idRol",required=false) Integer idRol,
+                                                      @RequestParam(value="nombre",required=false) String nombre,
+                                                      @RequestParam(value="rut",required=false) String rut,
+                                                      @RequestParam(value="password",required=false) String password,
                                                     HttpSession session) {
         logger.debug("UsuarioController: guardar();");
         boolean enviar = true;
@@ -307,7 +307,6 @@ public class UsuarioController {
             enviar = false;
             errores +="idUsuario";
         }
-
         if(idRol==null){
             enviar = false;
             errores +="idRol";

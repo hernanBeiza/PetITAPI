@@ -28,7 +28,7 @@ public class DuenoMascotaController {
     @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
-        System.out.println("DuenoMascotaController: obtener();");
+        logger.info("obtener();");
         Map<String, Object> result = new HashMap<String,Object>();
         ArrayList<DuenoMascotaDTO> duenos = this.duenoMascotaService.obtener();
         if(duenos !=null){
@@ -47,14 +47,49 @@ public class DuenoMascotaController {
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
-    @RequestMapping(path="/{rutDueno}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/buscar/nombre/{nombre}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable String rutDueno) {
-        System.out.println("DuenoMascotaController: obtenerConID();");
+    public ResponseEntity<Map<String,Object>> buscarPorNombre(@PathVariable String nombre) {
+        logger.info("buscarPorNombre();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
-        if(rutDueno==null){
+        if(nombre==null){
+            enviar = false;
+            errores +="Nombre del dueño de mascota";
+        }
+
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar){
+            DuenoMascotaDTO model = new DuenoMascotaDTO();
+            model.setNombres(nombre);
+            ArrayList<DuenoMascotaDTO> dto = this.duenoMascotaService.buscarPorNombre(model);
+            if (dto!=null){
+                result.put("result",true);
+                result.put("dueno",dto);
+                result.put("mensajes","Dueño de mascota encontrado");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se encontró dueño con ese rut");
+            }
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
+        } else {
+            System.out.println(errores);
+            result.put("result",false);
+            result.put("errores",errores);
+            // Add any additional props that you want to add
+            return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    @RequestMapping(path="/buscar/rut/{rut}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> obtenerConRut(@PathVariable String rut) {
+        logger.info("obtenerConRut();");
+
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(rut==null){
             enviar = false;
             errores +="Rut del dueño de mascota";
         }
@@ -62,11 +97,11 @@ public class DuenoMascotaController {
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar){
             DuenoMascotaDTO model = new DuenoMascotaDTO();
-            model.setRutDueno(rutDueno);
-            DuenoMascotaDTO dto = this.duenoMascotaService.obtenerConRut(model);
-            if (dto!=null){
+            model.setRutDueno(rut);
+            DuenoMascotaDTO duenoMascotaDTO = this.duenoMascotaService.obtenerConRut(model);
+            if (duenoMascotaDTO!=null){
                 result.put("result",true);
-                result.put("dueno",dto);
+                result.put("dueno",duenoMascotaDTO);
                 result.put("mensajes","Dueño de mascota encontrado");
             } else {
                 result.put("result",false);
@@ -156,6 +191,8 @@ public class DuenoMascotaController {
             duenoMascotaDTO.setDireccion(direccion);
             duenoMascotaDTO.setTelefono(telefono);
             duenoMascotaDTO.setCorreo(correo);
+            duenoMascotaDTO.setValid(1);
+
             boolean guardado = this.duenoMascotaService.guardar(duenoMascotaDTO);
             if (guardado) {
                 result.put("result", true);
@@ -200,7 +237,6 @@ public class DuenoMascotaController {
             enviar = false;
             errores += "rut\n";
         }
-
         if (nombres == null) {
             enviar = false;
             errores += "Nombres\n";
@@ -273,8 +309,7 @@ public class DuenoMascotaController {
     @RequestMapping(path="/{rutDueno}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> eliminar(@PathVariable String rutDueno) {
-        System.out.println("DuenoMascotaController: eliminar();");
-
+        logger.info("eliminar();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";

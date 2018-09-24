@@ -2,6 +2,8 @@ package cl.petit.api.controllers;
 
 import cl.petit.api.models.dtos.TipoMascotaDTO;
 import cl.petit.api.services.TipoMascotaService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -22,7 +24,6 @@ public class TipoMascotaController {
     @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
-        System.out.println("TipoMascotaController: obtener();");
         Map<String, Object> result = new HashMap<String,Object>();
         ArrayList<TipoMascotaDTO> tipos = this.tipoMascotaService.obtener();
         if(tipos.size()>0){
@@ -40,8 +41,6 @@ public class TipoMascotaController {
     @RequestMapping(path="/{idTipoMascota}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Integer idTipoMascota) {
-        System.out.println("TipoMascotaController: obtenerConID();");
-
         boolean enviar = true;
         String errores = "Te faltó:\n";
         if(idTipoMascota==null){

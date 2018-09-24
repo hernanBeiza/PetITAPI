@@ -20,7 +20,7 @@ public class MascotaController {
 
     @Autowired
     private MascotaService mascotaService;
-
+    /*
     @RequestMapping(path="", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> obtener() {
@@ -37,18 +37,19 @@ public class MascotaController {
         }
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
+    */
 
-
-    @RequestMapping(path="/pag/{pagina}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path={"","/"}, method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> obtenerConPagina(@PathVariable Integer pagina) {
-        System.out.println("MascotaController: obtenerConRutDueno();");
+    public ResponseEntity<Map<String,Object>> obtenerConPagina(@RequestParam(value="pagina", required = false) Integer pagina) {
+        System.out.println("MascotaController: obtenerConPagina();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
         if(pagina==null){
-            enviar = false;
-            errores +="Página";
+            //enviar = false;
+            //errores +="Página";
+            pagina = 1;
         }
 
         Map<String, Object> result = new HashMap<String,Object>();

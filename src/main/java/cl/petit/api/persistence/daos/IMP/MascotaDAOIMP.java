@@ -36,6 +36,7 @@ public class MascotaDAOIMP implements MascotaDAO {
         }
     }
 
+    //TODO leer esta página https://www.baeldung.com/jpa-pagination
     @Override
     public ArrayList<MascotaEntity> obtenerConPagina(Integer pagina) {
         String queryString = "SELECT r FROM MascotaEntity AS r";

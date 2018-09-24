@@ -29,7 +29,7 @@ public class DuenoMascotaDAOIMP implements DuenoMascotaDAO {
         logger.info("DuenoMascotaDAOIMP: obtener();");
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
         String query = "SELECT dm FROM DuenoMascotaEntity AS dm";
-        System.out.println(query);
+        logger.info(query);
         try {
             return (ArrayList<DuenoMascotaEntity>) entityManager.createQuery(query).getResultList();
         } catch (Exception e){
@@ -39,39 +39,53 @@ public class DuenoMascotaDAOIMP implements DuenoMascotaDAO {
     }
 
     @Override
-    public DuenoMascotaEntity obtenerConRut(DuenoMascotaDTO dto) {
+    public DuenoMascotaEntity obtenerConRut(DuenoMascotaDTO duenoMascotaDTO) {
         logger.info("DuenoMascotaDAOIMP: obtenerConRut();");
-        String query = "SELECT r FROM DuenoMascotaEntity AS r WHERE r.rutDueno = '"+dto.getRutDueno()+"'";
-        System.out.println(query);
+        String query = "SELECT r FROM DuenoMascotaEntity AS r WHERE r.rutDueno = '"+duenoMascotaDTO.getRutDueno()+"'";
+        logger.info(query);
         try {
             return (DuenoMascotaEntity) entityManager.createQuery(query).getSingleResult();
         } catch (Exception e){
-            System.out.println(e.getLocalizedMessage());
+            logger.error(e.getLocalizedMessage());
             return null;
         }
     }
 
     @Override
-    public boolean guardar(DuenoMascotaDTO dto) {
+    public ArrayList<DuenoMascotaEntity> buscarPorNombre(DuenoMascotaDTO duenoMascotaDTO) {
+        logger.info("DuenoMascotaDAOIMP: obtenerConNombre();");
+        String query = "SELECT r FROM DuenoMascotaEntity AS r WHERE r.nombres LIKE '%"+duenoMascotaDTO.getNombres()+"%'";
+        logger.info(query);
+        try {
+            return (ArrayList<DuenoMascotaEntity>) entityManager.createQuery(query).getResultList();
+        } catch (Exception e){
+            logger.error(e.getLocalizedMessage());
+            return null;
+        }
+    }
+
+    @Override
+    public boolean guardar(DuenoMascotaDTO duenoMascotaDTO) {
         logger.info("DuenoMascotaDAOIMP: guardar();");
         DuenoMascotaEntity duenoMascotaEntity = new DuenoMascotaEntity();
 
         UsuarioEntity usuarioEntity = new UsuarioEntity();
-        usuarioEntity.setIdUsuario(dto.getUsuario().getIdUsuario());
+        usuarioEntity.setIdUsuario(duenoMascotaDTO.getUsuario().getIdUsuario());
         duenoMascotaEntity.setUsuarioEntity(usuarioEntity);
 
         ComunaEntity comunaEntity = new ComunaEntity();
-        comunaEntity.setIdComuna(dto.getComuna().getIdComuna());
+        comunaEntity.setIdComuna(duenoMascotaDTO.getComuna().getIdComuna());
         duenoMascotaEntity.setComuna(comunaEntity);
 
-        duenoMascotaEntity.setRutDueno(dto.getRutDueno());
-        duenoMascotaEntity.setNombres(dto.getNombres());
-        duenoMascotaEntity.setApellidoPaterno(dto.getApellidoPaterno());
-        duenoMascotaEntity.setApellidoMaterno(dto.getApellidoMaterno());
+        duenoMascotaEntity.setRutDueno(duenoMascotaDTO.getRutDueno());
+        duenoMascotaEntity.setNombres(duenoMascotaDTO.getNombres());
+        duenoMascotaEntity.setApellidoPaterno(duenoMascotaDTO.getApellidoPaterno());
+        duenoMascotaEntity.setApellidoMaterno(duenoMascotaDTO.getApellidoMaterno());
 
-        duenoMascotaEntity.setDireccion(dto.getDireccion());
-        duenoMascotaEntity.setTelefono(dto.getTelefono());
-        duenoMascotaEntity.setCorreo(dto.getCorreo());
+        duenoMascotaEntity.setDireccion(duenoMascotaDTO.getDireccion());
+        duenoMascotaEntity.setTelefono(duenoMascotaDTO.getTelefono());
+        duenoMascotaEntity.setCorreo(duenoMascotaDTO.getCorreo());
+        duenoMascotaEntity.setValid(duenoMascotaDTO.getValid());
 
         logger.info(duenoMascotaEntity.toString());
         try {
@@ -84,26 +98,27 @@ public class DuenoMascotaDAOIMP implements DuenoMascotaDAO {
     }
 
     @Override
-    public boolean editar(DuenoMascotaDTO dto) {
+    public boolean editar(DuenoMascotaDTO duenoMascotaDTO) {
         logger.info("DuenoMascotaDAOIMP: editar();");
         DuenoMascotaEntity duenoMascotaEntity = new DuenoMascotaEntity();
 
         UsuarioEntity usuarioEntity = new UsuarioEntity();
-        usuarioEntity.setIdUsuario(dto.getUsuario().getIdUsuario());
+        usuarioEntity.setIdUsuario(duenoMascotaDTO.getUsuario().getIdUsuario());
         duenoMascotaEntity.setUsuarioEntity(usuarioEntity);
 
         ComunaEntity comunaEntity = new ComunaEntity();
-        comunaEntity.setIdComuna(dto.getComuna().getIdComuna());
+        comunaEntity.setIdComuna(duenoMascotaDTO.getComuna().getIdComuna());
         duenoMascotaEntity.setComuna(comunaEntity);
 
-        duenoMascotaEntity.setRutDueno(dto.getRutDueno());
-        duenoMascotaEntity.setNombres(dto.getNombres());
-        duenoMascotaEntity.setApellidoPaterno(dto.getApellidoPaterno());
-        duenoMascotaEntity.setApellidoMaterno(dto.getApellidoMaterno());
+        duenoMascotaEntity.setRutDueno(duenoMascotaDTO.getRutDueno());
+        duenoMascotaEntity.setNombres(duenoMascotaDTO.getNombres());
+        duenoMascotaEntity.setApellidoPaterno(duenoMascotaDTO.getApellidoPaterno());
+        duenoMascotaEntity.setApellidoMaterno(duenoMascotaDTO.getApellidoMaterno());
 
-        duenoMascotaEntity.setDireccion(dto.getDireccion());
-        duenoMascotaEntity.setTelefono(dto.getTelefono());
-        duenoMascotaEntity.setCorreo(dto.getCorreo());
+        duenoMascotaEntity.setDireccion(duenoMascotaDTO.getDireccion());
+        duenoMascotaEntity.setTelefono(duenoMascotaDTO.getTelefono());
+        duenoMascotaEntity.setCorreo(duenoMascotaDTO.getCorreo());
+        duenoMascotaEntity.setValid(duenoMascotaDTO.getValid());
 
         logger.info(duenoMascotaEntity.toString());
         try {
@@ -117,7 +132,7 @@ public class DuenoMascotaDAOIMP implements DuenoMascotaDAO {
 
     @Override
     public boolean eliminar(DuenoMascotaDTO dto) {
-        logger.info("DuenoMascotaDAOIMP: editar();");
+        logger.info("DuenoMascotaDAOIMP: eliminar();");
         DuenoMascotaEntity duenoMascotaEntity = this.obtenerConRut(dto);
         if(duenoMascotaEntity!=null){
             try {

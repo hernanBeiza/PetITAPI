@@ -42,7 +42,7 @@ public class ComunaServiceIMP implements ComunaService {
                 return null;
             }
         } else {
-            logger.error("No se encontraron comunas");
+            logger.warn("No se encontraron comunas");
             return null;
         }
     }
@@ -73,7 +73,7 @@ public class ComunaServiceIMP implements ComunaService {
                 return null;
             }
         } else {
-            logger.error("No se encontraron comunas");
+            logger.warn("No se encontraron comunas");
             return null;
         }
     }

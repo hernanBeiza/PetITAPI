@@ -9,13 +9,13 @@ public interface DuenoMascotaService {
 
     ArrayList<DuenoMascotaDTO> obtener();
 
-    DuenoMascotaDTO obtenerConID(DuenoMascotaDTO dto);
+    DuenoMascotaDTO obtenerConRut(DuenoMascotaDTO duenoMascotaDTO);
 
-    DuenoMascotaDTO obtenerConRut(DuenoMascotaDTO dto);
+    ArrayList<DuenoMascotaDTO> buscarPorNombre(DuenoMascotaDTO duenoMascotaDTO);
 
-    boolean guardar(DuenoMascotaDTO dto);
+    boolean guardar(DuenoMascotaDTO duenoMascotaDTO);
 
-    boolean editar(DuenoMascotaDTO dto);
+    boolean editar(DuenoMascotaDTO duenoMascotaDTO);
 
-    boolean eliminar(DuenoMascotaDTO dto);
+    boolean eliminar(DuenoMascotaDTO duenoMascotaDTO);
 }
