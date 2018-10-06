@@ -1029,3 +1029,645 @@
 2018-09-24 13:36:00 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 14.097 seconds (JVM running for 16.735)
 2018-09-24 13:36:04 [32mINFO [m EspecialistaDAOIMP:26 - SELECT r FROM EspecialistaEntity AS r
 2018-09-24 13:36:06 [32mINFO [m EspecialistaServiceIMP:33 - Especialistas encontrados
+2018-09-24 15:37:01 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3673 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 15:37:01 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 15:37:31 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 31.721 seconds (JVM running for 34.315)
+2018-09-24 15:37:35 [33mWARN [m JwtFilter:34 - Missing or inalid Authorization header
+2018-09-24 15:38:03 [32mINFO [m BloqueHorarioDAOIMP:28 - SELECT r FROM BloqueHorarioEntity AS r
+2018-09-24 15:38:03 [1;31mERROR[m BloqueHorarioDAOIMP:34 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 15:38:03 [33mWARN [m BloqueHorarioServiceIMP:44 - No se encontraron bloques horarios
+2018-09-24 15:39:34 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3841 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 15:39:34 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 15:39:43 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.275 seconds (JVM running for 10.885)
+2018-09-24 15:39:49 [32mINFO [m BloqueHorarioDAOIMP:28 - SELECT r FROM BloqueHorarioEntity AS r
+2018-09-24 15:39:49 [32mINFO [m BloqueHorarioServiceIMP:33 - Bloques de Horarios encontrados
+2018-09-24 15:39:55 [32mINFO [m BloqueHorarioDAOIMP:42 - SELECT r FROM BloqueHorarioEntity AS r WHERE r.idBloqueHorario = 3
+2018-09-24 15:39:57 [32mINFO [m BloqueHorarioDAOIMP:42 - SELECT r FROM BloqueHorarioEntity AS r WHERE r.idBloqueHorario = 1
+2018-09-24 15:40:00 [32mINFO [m BloqueHorarioDAOIMP:42 - SELECT r FROM BloqueHorarioEntity AS r WHERE r.idBloqueHorario = 2
+2018-09-24 15:40:02 [32mINFO [m BloqueHorarioDAOIMP:42 - SELECT r FROM BloqueHorarioEntity AS r WHERE r.idBloqueHorario = 10
+2018-09-24 15:46:00 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 4290 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 15:46:00 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 15:46:07 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.86 seconds (JVM running for 9.396)
+2018-09-24 15:51:26 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 4623 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 15:51:26 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 15:51:34 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.351 seconds (JVM running for 10.011)
+2018-09-24 15:57:03 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 4986 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 15:57:03 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 15:57:12 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.648 seconds (JVM running for 13.431)
+2018-09-24 15:57:18 [32mINFO [m EspecialistaDisponibilidadDAOIMP:29 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 15:57:18 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:35 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 15:57:18 [33mWARN [m EspecialistaDisponibilidadServiceIMP:45 - No se encontraron entidades de EspecialialistaDisponibilidad
+2018-09-24 15:59:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5182 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 15:59:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 15:59:41 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.752 seconds (JVM running for 13.017)
+2018-09-24 16:00:27 [32mINFO [m EspecialistaDisponibilidadDAOIMP:29 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:00:27 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:35 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 16:00:27 [33mWARN [m EspecialistaDisponibilidadServiceIMP:45 - No se encontraron entidades de EspecialialistaDisponibilidad
+2018-09-24 16:01:16 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5289 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:01:16 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:01:23 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.353 seconds (JVM running for 9.55)
+2018-09-24 16:01:28 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:01:29 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:37 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 16:01:29 [33mWARN [m EspecialistaDisponibilidadServiceIMP:45 - No se encontraron entidades de EspecialialistaDisponibilidad
+2018-09-24 16:02:34 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5373 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:02:34 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:02:43 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.678 seconds (JVM running for 11.201)
+2018-09-24 16:02:47 [32mINFO [m EspecialistaDisponibilidadServiceIMP:31 - obtener();
+2018-09-24 16:02:47 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:02:47 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:37 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 16:02:47 [33mWARN [m EspecialistaDisponibilidadServiceIMP:47 - No se encontraron entidades de EspecialialistaDisponibilidad
+2018-09-24 16:06:06 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5586 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:06:06 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:06:17 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 12.172 seconds (JVM running for 14.849)
+2018-09-24 16:07:17 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:07:17 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:37 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 16:07:17 [33mWARN [m EspecialistaDisponibilidadServiceIMP:45 - No se encontraron entidades de EspecialialistaDisponibilidad
+2018-09-24 16:07:42 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5690 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:07:42 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:07:50 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.082 seconds (JVM running for 10.303)
+2018-09-24 16:07:54 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-24 16:07:55 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:07:55 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:37 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 16:07:55 [33mWARN [m EspecialistaDisponibilidadServiceIMP:45 - No se encontraron entidades de EspecialialistaDisponibilidad
+2018-09-24 16:08:34 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5754 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:08:34 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:09:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5785 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:09:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:09:10 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.788 seconds (JVM running for 10.13)
+2018-09-24 16:10:27 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5875 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:10:27 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:10:39 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 12.864 seconds (JVM running for 15.062)
+2018-09-24 16:19:26 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-24 16:19:27 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:19:27 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:37 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-09-24 16:19:27 [33mWARN [m EspecialistaDisponibilidadServiceIMP:45 - No se encontraron entidades de EspecialialistaDisponibilidad
+2018-09-24 16:22:55 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-24 16:22:55 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:22:58 [32mINFO [m EspecialistaDisponibilidadServiceIMP:34 - Especialistas disponibilidades encontrados
+2018-09-24 16:25:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 6831 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:25:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:25:11 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.476 seconds (JVM running for 11.142)
+2018-09-24 16:25:13 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-24 16:25:13 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:25:16 [32mINFO [m EspecialistaDisponibilidadServiceIMP:34 - Especialistas disponibilidades encontrados
+2018-09-24 16:32:38 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-24 16:32:39 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 16:32:41 [32mINFO [m EspecialistaDisponibilidadServiceIMP:34 - Especialistas disponibilidades encontrados
+2018-09-24 16:39:24 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 7742 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:39:24 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:39:31 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.578 seconds (JVM running for 10.561)
+2018-09-24 16:40:10 [32mINFO [m EspecialistaDisponibilidadController:147 - obtenerConFecha();
+2018-09-24 16:40:10 [32mINFO [m EspecialistaDisponibilidadDAOIMP:83 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = 2018-10-15
+2018-09-24 16:40:41 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 7823 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:40:41 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:40:49 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.986 seconds (JVM running for 9.399)
+2018-09-24 16:40:53 [32mINFO [m EspecialistaDisponibilidadController:147 - obtenerConFecha();
+2018-09-24 16:40:53 [32mINFO [m EspecialistaDisponibilidadDAOIMP:83 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-15'
+2018-09-24 16:40:53 [32mINFO [m EspecialistaDisponibilidadServiceIMP:96 - Horarios disponibles encontrados para la fecha 2018-10-15
+2018-09-24 16:41:30 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 7878 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:41:30 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:41:38 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.69 seconds (JVM running for 10.182)
+2018-09-24 16:42:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 7945 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:42:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:42:39 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.939 seconds (JVM running for 9.172)
+2018-09-24 16:50:05 [32mINFO [m EspecialistaDisponibilidadController:147 - obtenerConFecha();
+2018-09-24 16:50:05 [32mINFO [m EspecialistaDisponibilidadDAOIMP:84 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-15'
+2018-09-24 16:50:05 [32mINFO [m EspecialistaDisponibilidadServiceIMP:96 - Horarios disponibles encontrados para la fecha 2018-10-15
+2018-09-24 16:50:18 [32mINFO [m EspecialistaDisponibilidadController:147 - obtenerConFecha();
+2018-09-24 16:50:18 [32mINFO [m EspecialistaDisponibilidadDAOIMP:84 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-14'
+2018-09-24 16:52:13 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 8691 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:52:13 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:52:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.393 seconds (JVM running for 10.054)
+2018-09-24 16:52:45 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 16:52:45 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 16:54:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 8867 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:54:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:56:34 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 8989 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 16:56:34 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 16:56:42 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.59 seconds (JVM running for 10.111)
+2018-09-24 16:56:49 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 16:56:50 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:02:09 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 9366 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:02:09 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:03:07 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 9424 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:03:07 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:04:33 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 9517 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:04:33 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:04:43 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.051 seconds (JVM running for 11.911)
+2018-09-24 17:10:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 9882 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:10:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:10:10 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.58 seconds (JVM running for 10.125)
+2018-09-24 17:10:16 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:10:16 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:13:51 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10120 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:13:51 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:14:33 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10178 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:14:33 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:15:12 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10220 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:15:12 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:15:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10280 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:15:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:15:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.545 seconds (JVM running for 9.732)
+2018-09-24 17:19:15 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10496 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:19:15 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:19:24 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10511 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:19:24 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:19:33 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.357 seconds (JVM running for 10.704)
+2018-09-24 17:22:57 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10753 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:22:57 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:23:05 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.619 seconds (JVM running for 10.615)
+2018-09-24 17:25:13 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:25:14 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:28:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11117 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:28:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:28:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.262 seconds (JVM running for 9.98)
+2018-09-24 17:29:00 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:29:01 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:29:20 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11172 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:29:20 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:29:29 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.839 seconds (JVM running for 11.798)
+2018-09-24 17:29:31 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:29:32 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:33:51 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11450 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:33:51 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:34:00 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.09 seconds (JVM running for 10.6)
+2018-09-24 17:36:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11591 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:36:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:37:44 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11695 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:37:44 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:37:52 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.908 seconds (JVM running for 10.262)
+2018-09-24 17:37:56 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:37:56 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:39:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11835 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:39:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:39:55 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.407 seconds (JVM running for 9.742)
+2018-09-24 17:40:22 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:40:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:41:31 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11938 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:41:31 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:41:38 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.884 seconds (JVM running for 9.291)
+2018-09-24 17:41:46 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:41:46 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:45:59 [32mINFO [m EspecialistaDAOIMP:40 - SELECT r FROM EspecialistaEntity AS r WHERE r.idEspecialista = 1
+2018-09-24 17:46:18 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-24 17:46:19 [32mINFO [m EspecialistaDisponibilidadDAOIMP:31 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-24 17:46:20 [32mINFO [m EspecialistaDisponibilidadServiceIMP:34 - Especialistas disponibilidades encontrados
+2018-09-24 17:46:33 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:46:33 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:46:47 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 17:46:48 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1
+2018-09-24 17:46:48 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:63 - org.hibernate.QueryException: could not resolve property: idEspecialista of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT r FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1]
+2018-09-24 17:46:48 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este especialista con rut null
+2018-09-24 17:47:22 [32mINFO [m EspecialistaDisponibilidadController:51 - obtenerConID();
+2018-09-24 17:47:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:47 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 1
+2018-09-24 17:48:24 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 17:48:24 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1
+2018-09-24 17:48:24 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:63 - org.hibernate.QueryException: could not resolve property: idEspecialista of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT r FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1]
+2018-09-24 17:48:24 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este especialista con rut null
+2018-09-24 17:48:48 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12486 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:48:48 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:48:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.169 seconds (JVM running for 10.939)
+2018-09-24 17:49:00 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 17:49:00 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1
+2018-09-24 17:49:00 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:63 - org.hibernate.QueryException: could not resolve property: idEspecialista of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT r FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1]
+2018-09-24 17:49:00 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este especialista con rut null
+2018-09-24 17:49:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12551 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:49:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:49:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.621 seconds (JVM running for 12.286)
+2018-09-24 17:50:11 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 17:50:12 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1
+2018-09-24 17:50:12 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:63 - org.hibernate.QueryException: could not resolve property: idEspecialista of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT r FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialista = 1]
+2018-09-24 17:50:12 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-24 17:51:03 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12626 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:51:03 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:51:11 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.397 seconds (JVM running for 9.855)
+2018-09-24 17:51:14 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 17:51:15 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.EspecialistaEntity.idEspecialista = 1
+2018-09-24 17:51:15 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:63 - org.hibernate.QueryException: could not resolve property: EspecialistaEntity of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT r FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS r WHERE r.EspecialistaEntity.idEspecialista = 1]
+2018-09-24 17:51:15 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-24 17:51:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12678 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:51:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:51:58 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.802 seconds (JVM running for 10.144)
+2018-09-24 17:52:29 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 17:52:29 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.especialista.idEspecialista = 1
+2018-09-24 17:52:29 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-24 17:54:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12816 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 17:54:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 17:54:10 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.182 seconds (JVM running for 9.845)
+2018-09-24 17:54:19 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 17:54:20 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.especialista.idEspecialista = 1
+2018-09-24 17:54:22 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-24 20:20:19 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 762 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-24 20:20:19 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-24 20:20:30 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.533 seconds (JVM running for 14.189)
+2018-09-24 20:20:35 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-24 20:20:36 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.especialista.idEspecialista = 1
+2018-09-24 20:20:39 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-25 00:27:29 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2606 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:27:29 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:27:41 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 13.95 seconds (JVM running for 16.22)
+2018-09-25 00:28:01 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:28:01 [32mINFO [m EspecialistaDisponibilidadDAOIMP:60 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed INNER JOIN r.idBloqueHorario AS bh WHERE bh.idEspecialista = 1
+2018-09-25 00:28:01 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:64 - org.hibernate.hql.internal.ast.QuerySyntaxException: Invalid path: 'r.idBloqueHorario' [SELECT ed FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS ed INNER JOIN r.idBloqueHorario AS bh WHERE bh.idEspecialista = 1]
+2018-09-25 00:28:01 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:28:36 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2690 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:28:36 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:28:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2712 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:28:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:29:08 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 14.272 seconds (JVM running for 16.954)
+2018-09-25 00:29:11 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:29:11 [32mINFO [m EspecialistaDisponibilidadDAOIMP:57 - obtenerConEspecialistaDisponibilidad
+2018-09-25 00:29:11 [32mINFO [m EspecialistaDisponibilidadDAOIMP:60 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.idBloqueHorario AS bh WHERE bh.idEspecialista = 1
+2018-09-25 00:29:11 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:64 - org.hibernate.QueryException: could not resolve property: idBloqueHorario of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT ed FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.idBloqueHorario AS bh WHERE bh.idEspecialista = 1]
+2018-09-25 00:29:11 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:29:40 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2762 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:29:40 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:29:48 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.411 seconds (JVM running for 11.32)
+2018-09-25 00:29:58 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:29:58 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:29:58 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.idBloqueHorario AS bh WHERE bh.idEspecialista = 1
+2018-09-25 00:29:58 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:63 - org.hibernate.QueryException: could not resolve property: idBloqueHorario of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT ed FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.idBloqueHorario AS bh WHERE bh.idEspecialista = 1]
+2018-09-25 00:29:58 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:31:16 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2865 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:31:16 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:31:26 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.159 seconds (JVM running for 13.594)
+2018-09-25 00:31:41 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2896 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:31:41 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:31:50 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.376 seconds (JVM running for 11.719)
+2018-09-25 00:31:53 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:31:54 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:31:54 [32mINFO [m EspecialistaDisponibilidadDAOIMP:60 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.bloqueHorario AS bh WHERE bh.idEspecialista = 1
+2018-09-25 00:31:54 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:64 - org.hibernate.QueryException: could not resolve property: idEspecialista of: cl.petit.api.models.entities.BloqueHorarioEntity [SELECT ed FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.bloqueHorario AS bh WHERE bh.idEspecialista = 1]
+2018-09-25 00:31:54 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:32:21 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2940 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:32:21 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:32:29 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.634 seconds (JVM running for 9.947)
+2018-09-25 00:32:39 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:32:39 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:32:39 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.bloqueHorario AS bh WHERE ed.idEspecialista = 1
+2018-09-25 00:32:39 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:62 - org.hibernate.QueryException: could not resolve property: idEspecialista of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT ed FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS ed INNER JOIN ed.bloqueHorario AS bh WHERE ed.idEspecialista = 1]
+2018-09-25 00:32:39 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:34:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3083 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:34:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:34:54 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.38 seconds (JVM running for 12.216)
+2018-09-25 00:34:56 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:34:56 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:34:56 [32mINFO [m EspecialistaDisponibilidadDAOIMP:61 - SELECT ed FROM BloqueHorarioEntity AS bh INNER JOIN EspecialistaDisponibilidadEntity.idBloqueHorario AS ed WHERE ed.idEspecialista = 1
+2018-09-25 00:34:57 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:65 - null
+2018-09-25 00:34:57 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:36:20 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3186 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:36:20 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:36:29 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.289 seconds (JVM running for 11.647)
+2018-09-25 00:36:34 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:36:34 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:36:34 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM BloqueHorario AS bh INNER JOIN EspecialistaDisponibilidad.idBloqueHorario AS ed WHERE ed.idEspecialista = 1
+2018-09-25 00:36:34 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:62 - org.hibernate.hql.internal.ast.QuerySyntaxException: BloqueHorario is not mapped [SELECT ed FROM BloqueHorario AS bh INNER JOIN EspecialistaDisponibilidad.idBloqueHorario AS ed WHERE ed.idEspecialista = 1]
+2018-09-25 00:36:34 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:36:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3217 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:36:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:37:00 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.382 seconds (JVM running for 13.065)
+2018-09-25 00:37:16 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:37:16 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:37:16 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM BloqueHorarioEntity AS bh INNER JOIN EspecialistaDisponibilidad.idBloqueHorario AS ed WHERE ed.idEspecialista = 1
+2018-09-25 00:37:16 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:62 - org.hibernate.QueryException: No data type for node: org.hibernate.hql.internal.ast.tree.IdentNode 
+ \-[IDENT] IdentNode: 'ed' {originalText=ed}
+ [SELECT ed FROM cl.petit.api.models.entities.BloqueHorarioEntity AS bh INNER JOIN EspecialistaDisponibilidad.idBloqueHorario AS ed WHERE ed.idEspecialista = 1]
+2018-09-25 00:37:16 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:37:34 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3267 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:37:34 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:37:43 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3278 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:37:43 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:37:52 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.956 seconds (JVM running for 11.459)
+2018-09-25 00:37:56 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:37:56 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:37:56 [32mINFO [m EspecialistaDisponibilidadDAOIMP:61 - SELECT ed FROM BloqueHorarioEntity AS bh INNER JOIN EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-25 00:37:56 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:65 - org.hibernate.QueryException: could not resolve property: idEspecialista of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT ed FROM cl.petit.api.models.entities.BloqueHorarioEntity AS bh INNER JOIN cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1]
+2018-09-25 00:37:56 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:39:28 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3383 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:39:28 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:39:37 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.507 seconds (JVM running for 13.597)
+2018-09-25 00:39:41 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-25 00:39:42 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-25 00:39:42 [32mINFO [m EspecialistaDisponibilidadDAOIMP:61 - SELECT ed FROM BloqueHorarioEntity AS bh INNER JOIN EspecialistaDisponibilidadEntity.bloqueHorario AS ed WHERE ed.idEspecialista = 1
+2018-09-25 00:39:42 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:65 - null
+2018-09-25 00:39:42 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-25 00:45:48 [32mINFO [m MascotaController:151 - obtenerConRutDueno();
+2018-09-25 00:45:48 [32mINFO [m MascotaDAOIMP:92 - SELECT m FROM MascotaEntity AS m INNER JOIN m.duenoMascota AS dm WHERE dm.rutDueno='10745542-6'
+2018-09-25 00:57:11 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 4532 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-25 00:57:11 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-25 00:57:18 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.051 seconds (JVM running for 10.35)
+2018-09-25 00:57:24 [32mINFO [m MascotaController:151 - obtenerConRutDueno();
+2018-09-25 00:57:24 [32mINFO [m MascotaDAOIMP:92 - SELECT m FROM MascotaEntity AS m INNER JOIN m.duenoMascota AS dm WHERE dm.rutDueno='10745542-6'
+2018-09-27 14:50:33 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5208 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 14:50:33 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 14:50:42 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.675 seconds (JVM running for 11.306)
+2018-09-27 14:51:13 [32mINFO [m EspecialistaDAOIMP:26 - SELECT r FROM EspecialistaEntity AS r
+2018-09-27 14:51:15 [32mINFO [m EspecialistaServiceIMP:33 - Especialistas encontrados
+2018-09-27 14:51:46 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-27 14:51:46 [32mINFO [m EspecialistaDisponibilidadDAOIMP:28 - obtener();
+2018-09-27 14:51:46 [32mINFO [m EspecialistaDisponibilidadDAOIMP:30 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-27 14:51:50 [32mINFO [m EspecialistaDisponibilidadServiceIMP:34 - Especialistas disponibilidades encontrados
+2018-09-27 14:53:35 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5415 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 14:53:35 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 14:53:43 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.352 seconds (JVM running for 11.456)
+2018-09-27 14:53:49 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-27 14:53:49 [32mINFO [m EspecialistaDisponibilidadDAOIMP:28 - obtener();
+2018-09-27 14:53:49 [32mINFO [m EspecialistaDisponibilidadDAOIMP:30 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-27 14:53:52 [32mINFO [m EspecialistaDisponibilidadServiceIMP:34 - Especialistas disponibilidades encontrados
+2018-09-27 14:54:31 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 14:54:31 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 14:54:31 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM BloqueHorarioEntity AS bh INNER JOIN EspecialistaDisponibilidadEntity.bloqueHorario AS ed WHERE ed.idEspecialista = 1
+2018-09-27 14:54:31 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:62 - null
+2018-09-27 14:54:31 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-27 14:55:17 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5528 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 14:55:18 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 14:55:26 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.628 seconds (JVM running for 11.542)
+2018-09-27 14:55:52 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 14:55:52 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 14:55:52 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-27 15:00:01 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5821 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:00:01 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:00:09 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.362 seconds (JVM running for 10.287)
+2018-09-27 15:00:20 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 15:00:21 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 15:00:21 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-27 15:01:17 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5903 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:01:17 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:01:25 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.683 seconds (JVM running for 10.21)
+2018-09-27 15:01:29 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 15:01:29 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 15:01:29 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidad AS ed WHERE ed.idEspecialista = 1
+2018-09-27 15:01:29 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:62 - org.hibernate.hql.internal.ast.QuerySyntaxException: EspecialistaDisponibilidad is not mapped [SELECT ed FROM EspecialistaDisponibilidad AS ed WHERE ed.idEspecialista = 1]
+2018-09-27 15:01:29 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-27 15:01:50 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 5937 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:01:50 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:01:58 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.133 seconds (JVM running for 9.298)
+2018-09-27 15:02:05 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 15:02:06 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 15:02:06 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 15:02:08 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 15:07:02 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 6265 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:07:02 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:12:17 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 6619 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:12:17 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:13:46 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 6713 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:13:46 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:13:54 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.857 seconds (JVM running for 10.754)
+2018-09-27 15:14:11 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 15:14:12 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 15:14:12 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 15:14:12 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 15:14:35 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 6767 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:14:35 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:14:42 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.966 seconds (JVM running for 9.626)
+2018-09-27 15:14:47 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 15:14:48 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 15:14:48 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 15:14:48 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 15:15:18 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 6810 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:15:18 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:15:30 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 6824 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:15:30 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:18:37 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 7008 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:18:37 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:18:45 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 7022 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:18:45 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:21:40 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 7204 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:21:40 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:21:48 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.004 seconds (JVM running for 11.387)
+2018-09-27 15:21:55 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 15:21:55 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 15:21:55 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 15:21:55 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 15:46:27 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 8783 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:46:27 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:46:35 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.554 seconds (JVM running for 10.467)
+2018-09-27 15:46:38 [32mINFO [m EspecialistaDisponibilidadController:114 - obtenerConIdEspecialistaYFecha();
+2018-09-27 15:46:38 [32mINFO [m EspecialistaDisponibilidadDAOIMP:69 - obtenerConIDEspecialistaYFecha
+2018-09-27 15:46:38 [32mINFO [m EspecialistaDisponibilidadDAOIMP:71 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1 AND ed.fecha = '2018-10-11'
+2018-09-27 15:46:39 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Especialistas disponibilidades encontrados para el especialista con id 1 y fecha 2018-10-11
+2018-09-27 15:46:45 [32mINFO [m EspecialistaDisponibilidadController:114 - obtenerConIdEspecialistaYFecha();
+2018-09-27 15:46:46 [32mINFO [m EspecialistaDisponibilidadDAOIMP:69 - obtenerConIDEspecialistaYFecha
+2018-09-27 15:46:46 [32mINFO [m EspecialistaDisponibilidadDAOIMP:71 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1 AND ed.fecha = '2018-10-10'
+2018-09-27 15:46:49 [32mINFO [m EspecialistaDisponibilidadController:114 - obtenerConIdEspecialistaYFecha();
+2018-09-27 15:46:49 [32mINFO [m EspecialistaDisponibilidadDAOIMP:69 - obtenerConIDEspecialistaYFecha
+2018-09-27 15:46:49 [32mINFO [m EspecialistaDisponibilidadDAOIMP:71 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1 AND ed.fecha = '2018-10-11'
+2018-09-27 15:46:50 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Especialistas disponibilidades encontrados para el especialista con id 1 y fecha 2018-10-11
+2018-09-27 15:50:22 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 9027 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 15:50:22 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 15:50:33 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 12.477 seconds (JVM running for 15.915)
+2018-09-27 15:50:37 [32mINFO [m EspecialistaDisponibilidadController:114 - obtenerConIdEspecialistaYFecha();
+2018-09-27 15:50:37 [32mINFO [m EspecialistaDisponibilidadDAOIMP:69 - obtenerConIDEspecialistaYFecha
+2018-09-27 15:50:37 [32mINFO [m EspecialistaDisponibilidadDAOIMP:71 - SELECT bh FROM BloqueHorarioEntity AS bh WHERE INNER JOIN bh.idBloqueHorario = EspecilistaDisponibilidadEntity.idBloqueHorario
+2018-09-27 15:50:37 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:75 - org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: INNER near line 1, column 77 [SELECT bh FROM cl.petit.api.models.entities.BloqueHorarioEntity AS bh WHERE INNER JOIN bh.idBloqueHorario = EspecilistaDisponibilidadEntity.idBloqueHorario]
+2018-09-27 15:50:37 [33mWARN [m EspecialistaDisponibilidadServiceIMP:97 - No se encontraron disponibilidad para este id de especialista 1 en la fecha 2018-10-11
+2018-09-27 16:09:45 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10284 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:09:45 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:09:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.871 seconds (JVM running for 14.202)
+2018-09-27 16:10:07 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:10:07 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 16:10:07 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 16:10:07 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:10:22 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:10:22 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 16:10:22 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 2
+2018-09-27 16:10:22 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 2
+2018-09-27 16:10:24 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:10:24 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 16:10:24 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 3
+2018-09-27 16:10:27 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:10:27 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 16:10:27 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 16:10:27 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:18:53 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 10950 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:18:53 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:19:02 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.068 seconds (JVM running for 12.027)
+2018-09-27 16:19:06 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:19:07 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 16:19:07 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 16:19:07 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:20:57 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:20:58 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 16:20:58 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT ed FROM EspecialistaDisponibilidadEntity AS ed WHERE ed.idEspecialista = 1
+2018-09-27 16:20:58 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:21:50 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11126 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:21:50 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:21:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.656 seconds (JVM running for 11.537)
+2018-09-27 16:22:03 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:22:03 [32mINFO [m EspecialistaDisponibilidadDAOIMP:56 - obtenerConIDEspecialista
+2018-09-27 16:22:03 [32mINFO [m EspecialistaDisponibilidadDAOIMP:58 - SELECT e FROM EspecialistaEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:22:04 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:23:56 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11274 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:23:56 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:24:04 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.233 seconds (JVM running for 10.997)
+2018-09-27 16:24:11 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:24:12 [32mINFO [m EspecialistaDisponibilidadDAOIMP:57 - obtenerConIDEspecialista
+2018-09-27 16:24:12 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT e FROM EspecialistaEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:24:12 [32mINFO [m EspecialistaDisponibilidadDAOIMP:62 - [EspecialistaEntity{idEspecialista=1, especialidad=EspecialidadEntity{idEspecialidad=1, nombre='Peluqueria', valid=1}, comuna=ComunaEntity{idComuna=4932, idProvincia=49, strDescripcion='Vitacura', valid=1}, rut='8039562-0', nombres='MARIA DE LOURDES', apellidoPaterno='GUERRERO', apellidoMaterno='YANEZ', correo='mguerrero@petroquin.cl', direccion='ACHAO 718', telefono='3259959', valid=1}]
+2018-09-27 16:24:12 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-27 16:26:12 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11411 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:26:12 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:26:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.859 seconds (JVM running for 10.53)
+2018-09-27 16:26:26 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:26:26 [32mINFO [m EspecialistaDisponibilidadDAOIMP:57 - obtenerConIDEspecialista
+2018-09-27 16:26:26 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:26:27 [32mINFO [m EspecialistaDisponibilidadDAOIMP:62 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=8, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=9, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=10, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=11, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=12, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=13, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=14, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=15, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=16, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=17, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=18, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=19, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=1, idEspecialista=1, fecha='2018-10-11', valid=1}]
+2018-09-27 16:26:27 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-27 16:27:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11469 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:27:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:27:14 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.427 seconds (JVM running for 11.637)
+2018-09-27 16:27:16 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:27:17 [32mINFO [m EspecialistaDisponibilidadDAOIMP:57 - obtenerConIDEspecialista
+2018-09-27 16:27:17 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:27:17 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:28:23 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11555 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:28:23 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:28:32 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.911 seconds (JVM running for 10.527)
+2018-09-27 16:28:35 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:28:35 [32mINFO [m EspecialistaDisponibilidadDAOIMP:57 - obtenerConIDEspecialista
+2018-09-27 16:28:35 [32mINFO [m EspecialistaDisponibilidadDAOIMP:59 - SELECT e FROM EspecialistaEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:28:36 [32mINFO [m EspecialistaDisponibilidadDAOIMP:62 - [EspecialistaEntity{idEspecialista=1, especialidad=EspecialidadEntity{idEspecialidad=1, nombre='Peluqueria', valid=1}, comuna=ComunaEntity{idComuna=4932, idProvincia=49, strDescripcion='Vitacura', valid=1}, rut='8039562-0', nombres='MARIA DE LOURDES', apellidoPaterno='GUERRERO', apellidoMaterno='YANEZ', correo='mguerrero@petroquin.cl', direccion='ACHAO 718', telefono='3259959', valid=1}]
+2018-09-27 16:28:36 [33mWARN [m EspecialistaDisponibilidadServiceIMP:76 - No se encontraron disponibilidad para este id de especialista 1
+2018-09-27 16:29:52 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 11648 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:29:52 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:29:59 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.012 seconds (JVM running for 9.19)
+2018-09-27 16:50:32 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 12941 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-09-27 16:50:32 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-09-27 16:50:40 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.372 seconds (JVM running for 10.47)
+2018-09-27 16:51:08 [32mINFO [m EspecialistaDAOIMP:40 - SELECT r FROM EspecialistaEntity AS r WHERE r.idEspecialista = 1
+2018-09-27 16:51:18 [32mINFO [m EspecialistaDisponibilidadController:34 - obtener();
+2018-09-27 16:51:19 [32mINFO [m EspecialistaDisponibilidadDAOIMP:44 - obtener();
+2018-09-27 16:51:19 [32mINFO [m EspecialistaDisponibilidadDAOIMP:46 - SELECT r FROM EspecialistaDisponibilidadEntity AS r
+2018-09-27 16:51:19 [32mINFO [m EspecialistaDisponibilidadServiceIMP:34 - Especialistas disponibilidades encontrados
+2018-09-27 16:51:50 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:51:50 [32mINFO [m EspecialistaDisponibilidadDAOIMP:72 - obtenerConIDEspecialista
+2018-09-27 16:51:50 [32mINFO [m EspecialistaDisponibilidadDAOIMP:74 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:51:50 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:52:09 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:52:09 [32mINFO [m EspecialistaDisponibilidadDAOIMP:72 - obtenerConIDEspecialista
+2018-09-27 16:52:09 [32mINFO [m EspecialistaDisponibilidadDAOIMP:74 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 2
+2018-09-27 16:52:09 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 2
+2018-09-27 16:52:10 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:52:11 [32mINFO [m EspecialistaDisponibilidadDAOIMP:72 - obtenerConIDEspecialista
+2018-09-27 16:52:11 [32mINFO [m EspecialistaDisponibilidadDAOIMP:74 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 3
+2018-09-27 16:52:13 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:52:13 [32mINFO [m EspecialistaDisponibilidadDAOIMP:72 - obtenerConIDEspecialista
+2018-09-27 16:52:13 [32mINFO [m EspecialistaDisponibilidadDAOIMP:74 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:52:13 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-09-27 16:52:14 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:52:15 [32mINFO [m EspecialistaDisponibilidadDAOIMP:72 - obtenerConIDEspecialista
+2018-09-27 16:52:15 [32mINFO [m EspecialistaDisponibilidadDAOIMP:74 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 2
+2018-09-27 16:52:15 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 2
+2018-09-27 16:52:22 [32mINFO [m EspecialistaDisponibilidadController:83 - obtenerConIDEspecialista();
+2018-09-27 16:52:22 [32mINFO [m EspecialistaDisponibilidadDAOIMP:72 - obtenerConIDEspecialista
+2018-09-27 16:52:22 [32mINFO [m EspecialistaDisponibilidadDAOIMP:74 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 1
+2018-09-27 16:52:22 [32mINFO [m EspecialistaDisponibilidadServiceIMP:65 - Especialistas disponibilidades encontrados para el especialista con id 1
+2018-10-06 19:15:18 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2931 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 19:15:18 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 19:15:28 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.473 seconds (JVM running for 14.584)
+2018-10-06 19:16:43 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 19:16:44 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 19:16:44 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-15'
+2018-10-06 19:16:44 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-15
+2018-10-06 19:16:51 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 19:16:52 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 19:16:52 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-12'
+2018-10-06 19:16:52 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-12
+2018-10-06 19:16:54 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 19:16:54 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 19:16:54 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 19:16:54 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 19:18:41 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 19:18:42 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 19:18:42 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 19:18:42 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 19:22:24 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 19:22:24 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 19:22:24 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 19:22:24 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 19:22:59 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 2965 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 19:22:59 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 19:23:07 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.071 seconds (JVM running for 10.879)
+2018-10-06 19:24:39 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 19:24:39 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 19:24:39 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 19:24:39 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 19:24:39 [32mINFO [m EspecialistaDisponibilidadServiceIMP:87 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=1, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=3, idEspecialista=2, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=8, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=9, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=10, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=11, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=12, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=13, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=14, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=15, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=16, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=17, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=18, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=19, idEspecialista=1, fecha='2018-10-11', valid=1}]
+2018-10-06 19:28:38 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3010 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 19:28:38 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 19:28:53 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3015 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 19:28:53 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 19:29:28 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3020 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 19:29:28 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:04:35 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3090 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:04:35 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:04:44 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.229 seconds (JVM running for 11.09)
+2018-10-06 20:07:20 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 20:07:21 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 20:07:21 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 20:07:21 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 20:07:21 [32mINFO [m EspecialistaDisponibilidadServiceIMP:87 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=1, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=3, idEspecialista=2, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=8, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=9, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=10, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=11, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=12, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=13, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=14, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=15, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=16, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=17, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=18, idEspecialista=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=19, idEspecialista=1, fecha='2018-10-11', valid=1}]
+2018-10-06 20:08:49 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3150 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:08:49 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:08:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.884 seconds (JVM running for 9.486)
+2018-10-06 20:09:01 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 20:09:01 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 20:09:01 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r INNER JOIN BloqueHorarioEntity AS bh ON r.idBloqueHorario = bh.idBloqueHorario WHERE r.fecha = '2018-10-11'
+2018-10-06 20:09:01 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:92 - org.hibernate.hql.internal.ast.QuerySyntaxException: could not resolve property: idBloqueHorario of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT r FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS r INNER JOIN cl.petit.api.models.entities.BloqueHorarioEntity AS bh ON r.idBloqueHorario = bh.idBloqueHorario WHERE r.fecha = '2018-10-11']
+2018-10-06 20:09:01 [33mWARN [m EspecialistaDisponibilidadServiceIMP:98 - No se encontró disponibilidad de horario para el día 2018-10-11
+2018-10-06 20:10:03 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3158 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:10:03 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:10:11 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.45 seconds (JVM running for 9.648)
+2018-10-06 20:10:23 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 20:10:24 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 20:10:24 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r INNER JOIN BloqueHorarioEntity AS bh ON r.idBloqueHorario = bh.idBloqueHorario WHERE r.fecha = '2018-10-11'
+2018-10-06 20:10:24 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 20:10:24 [32mINFO [m EspecialistaDisponibilidadServiceIMP:87 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=1, idEspecialista=1, idBloqueHorario=13, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=3, idEspecialista=2, idBloqueHorario=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=8, idEspecialista=1, idBloqueHorario=1, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=9, idEspecialista=1, idBloqueHorario=2, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=10, idEspecialista=1, idBloqueHorario=3, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=11, idEspecialista=1, idBloqueHorario=4, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=12, idEspecialista=1, idBloqueHorario=5, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=13, idEspecialista=1, idBloqueHorario=6, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=14, idEspecialista=1, idBloqueHorario=7, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=15, idEspecialista=1, idBloqueHorario=8, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=16, idEspecialista=1, idBloqueHorario=9, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=17, idEspecialista=1, idBloqueHorario=10, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=18, idEspecialista=1, idBloqueHorario=11, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=19, idEspecialista=1, idBloqueHorario=12, fecha='2018-10-11', valid=1}]
+2018-10-06 20:13:14 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3196 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:13:14 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:13:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.116 seconds (JVM running for 9.795)
+2018-10-06 20:13:26 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 20:13:26 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 20:13:26 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r INNER JOIN BloqueHorarioEntity AS bh ON r.idBloqueHorario = bh.idBloqueHorario WHERE r.fecha = '2018-10-11'
+2018-10-06 20:13:27 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:92 - org.hibernate.hql.internal.ast.QuerySyntaxException: could not resolve property: idBloqueHorario of: cl.petit.api.models.entities.EspecialistaDisponibilidadEntity [SELECT r FROM cl.petit.api.models.entities.EspecialistaDisponibilidadEntity AS r INNER JOIN cl.petit.api.models.entities.BloqueHorarioEntity AS bh ON r.idBloqueHorario = bh.idBloqueHorario WHERE r.fecha = '2018-10-11']
+2018-10-06 20:13:27 [33mWARN [m EspecialistaDisponibilidadServiceIMP:98 - No se encontró disponibilidad de horario para el día 2018-10-11
+2018-10-06 20:13:55 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3202 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:13:55 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:14:03 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.66 seconds (JVM running for 9.861)
+2018-10-06 20:14:05 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 20:14:05 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 20:14:05 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 20:14:05 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:92 - org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2018-10-06 20:14:05 [33mWARN [m EspecialistaDisponibilidadServiceIMP:98 - No se encontró disponibilidad de horario para el día 2018-10-11
+2018-10-06 20:14:53 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3209 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:14:53 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:15:01 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.068 seconds (JVM running for 9.286)
+2018-10-06 20:15:05 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 20:15:05 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 20:15:05 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 20:15:08 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 20:15:08 [32mINFO [m EspecialistaDisponibilidadServiceIMP:87 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=1, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=13, horaInicio='14:00:00', horaTermino='14:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=3, idEspecialista=2, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=1, horaInicio='08:00:00', horaTermino='08:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=8, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=1, horaInicio='08:00:00', horaTermino='08:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=9, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=2, horaInicio='08:30:00', horaTermino='09:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=10, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=3, horaInicio='09:00:00', horaTermino='09:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=11, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=4, horaInicio='09:30:00', horaTermino='10:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=12, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=5, horaInicio='10:00:00', horaTermino='10:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=13, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=6, horaInicio='10:30:00', horaTermino='11:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=14, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=7, horaInicio='11:00:00', horaTermino='11:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=15, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=8, horaInicio='11:30:00', horaTermino='12:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=16, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=9, horaInicio='12:00:00', horaTermino='12:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=17, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=10, horaInicio='12:30:00', horaTermino='13:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=18, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=11, horaInicio='13:00:00', horaTermino='13:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=19, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=12, horaInicio='13:30:00', horaTermino='14:00:00', valid=1}, fecha='2018-10-11', valid=1}]
+2018-10-06 20:17:13 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3221 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:17:13 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:17:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.426 seconds (JVM running for 10.088)
+2018-10-06 20:17:27 [32mINFO [m EspecialistaDisponibilidadController:115 - obtenerConFecha();
+2018-10-06 20:17:27 [32mINFO [m EspecialistaDisponibilidadDAOIMP:85 - obtenerConFecha
+2018-10-06 20:17:27 [32mINFO [m EspecialistaDisponibilidadDAOIMP:88 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.fecha = '2018-10-11'
+2018-10-06 20:17:30 [32mINFO [m EspecialistaDisponibilidadServiceIMP:86 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 20:17:30 [32mINFO [m EspecialistaDisponibilidadServiceIMP:87 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=1, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=13, horaInicio='14:00:00', horaTermino='14:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=3, idEspecialista=2, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=1, horaInicio='08:00:00', horaTermino='08:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=8, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=1, horaInicio='08:00:00', horaTermino='08:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=9, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=2, horaInicio='08:30:00', horaTermino='09:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=10, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=3, horaInicio='09:00:00', horaTermino='09:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=11, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=4, horaInicio='09:30:00', horaTermino='10:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=12, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=5, horaInicio='10:00:00', horaTermino='10:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=13, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=6, horaInicio='10:30:00', horaTermino='11:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=14, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=7, horaInicio='11:00:00', horaTermino='11:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=15, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=8, horaInicio='11:30:00', horaTermino='12:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=16, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=9, horaInicio='12:00:00', horaTermino='12:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=17, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=10, horaInicio='12:30:00', horaTermino='13:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=18, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=11, horaInicio='13:00:00', horaTermino='13:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=19, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=12, horaInicio='13:30:00', horaTermino='14:00:00', valid=1}, fecha='2018-10-11', valid=1}]
+2018-10-06 20:26:45 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3261 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:26:45 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:26:53 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.445 seconds (JVM running for 10.295)
+2018-10-06 20:27:27 [32mINFO [m EspecialistaDisponibilidadController:144 - obtenerConIDEspecialistaYFecha();
+2018-10-06 20:27:28 [32mINFO [m EspecialistaDisponibilidadDAOIMP:100 - obtenerConIDEspecialistaYFecha
+2018-10-06 20:27:28 [32mINFO [m EspecialistaDisponibilidadDAOIMP:102 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 1 AND e.fecha='2018-10-11'
+2018-10-06 20:27:30 [32mINFO [m EspecialistaDisponibilidadServiceIMP:108 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 20:27:30 [32mINFO [m EspecialistaDisponibilidadServiceIMP:109 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=8, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=1, horaInicio='08:00:00', horaTermino='08:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=9, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=2, horaInicio='08:30:00', horaTermino='09:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=10, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=3, horaInicio='09:00:00', horaTermino='09:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=11, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=4, horaInicio='09:30:00', horaTermino='10:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=12, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=5, horaInicio='10:00:00', horaTermino='10:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=13, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=6, horaInicio='10:30:00', horaTermino='11:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=14, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=7, horaInicio='11:00:00', horaTermino='11:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=15, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=8, horaInicio='11:30:00', horaTermino='12:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=16, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=9, horaInicio='12:00:00', horaTermino='12:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=17, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=10, horaInicio='12:30:00', horaTermino='13:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=18, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=11, horaInicio='13:00:00', horaTermino='13:30:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=19, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=12, horaInicio='13:30:00', horaTermino='14:00:00', valid=1}, fecha='2018-10-11', valid=1}, EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=1, idEspecialista=1, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=13, horaInicio='14:00:00', horaTermino='14:30:00', valid=1}, fecha='2018-10-11', valid=1}]
+2018-10-06 20:27:35 [32mINFO [m EspecialistaDisponibilidadController:144 - obtenerConIDEspecialistaYFecha();
+2018-10-06 20:27:35 [32mINFO [m EspecialistaDisponibilidadDAOIMP:100 - obtenerConIDEspecialistaYFecha
+2018-10-06 20:27:35 [32mINFO [m EspecialistaDisponibilidadDAOIMP:102 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 2 AND e.fecha='2018-10-11'
+2018-10-06 20:27:35 [32mINFO [m EspecialistaDisponibilidadServiceIMP:108 - Horarios disponibles encontrados para la fecha 2018-10-11
+2018-10-06 20:27:35 [32mINFO [m EspecialistaDisponibilidadServiceIMP:109 - [EspecialistaDisponibilidadEntity{idEspecialistaDisponibilidad=3, idEspecialista=2, bloqueHorario=BloqueHorarioEntity{idBloqueHorario=1, horaInicio='08:00:00', horaTermino='08:30:00', valid=1}, fecha='2018-10-11', valid=1}]
+2018-10-06 20:27:40 [32mINFO [m EspecialistaDisponibilidadController:144 - obtenerConIDEspecialistaYFecha();
+2018-10-06 20:27:41 [32mINFO [m EspecialistaDisponibilidadDAOIMP:100 - obtenerConIDEspecialistaYFecha
+2018-10-06 20:27:41 [32mINFO [m EspecialistaDisponibilidadDAOIMP:102 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 3 AND e.fecha='2018-10-11'

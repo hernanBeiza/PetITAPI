@@ -1,7 +1,11 @@
 package cl.petit.api.models.entities;
 
+import cl.petit.api.models.dtos.BloqueHorarioDTO;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "EspecialistaDisponibilidad")
@@ -11,16 +15,14 @@ public class EspecialistaDisponibilidadEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idEspecialistaDisponibilidad")
     private Long idEspecialistaDisponibilidad;
-    @ManyToOne
-    @JoinColumn(name="idEspecialista")
-    private EspecialistaEntity especialista;
+    @Column(name = "idEspecialista")
+    private Long idEspecialista;
     @ManyToOne
     @JoinColumn(name="idBloqueHorario")
     private BloqueHorarioEntity bloqueHorario;
 
     @Column(name = "fecha")
     private String fecha;
-
     @Column(name = "valid")
     private int valid;
 
@@ -32,12 +34,12 @@ public class EspecialistaDisponibilidadEntity implements Serializable {
         this.idEspecialistaDisponibilidad = idEspecialistaDisponibilidad;
     }
 
-    public EspecialistaEntity getEspecialista() {
-        return especialista;
+    public Long getIdEspecialista() {
+        return idEspecialista;
     }
 
-    public void setEspecialista(EspecialistaEntity especialista) {
-        this.especialista = especialista;
+    public void setIdEspecialista(Long idEspecialista) {
+        this.idEspecialista = idEspecialista;
     }
 
     public BloqueHorarioEntity getBloqueHorario() {
@@ -64,14 +66,16 @@ public class EspecialistaDisponibilidadEntity implements Serializable {
         this.valid = valid;
     }
 
+
     @Override
     public String toString() {
         return "EspecialistaDisponibilidadEntity{" +
                 "idEspecialistaDisponibilidad=" + idEspecialistaDisponibilidad +
-                ", especialista=" + especialista +
+                ", idEspecialista=" + idEspecialista +
                 ", bloqueHorario=" + bloqueHorario +
                 ", fecha='" + fecha + '\'' +
                 ", valid=" + valid +
                 '}';
     }
+
 }

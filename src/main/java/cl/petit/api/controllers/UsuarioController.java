@@ -38,7 +38,7 @@ public class UsuarioController {
     public ResponseEntity<Map<String,Object>> login(@RequestParam(value="rut",required=false) String rut,
                                                     @RequestParam(value="password",required=false) String password,
                                                     HttpSession session) {
-        logger.debug("UsuarioController: login();");
+        logger.debug("login();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";

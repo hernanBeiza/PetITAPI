@@ -9,7 +9,7 @@ public class BloqueHorarioDTO {
 
     private Long idBloqueHorario;
     private String horaInicio;
-    private String horaFin;
+    private String horaTermino;
     private int valid;
 
     public BloqueHorarioDTO() { }
@@ -17,7 +17,7 @@ public class BloqueHorarioDTO {
     public BloqueHorarioDTO(BloqueHorarioEntity entity){
         this.idBloqueHorario = entity.getIdBloqueHorario();
         this.horaInicio = entity.getHoraInicio();
-        this.horaFin = entity.getHoraTermino();
+        this.horaTermino = entity.getHoraTermino();
         this.valid = entity.getValid();
     }
 
@@ -37,12 +37,12 @@ public class BloqueHorarioDTO {
         this.horaInicio = horaInicio;
     }
 
-    public String getHoraFin() {
-        return horaFin;
+    public String getHoraTermino() {
+        return horaTermino;
     }
 
-    public void setHoraFin(String horaFin) {
-        this.horaFin = horaFin;
+    public void setHoraTermino(String horaTermino) {
+        this.horaTermino = horaTermino;
     }
 
     public int getValid() {
@@ -58,7 +58,7 @@ public class BloqueHorarioDTO {
         return "BloqueHorarioDTO{" +
                 "idBloqueHorario=" + idBloqueHorario +
                 ", horaInicio='" + horaInicio + '\'' +
-                ", horaFin='" + horaFin + '\'' +
+                ", horaTermino='" + horaTermino + '\'' +
                 ", valid=" + valid +
                 '}';
     }

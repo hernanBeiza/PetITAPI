@@ -3,10 +3,12 @@ package cl.petit.api.models.dtos;
 import cl.petit.api.models.entities.BloqueHorarioEntity;
 import cl.petit.api.models.entities.EspecialistaDisponibilidadEntity;
 
+import java.util.ArrayList;
+
 public class EspecialistaDisponibilidadDTO {
 
     private Long idEspecialistaDisponibilidad;
-    private EspecialistaDTO especialistaDTO;
+    private Long idEspecialista;
     private BloqueHorarioDTO bloqueHorarioDTO;
     private String fecha;
     private int valid;
@@ -14,8 +16,9 @@ public class EspecialistaDisponibilidadDTO {
     public EspecialistaDisponibilidadDTO() { }
 
     public EspecialistaDisponibilidadDTO(EspecialistaDisponibilidadEntity entity){
+        System.out.println(entity);
         this.idEspecialistaDisponibilidad = entity.getIdEspecialistaDisponibilidad();
-        this.especialistaDTO = new EspecialistaDTO(entity.getEspecialista());
+        this.idEspecialista = entity.getIdEspecialista();
         this.bloqueHorarioDTO = new BloqueHorarioDTO(entity.getBloqueHorario());
         this.fecha = entity.getFecha();
         this.valid = entity.getValid();
@@ -29,19 +32,19 @@ public class EspecialistaDisponibilidadDTO {
         this.idEspecialistaDisponibilidad = idEspecialistaDisponibilidad;
     }
 
-    public EspecialistaDTO getEspecialistaDTO() {
-        return especialistaDTO;
+    public Long getIdEspecialista() {
+        return idEspecialista;
     }
 
-    public void setEspecialistaDTO(EspecialistaDTO especialistaDTO) {
-        this.especialistaDTO = especialistaDTO;
+    public void setIdEspecialista(Long idEspecialista) {
+        this.idEspecialista = idEspecialista;
     }
 
     public BloqueHorarioDTO getBloqueHorarioDTO() {
         return bloqueHorarioDTO;
     }
 
-    public void setBloqueHorarioDTO(BloqueHorarioDTO bloqueHorarioDTO) {
+    public void setBloquesHorarioDTO(BloqueHorarioDTO bloqueHorarioDTO) {
         this.bloqueHorarioDTO = bloqueHorarioDTO;
     }
 
@@ -65,7 +68,7 @@ public class EspecialistaDisponibilidadDTO {
     public String toString() {
         return "EspecialistaDisponibilidadDTO{" +
                 "idEspecialistaDisponibilidad=" + idEspecialistaDisponibilidad +
-                ", especialistaDTO=" + especialistaDTO +
+                ", idEspecialista=" + idEspecialista +
                 ", bloqueHorarioDTO=" + bloqueHorarioDTO +
                 ", fecha='" + fecha + '\'' +
                 ", valid=" + valid +

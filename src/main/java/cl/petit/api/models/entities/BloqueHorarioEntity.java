@@ -1,5 +1,7 @@
 package cl.petit.api.models.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -52,6 +54,7 @@ public class BloqueHorarioEntity implements Serializable {
     public void setValid(int valid) {
         this.valid = valid;
     }
+
 
     @Override
     public String toString() {

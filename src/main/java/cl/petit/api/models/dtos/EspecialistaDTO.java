@@ -22,6 +22,7 @@ public class EspecialistaDTO {
         this.idEspecialista = entity.getIdEspecialista();
         this.especialidadDTO = new EspecialidadDTO(entity.getEspecialidad());
         this.comunaDTO = new ComunaDTO(entity.getComuna());
+        this.rut = entity.getRut();
         this.nombres = entity.getNombres();
         this.apellidoPaterno = entity.getApellidoPaterno();
         this.apellidoMaterno = entity.getApellidoMaterno();

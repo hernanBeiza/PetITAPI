@@ -18,7 +18,6 @@ public class EspecialidadEntity implements Serializable {
     @Column(name = "valid")
     private int valid;
 
-
     public Long getIdEspecialidad() {
         return idEspecialidad;
     }
