@@ -1,0 +1,19 @@
+package cl.petit.api.services;
+
+import cl.petit.api.models.dtos.CitaDTO;
+import cl.petit.api.models.dtos.EspecialistaDTO;
+import cl.petit.api.models.dtos.MascotaDTO;
+
+import java.util.ArrayList;
+
+public interface CitaService {
+
+    ArrayList<CitaDTO> obtener();
+
+    CitaDTO obtenerConID(CitaDTO citaDTO);
+
+    CitaDTO obtenerConRutMascota(MascotaDTO mascotaDTO);
+
+    CitaDTO obtenerConIDEspecialista(EspecialistaDTO especialistaDTO);
+
+}
