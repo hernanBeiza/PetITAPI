@@ -27,6 +27,21 @@ public class EspecialistaDisponibilidadServiceIMP implements EspecialistaDisponi
     private EspecialistaDisponibilidadDAO especialistaDisponibilidadDAO;
 
     @Override
+    public boolean guardar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO) {
+        return this.especialistaDisponibilidadDAO.guardar(especialistaDisponibilidadDTO);
+    }
+
+    @Override
+    public boolean editar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO) {
+        return this.especialistaDisponibilidadDAO.editar(especialistaDisponibilidadDTO);
+    }
+
+    @Override
+    public boolean eliminar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO) {
+        return this.especialistaDisponibilidadDAO.eliminar(especialistaDisponibilidadDTO);
+    }
+
+    @Override
     public ArrayList<EspecialistaDisponibilidadDTO> obtener() {
         ArrayList<EspecialistaDisponibilidadEntity> entities = this.especialistaDisponibilidadDAO.obtener();
         if(entities!=null){

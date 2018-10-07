@@ -25,18 +25,71 @@ public class EspecialistaDisponibilidadDAOIMP implements EspecialistaDisponibili
     EntityManager entityManager;
 
     @Override
-    public boolean guardar(EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity) {
-        return false;
+    public boolean guardar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO) {
+        EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity = new EspecialistaDisponibilidadEntity();
+        especialistaDisponibilidadEntity.setIdEspecialista(especialistaDisponibilidadDTO.getIdEspecialista());
+
+        BloqueHorarioEntity bloqueHorarioEntity = new BloqueHorarioEntity();
+        bloqueHorarioEntity.setIdBloqueHorario(especialistaDisponibilidadDTO.getBloqueHorarioDTO().getIdBloqueHorario());
+        especialistaDisponibilidadEntity.setBloqueHorario(bloqueHorarioEntity);
+
+        especialistaDisponibilidadEntity.setFecha(especialistaDisponibilidadDTO.getFecha());
+        especialistaDisponibilidadEntity.setValid(especialistaDisponibilidadDTO.getValid());
+        try {
+            entityManager.persist(especialistaDisponibilidadEntity);
+            return true;
+        } catch (Exception e){
+            logger.error(e.getLocalizedMessage());
+            return false;
+        }
+    }
+
+
+    @Override
+    public boolean editar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO) {
+
+        EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity = obtenerConID(especialistaDisponibilidadDTO);
+        if (especialistaDisponibilidadEntity!=null){
+            especialistaDisponibilidadEntity.setIdEspecialista(especialistaDisponibilidadDTO.getIdEspecialista());
+
+            BloqueHorarioEntity bloqueHorarioEntity = new BloqueHorarioEntity();
+            bloqueHorarioEntity.setIdBloqueHorario(especialistaDisponibilidadDTO.getBloqueHorarioDTO().getIdBloqueHorario());
+            especialistaDisponibilidadEntity.setBloqueHorario(bloqueHorarioEntity);
+
+            especialistaDisponibilidadEntity.setFecha(especialistaDisponibilidadDTO.getFecha());
+            especialistaDisponibilidadEntity.setValid(especialistaDisponibilidadDTO.getValid());
+
+            try {
+                entityManager.merge(especialistaDisponibilidadEntity);
+                return true;
+            } catch (Exception e){
+                logger.error(e.getLocalizedMessage());
+                return false;
+            }
+
+        } else {
+
+            return false;
+        }
     }
 
     @Override
-    public boolean editar(EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity) {
-        return false;
-    }
+    public boolean eliminar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO) {
+        EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity = obtenerConID(especialistaDisponibilidadDTO);
+        especialistaDisponibilidadEntity.setValid(especialistaDisponibilidadDTO.getValid());
+        if(especialistaDisponibilidadEntity!=null){
+            try {
 
-    @Override
-    public boolean eliminar(EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity) {
-        return false;
+                //entityManager.remove(especialistaDisponibilidadEntity);
+                entityManager.merge(especialistaDisponibilidadEntity);
+                return true;
+            } catch (Exception e){
+                logger.error(e.getLocalizedMessage());
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 
     @Override

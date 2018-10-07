@@ -8,6 +8,12 @@ import java.util.ArrayList;
 
 public interface EspecialistaDisponibilidadService {
 
+    boolean guardar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO);
+
+    boolean editar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO);
+
+    boolean eliminar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO);
+
     ArrayList<EspecialistaDisponibilidadDTO> obtener();
 
     EspecialistaDisponibilidadDTO obtenerConID(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO);

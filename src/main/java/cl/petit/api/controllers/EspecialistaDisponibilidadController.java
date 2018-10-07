@@ -99,7 +99,7 @@ public class EspecialistaDisponibilidadController {
                 result.put("disponibilidades", encontrados);
             } else {
                 result.put("result", false);
-                result.put("errores", "No se encontró disponibilidad de horas con ese id de especialista...");
+                result.put("errores", "No se encontró disponibilidad de horas para este especialista");
             }
         } else {
             result.put("result", false);
@@ -147,12 +147,12 @@ public class EspecialistaDisponibilidadController {
         String errores = "Te faltó:\n";
         if(idEspecialista==null){
             enviar = false;
-            errores +="Id de especialista";
+            errores +="Id de especialista\n";
         }
 
         if(fecha==null){
             enviar = false;
-            errores +="fecha";
+            errores +="fecha\n";
         }
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar) {
@@ -165,7 +165,7 @@ public class EspecialistaDisponibilidadController {
                 result.put("disponibilidades", encontrados);
             } else {
                 result.put("result", false);
-                result.put("errores", "No se encontró disponibilidad de horario para el día " + fecha);
+                result.put("errores", "No se encontró disponibilidad de horario del especialista para el día " + fecha);
             }
         } else {
             result.put("result", false);
@@ -174,5 +174,148 @@ public class EspecialistaDisponibilidadController {
         return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
     }
 
+    @RequestMapping(path="", method={RequestMethod.POST}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> guardar(
+
+            @RequestParam(value="idEspecialista",required=false) Integer idEspecialista,
+            @RequestParam(value="idBloqueHorario",required=false) Integer idBloqueHorario,
+            @RequestParam(value="fecha",required=false) String fecha) {
+        logger.info("guardar();");
+
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idEspecialista==null){
+            enviar = false;
+            errores +="Id de especialista\n";
+        }
+        if(idBloqueHorario==null){
+            enviar = false;
+            errores +="ID del bloque horario\n";
+        }
+        if(fecha==null){
+            enviar = false;
+            errores +="Fecha";
+        }
+
+
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar){
+            EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO = new EspecialistaDisponibilidadDTO();
+            especialistaDisponibilidadDTO.setIdEspecialista(idEspecialista.longValue());
+            BloqueHorarioDTO bloqueHorarioDTO = new BloqueHorarioDTO();
+            bloqueHorarioDTO.setIdBloqueHorario(idBloqueHorario.longValue());
+            especialistaDisponibilidadDTO.setBloquesHorarioDTO(bloqueHorarioDTO);
+            especialistaDisponibilidadDTO.setFecha(fecha);
+            especialistaDisponibilidadDTO.setValid(1);
+            boolean guardado = this.especialistaDisponibilidadService.guardar(especialistaDisponibilidadDTO);
+            if(guardado){
+                result.put("result",true);
+                result.put("mensajes","Se guardó la disponibilidad del bloque horario");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se guardó la disponibilidad del bloque horario");
+            }
+        } else {
+            result.put("result",false);
+            result.put("errores",errores);
+
+        }
+        return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+
+    }
+
+
+    @RequestMapping(path="/{idEspecialistaDisponibilidad}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> editar(
+            @PathVariable(value="idEspecialistaDisponibilidad") Integer idEspecialistaDisponibilidad,
+            @RequestParam(value="idEspecialista",required=false) Integer idEspecialista,
+            @RequestParam(value="idBloqueHorario",required=false) Integer idBloqueHorario,
+            @RequestParam(value="fecha",required=false) String fecha,
+            @RequestParam(value="valid",required=false) Integer valid)    {
+        logger.info("editar();");
+
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idEspecialistaDisponibilidad==null){
+            enviar = false;
+            errores +="ID de la disponibilidad\n";
+        }
+        if(idEspecialista==null){
+            enviar = false;
+            errores +="Id de especialista\n";
+        }
+        if(idBloqueHorario==null){
+            enviar = false;
+            errores +="ID del bloque horario\n";
+        }
+        if(fecha==null){
+            enviar = false;
+            errores +="Fecha";
+        }
+        if(valid==null){
+            enviar = false;
+            errores +="valid";
+        }
+
+
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar){
+            EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO = new EspecialistaDisponibilidadDTO();
+            especialistaDisponibilidadDTO.setIdEspecialistaDisponibilidad(idEspecialistaDisponibilidad.longValue());
+            especialistaDisponibilidadDTO.setIdEspecialista(idEspecialista.longValue());
+            BloqueHorarioDTO bloqueHorarioDTO = new BloqueHorarioDTO();
+            bloqueHorarioDTO.setIdBloqueHorario(idBloqueHorario.longValue());
+            especialistaDisponibilidadDTO.setBloquesHorarioDTO(bloqueHorarioDTO);
+            especialistaDisponibilidadDTO.setFecha(fecha);
+            especialistaDisponibilidadDTO.setValid(valid);
+            boolean guardado = this.especialistaDisponibilidadService.editar(especialistaDisponibilidadDTO);
+            if(guardado){
+                result.put("result",true);
+                result.put("mensajes","Se editó la disponibilidad del bloque horario");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se editó la disponibilidad del bloque horario");
+            }
+        } else {
+            result.put("result",false);
+            result.put("errores",errores);
+
+        }
+        return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+
+    }
+
+    @RequestMapping(path="/{idEspecialistaDisponibilidad}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String,Object>> eliminar(@PathVariable(value="idEspecialistaDisponibilidad") Integer idEspecialistaDisponibilidad){
+        logger.info("eliminar();");
+
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idEspecialistaDisponibilidad==null){
+            enviar = false;
+            errores +="ID de la disponibilidad\n";
+        }
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar){
+            EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO = new EspecialistaDisponibilidadDTO();
+            especialistaDisponibilidadDTO.setIdEspecialistaDisponibilidad(idEspecialistaDisponibilidad.longValue());
+            especialistaDisponibilidadDTO.setValid(2);
+            boolean eliminado = this.especialistaDisponibilidadService.eliminar(especialistaDisponibilidadDTO);
+            if(eliminado){
+                result.put("result",true);
+                result.put("mensajes","Se eliminó la disponibilidad del bloque horario");
+            } else {
+                result.put("result",false);
+                result.put("errores","No se eliminó la disponibilidad del bloque horario");
+            }
+        } else {
+            result.put("result",false);
+            result.put("errores",errores);
+        }
+        return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+    }
 }
 

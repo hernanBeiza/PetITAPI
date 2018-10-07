@@ -10,11 +10,11 @@ import java.util.ArrayList;
 
 public interface EspecialistaDisponibilidadDAO {
 
-    boolean guardar(EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity);
+    boolean guardar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO);
 
-    boolean editar(EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity);
+    boolean editar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO);
 
-    boolean eliminar(EspecialistaDisponibilidadEntity especialistaDisponibilidadEntity);
+    boolean eliminar(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO);
 
     ArrayList<EspecialistaDisponibilidadEntity> obtener();
 

@@ -1671,3 +1671,50 @@
 2018-10-06 20:27:40 [32mINFO [m EspecialistaDisponibilidadController:144 - obtenerConIDEspecialistaYFecha();
 2018-10-06 20:27:41 [32mINFO [m EspecialistaDisponibilidadDAOIMP:100 - obtenerConIDEspecialistaYFecha
 2018-10-06 20:27:41 [32mINFO [m EspecialistaDisponibilidadDAOIMP:102 - SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialista = 3 AND e.fecha='2018-10-11'
+2018-10-06 20:40:03 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3472 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:40:03 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:40:10 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.729 seconds (JVM running for 9.686)
+2018-10-06 20:40:55 [32mINFO [m EspecialistaDisponibilidadController:180 - guardar();
+2018-10-06 20:57:58 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3521 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:57:58 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:58:06 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 7.927 seconds (JVM running for 9.455)
+2018-10-06 20:59:00 [32mINFO [m EspecialistaDisponibilidadController:184 - guardar();
+2018-10-06 20:59:20 [32mINFO [m EspecialistaDisponibilidadController:184 - guardar();
+2018-10-06 20:59:47 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3529 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 20:59:47 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 20:59:56 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.623 seconds (JVM running for 9.875)
+2018-10-06 21:02:31 [32mINFO [m EspecialistaDisponibilidadController:184 - guardar();
+2018-10-06 21:19:19 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3630 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 21:19:19 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 21:19:27 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.708 seconds (JVM running for 10.48)
+2018-10-06 21:21:07 [32mINFO [m EspecialistaDisponibilidadController:184 - guardar();
+2018-10-06 21:21:13 [32mINFO [m EspecialistaDisponibilidadController:184 - guardar();
+2018-10-06 21:24:11 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3649 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 21:24:11 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 21:24:20 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.87 seconds (JVM running for 11.195)
+2018-10-06 21:24:33 [32mINFO [m EspecialistaDisponibilidadController:237 - editar();
+2018-10-06 21:24:41 [32mINFO [m EspecialistaDisponibilidadController:237 - editar();
+2018-10-06 21:24:42 [32mINFO [m EspecialistaDisponibilidadDAOIMP:107 - obtenerConID();
+2018-10-06 21:24:42 [32mINFO [m EspecialistaDisponibilidadDAOIMP:109 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = null
+2018-10-06 21:24:42 [1;31mERROR[m EspecialistaDisponibilidadDAOIMP:113 - No entity found for query
+2018-10-06 21:25:15 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3656 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 21:25:15 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 21:25:23 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.178 seconds (JVM running for 9.342)
+2018-10-06 21:25:29 [32mINFO [m EspecialistaDisponibilidadController:237 - editar();
+2018-10-06 21:25:29 [32mINFO [m EspecialistaDisponibilidadDAOIMP:107 - obtenerConID();
+2018-10-06 21:25:29 [32mINFO [m EspecialistaDisponibilidadDAOIMP:109 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 20
+2018-10-06 21:26:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3661 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 21:26:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 21:26:12 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.328 seconds (JVM running for 9.945)
+2018-10-06 21:26:15 [32mINFO [m EspecialistaDisponibilidadController:237 - editar();
+2018-10-06 21:26:15 [32mINFO [m EspecialistaDisponibilidadDAOIMP:109 - obtenerConID();
+2018-10-06 21:26:15 [32mINFO [m EspecialistaDisponibilidadDAOIMP:111 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 20
+2018-10-06 21:26:23 [32mINFO [m EspecialistaDisponibilidadController:237 - editar();
+2018-10-06 21:26:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:109 - obtenerConID();
+2018-10-06 21:26:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:111 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 20
+2018-10-06 21:28:13 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on HBMacBookPro.local with PID 3669 (/Users/hernanBeiza/Documents/GitHub/PetITAPI/target/classes started by hernanBeiza in /Users/hernanBeiza/Documents/GitHub/PetITAPI)
+2018-10-06 21:28:13 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-06 21:28:21 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.001 seconds (JVM running for 10.946)
+2018-10-06 21:28:23 [32mINFO [m EspecialistaDisponibilidadController:293 - eliminar();
+2018-10-06 21:28:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:112 - obtenerConID();
+2018-10-06 21:28:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:114 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 20
