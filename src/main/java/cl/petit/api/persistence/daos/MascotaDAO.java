@@ -10,7 +10,7 @@ public interface MascotaDAO {
 
     ArrayList<MascotaEntity> obtener();
 
-    ArrayList<MascotaEntity> obtenerConPagina(Integer pagina);
+    ArrayList<MascotaEntity> obtenerConPagina(Long pagina);
 
     MascotaEntity obtenerConRut(MascotaDTO mascotaDTO);
 

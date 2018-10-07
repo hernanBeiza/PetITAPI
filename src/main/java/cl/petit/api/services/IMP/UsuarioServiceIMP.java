@@ -4,6 +4,8 @@ import cl.petit.api.persistence.daos.UsuarioDAO;
 import cl.petit.api.models.dtos.UsuarioDTO;
 import cl.petit.api.models.entities.UsuarioEntity;
 import cl.petit.api.services.UsuarioService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,7 @@ import java.util.ArrayList;
 @Transactional
 @Service
 public class UsuarioServiceIMP implements UsuarioService {
+    private static final Logger logger = LogManager.getLogger(UsuarioServiceIMP.class);
 
     @Autowired
     private UsuarioDAO usuarioDAO;
@@ -21,27 +24,29 @@ public class UsuarioServiceIMP implements UsuarioService {
     public ArrayList<UsuarioDTO> obtener() {
         ArrayList<UsuarioEntity> entities = this.usuarioDAO.obtener();
         if(entities!=null){
-            System.out.println("Usuarios encontrados:" + entities.size());
+            logger.info("Usuarios encontrados: " + entities.size());
             ArrayList<UsuarioDTO> encontrados = new ArrayList<UsuarioDTO>();
             for (UsuarioEntity entity : entities) {
                 UsuarioDTO dto = new UsuarioDTO(entity);
-                System.out.println(dto.toString());
                 encontrados.add(dto);
             }
             return encontrados;
         } else {
+            logger.warn("No se encontraron usuarios");
             return null;
         }
     }
 
     @Override
-    public UsuarioDTO obtenerConID(int idusuario) {
-        UsuarioEntity entity = this.usuarioDAO.obtenerConID(idusuario);
+    public UsuarioDTO obtenerConID(Long idUsuario) {
+        UsuarioEntity entity = this.usuarioDAO.obtenerConID(idUsuario);
         if(entity!=null){
+            logger.info("Usuario encontrado");
             //System.out.println(entity);
             UsuarioDTO dto = new UsuarioDTO(entity);
             return dto;
         } else {
+            logger.warn("No se encontró usuario con id " + idUsuario);
             return null;
         }
     }
@@ -50,9 +55,10 @@ public class UsuarioServiceIMP implements UsuarioService {
     public UsuarioDTO buscar(String rut, String contrasena) {
         UsuarioEntity entity = this.usuarioDAO.buscar(rut,contrasena);
         if(entity!=null){
-            System.out.println("Usuario encontrado: " + entity.toString());
+            logger.info("Usuario encontrado: " + entity.toString());
             return new UsuarioDTO(entity);
         } else {
+            logger.warn("No se encontró usuario con esos datos");
             return null;
         }
     }
@@ -64,6 +70,7 @@ public class UsuarioServiceIMP implements UsuarioService {
             UsuarioDTO dto = new UsuarioDTO(entity);
             return dto;
         } else {
+            logger.warn("No se encontró usuario con ese nombre");
             return null;
         }
     }
@@ -75,6 +82,7 @@ public class UsuarioServiceIMP implements UsuarioService {
             UsuarioDTO dto = new UsuarioDTO(entity);
             return dto;
         } else {
+            logger.warn("No se encontró usuario con ese rut");
             return null;
         }
     }

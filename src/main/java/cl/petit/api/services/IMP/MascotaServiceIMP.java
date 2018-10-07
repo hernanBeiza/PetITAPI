@@ -42,7 +42,7 @@ public class MascotaServiceIMP implements MascotaService {
     }
 
     @Override
-    public ArrayList<MascotaDTO> obtenerConPagina(Integer pagina) {
+    public ArrayList<MascotaDTO> obtenerConPagina(Long pagina) {
         ArrayList<MascotaEntity> entities = this.mascotaDAO.obtenerConPagina(pagina);
         if(entities!=null){
             System.out.println("Mascotas encontradas");

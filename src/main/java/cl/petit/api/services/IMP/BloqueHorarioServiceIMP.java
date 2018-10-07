@@ -52,6 +52,7 @@ public class BloqueHorarioServiceIMP implements BloqueHorarioService {
         if(entity!=null){
             return new BloqueHorarioDTO(entity);
         } else {
+            logger.warn("No se encontraron bloque horario con ese id");
             return null;
         }
     }

@@ -8,7 +8,7 @@ public interface MascotaService {
 
     ArrayList<MascotaDTO> obtener();
 
-    ArrayList<MascotaDTO> obtenerConPagina(Integer pagina);
+    ArrayList<MascotaDTO> obtenerConPagina(Long pagina);
 
     MascotaDTO obtenerConRut(MascotaDTO mascotaDTO);
 

@@ -3,8 +3,8 @@ package cl.petit.api.persistence.daos.IMP;
 import cl.petit.api.models.dtos.CitaDTO;
 import cl.petit.api.models.dtos.EspecialistaDTO;
 import cl.petit.api.models.dtos.MascotaDTO;
-import cl.petit.api.models.entities.CitaEntity;
-import cl.petit.api.models.entities.OrigenEntity;
+import cl.petit.api.models.dtos.OrigenDTO;
+import cl.petit.api.models.entities.*;
 import cl.petit.api.persistence.daos.CitaDAO;
 import cl.petit.api.persistence.daos.OrigenDAO;
 import org.apache.logging.log4j.LogManager;
@@ -71,6 +71,84 @@ public class CitaDAOIMP implements CitaDAO {
         } catch (Exception e){
             logger.error(e.getLocalizedMessage());
             return null;
+        }
+    }
+
+    @Override
+    public boolean guardar(CitaDTO citaDTO) {
+        CitaEntity citaEntity = new CitaEntity();
+
+        EspecialistaEntity especialistaEntity = new EspecialistaEntity();
+        especialistaEntity.setIdEspecialista(citaDTO.getEspecialistaDTO().getIdEspecialista());
+        citaEntity.setEspecialistaEntity(especialistaEntity);
+
+        MascotaEntity mascotaEntity = new MascotaEntity();
+        mascotaEntity.setRutMascota(citaDTO.getMascotaDTO().getRutMascota());
+        citaEntity.setMascotaEntity(mascotaEntity);
+
+        OrigenEntity origenEntity = new OrigenEntity();
+        origenEntity.setIdOrigen(citaDTO.getOrigenDTO().getIdOrigen());
+        citaEntity.setOrigenEntity(origenEntity);
+
+        citaEntity.setValid(citaDTO.getValid());
+        try {
+            entityManager.persist(citaEntity);
+            return true;
+        } catch (Exception ex){
+            logger.error("No se pudo guardar la cita");
+            logger.error(ex.getLocalizedMessage());
+            return false;
+        }
+    }
+
+    @Override
+    public boolean editar(CitaDTO citaDTO) {
+
+        CitaEntity citaEntityEncontrada = this.obtenerConID(citaDTO);
+        if (citaEntityEncontrada!=null) {
+
+            EspecialistaEntity especialistaEntity = new EspecialistaEntity();
+            especialistaEntity.setIdEspecialista(citaDTO.getEspecialistaDTO().getIdEspecialista());
+            citaEntityEncontrada.setEspecialistaEntity(especialistaEntity);
+
+            MascotaEntity mascotaEntity = new MascotaEntity();
+            mascotaEntity.setRutMascota(citaDTO.getMascotaDTO().getRutMascota());
+            citaEntityEncontrada.setMascotaEntity(mascotaEntity);
+
+            OrigenEntity origenEntity = new OrigenEntity();
+            origenEntity.setIdOrigen(citaDTO.getOrigenDTO().getIdOrigen());
+            citaEntityEncontrada.setOrigenEntity(origenEntity);
+
+            citaEntityEncontrada.setValid(citaDTO.getValid());
+
+            try {
+                entityManager.merge(citaEntityEncontrada);
+                return true;
+            } catch (Exception ex){
+                logger.error("No se pudo editar la cita");
+                logger.error(ex.getLocalizedMessage());
+                return false;
+            }
+        } else {
+            return false;
+        }
+
+    }
+
+    @Override
+    public boolean eliminar(CitaDTO citaDTO) {
+        CitaEntity citaEntityEncontrada = this.obtenerConID(citaDTO);
+        if (citaEntityEncontrada!=null) {
+            try {
+                entityManager.remove(citaEntityEncontrada);
+                return true;
+            } catch (Exception ex){
+                logger.error("No se pudo eliminar la cita");
+                logger.error(ex.getLocalizedMessage());
+                return false;
+            }
+        } else {
+            return false;
         }
     }
 }

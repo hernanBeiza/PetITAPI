@@ -45,13 +45,13 @@ public class MascotaDAOIMP implements MascotaDAO {
 
     //TODO leer esta página https://www.baeldung.com/jpa-pagination
     @Override
-    public ArrayList<MascotaEntity> obtenerConPagina(Integer pagina) {
+    public ArrayList<MascotaEntity> obtenerConPagina(Long pagina) {
         String queryString = "SELECT r FROM MascotaEntity AS r";
         logger.info(queryString);
         try {
             int pageSize = 10;
             Query query = entityManager.createQuery(queryString);
-            query.setFirstResult((pagina-1) * pageSize);
+            query.setFirstResult((pagina.intValue()-1) * pageSize);
             query.setMaxResults(pageSize);
             return (ArrayList<MascotaEntity>) query.getResultList();
         } catch (Exception e){

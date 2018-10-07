@@ -52,10 +52,7 @@ public class UsuarioController {
 
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar){
-            UsuarioDTO model = new UsuarioDTO();
-            model.setRut(rut);
-            model.setPassword(password);
-            UsuarioDTO encontrado = this.usuarioService.buscar(model.getRut(),model.getPassword());
+            UsuarioDTO encontrado = this.usuarioService.buscar(rut,password);
             if(encontrado!=null){
                 result.put("result",true);
                 result.put("mensaje","Bienvenido al sistema de PetIT...");
@@ -82,10 +79,8 @@ public class UsuarioController {
 
             return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
         } else {
-            System.out.println(errores);
             result.put("result",false);
             result.put("errores",errores);
-            // Add any additional props that you want to add
             return new ResponseEntity<Map<String,Object>>(result, HttpStatus.BAD_REQUEST);
         }
 
@@ -186,19 +181,30 @@ public class UsuarioController {
 
     @RequestMapping(path="/api/usuario/{idUsuario}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable int idUsuario) {
+    public ResponseEntity<Map<String,Object>> obtenerConID(@PathVariable Integer idUsuario) {
         logger.debug("UsuarioController: obtenerConID();");
         Map<String, Object> result = new HashMap<String,Object>();
-        UsuarioDTO encontrado = this.usuarioService.obtenerConID(idUsuario);
-        if(encontrado!=null){
-            result.put("result",true);
-            result.put("mensaje","Se encontraron usuarios");
-            result.put("usuario",encontrado);
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(idUsuario==null){
+            enviar = false;
+            errores +="Id del usuario";
+        }
+        if(enviar){
+            UsuarioDTO encontrado = this.usuarioService.obtenerConID(idUsuario.longValue());
+
+            if(encontrado!=null){
+                result.put("result",true);
+                result.put("mensaje","Se encontraron usuarios");
+                result.put("usuario",encontrado);
+            } else {
+                result.put("result",false);
+                result.put("errores","No se encontró usuario registrado");
+            }
         } else {
             result.put("result",false);
-            result.put("errores","No se encontró usuario registrado");
+            result.put("errores",errores);
         }
-
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
     }
 
@@ -208,14 +214,25 @@ public class UsuarioController {
     public ResponseEntity<Map<String,Object>> buscarPorRut(@PathVariable String rut) {
         logger.debug("UsuarioController: buscarPorRut();");
         Map<String, Object> result = new HashMap<String,Object>();
-        UsuarioDTO encontrado = this.usuarioService.buscarPorRut(rut);
-        if(encontrado!=null){
-            result.put("result",true);
-            result.put("mensaje","Se encontraro usuario con ese rut");
-            result.put("usuario",encontrado);
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(rut==null){
+            enviar = false;
+            errores +="rut del usuario";
+        }
+        if(enviar) {
+            UsuarioDTO encontrado = this.usuarioService.buscarPorRut(rut);
+            if (encontrado != null) {
+                result.put("result", true);
+                result.put("mensaje", "Se encontraro usuario con ese rut");
+                result.put("usuario", encontrado);
+            } else {
+                result.put("result", false);
+                result.put("errores", "No se encontraró usuario con ese rut");
+            }
         } else {
             result.put("result",false);
-            result.put("errores","No se encontraró usuario con ese rut");
+            result.put("errores",errores);
         }
 
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);
@@ -227,14 +244,25 @@ public class UsuarioController {
     public ResponseEntity<Map<String,Object>> buscarPorNombre(@PathVariable String nombre) {
         logger.debug("UsuarioController: buscarPorNombre();");
         Map<String, Object> result = new HashMap<String,Object>();
-        UsuarioDTO encontrado = this.usuarioService.buscarPorNombre(nombre);
-        if(encontrado!=null){
-            result.put("result",true);
-            result.put("mensaje","Se encontró usuario con ese nombre");
-            result.put("usuario",encontrado);
+        boolean enviar = true;
+        String errores = "Te faltó:\n";
+        if(nombre==null){
+            enviar = false;
+            errores +="nombre del usuario";
+        }
+        if(enviar){
+            UsuarioDTO encontrado = this.usuarioService.buscarPorNombre(nombre);
+            if(encontrado!=null){
+                result.put("result",true);
+                result.put("mensaje","Se encontró usuario con ese nombre");
+                result.put("usuario",encontrado);
+            } else {
+                result.put("result",false);
+                result.put("errores","No se encontró usuario con ese nombre");
+            }
         } else {
             result.put("result",false);
-            result.put("errores","No se encontró usuario con ese nombre");
+            result.put("errores",errores);
         }
 
         return new ResponseEntity<Map<String,Object>>(result, HttpStatus.OK);

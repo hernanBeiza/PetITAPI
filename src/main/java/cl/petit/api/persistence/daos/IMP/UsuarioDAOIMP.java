@@ -78,7 +78,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
     }
 
     @Override
-    public UsuarioEntity obtenerConID(int idUsuario) {
+    public UsuarioEntity obtenerConID(Long idUsuario) {
         logger.info("obtenerConID();");
         String query = "SELECT u FROM UsuarioEntity u WHERE idUsuario="+idUsuario;
         logger.info(query);
@@ -164,7 +164,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
     @Override
     public boolean eliminar(UsuarioDTO model) {
         logger.info("eliminar();");
-        UsuarioEntity usuarioEntity = this.obtenerConID(model.getIdUsuario().intValue());
+        UsuarioEntity usuarioEntity = this.obtenerConID(model.getIdUsuario());
         if(usuarioEntity!=null){
             try {
                 entityManager.remove(usuarioEntity);

@@ -58,7 +58,7 @@ public class MascotaController {
 
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar){
-            ArrayList<MascotaDTO> mascotas = this.mascotaService.obtenerConPagina(pagina);
+            ArrayList<MascotaDTO> mascotas = this.mascotaService.obtenerConPagina(pagina.longValue());
             if(mascotas.size()>0){
                 result.put("result",true);
                 result.put("mascotas",mascotas);

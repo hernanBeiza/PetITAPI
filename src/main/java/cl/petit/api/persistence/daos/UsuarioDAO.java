@@ -9,7 +9,7 @@ public interface UsuarioDAO {
 
     ArrayList<UsuarioEntity> obtener();
 
-    UsuarioEntity obtenerConID(int idUsuario);
+    UsuarioEntity obtenerConID(Long idUsuario);
 
     UsuarioEntity buscar(String rut, String contrasena);
 

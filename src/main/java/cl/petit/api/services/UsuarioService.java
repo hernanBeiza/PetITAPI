@@ -8,7 +8,7 @@ public interface UsuarioService {
 
     ArrayList<UsuarioDTO> obtener();
 
-    UsuarioDTO obtenerConID(int idusuario);
+    UsuarioDTO obtenerConID(Long idUsuario);
 
     UsuarioDTO buscar(String rut, String contrasena);
 

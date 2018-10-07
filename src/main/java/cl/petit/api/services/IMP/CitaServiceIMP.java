@@ -76,4 +76,19 @@ public class CitaServiceIMP implements CitaService {
             return null;
         }
     }
+
+    @Override
+    public boolean guardar(CitaDTO citaDTO) {
+        return this.citaDAO.guardar(citaDTO);
+    }
+
+    @Override
+    public boolean editar(CitaDTO citaDTO) {
+        return this.citaDAO.editar(citaDTO);
+    }
+
+    @Override
+    public boolean eliminar(CitaDTO citaDTO) {
+        return this.citaDAO.eliminar(citaDTO);
+    }
 }
