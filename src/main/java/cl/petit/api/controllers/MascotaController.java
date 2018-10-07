@@ -263,16 +263,17 @@ public class MascotaController {
         }
     }
 
-    @RequestMapping(path="", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{rutMascota}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> editar(
-            @RequestParam(value="rutMascota",required=false) String rutMascota,
+            @PathVariable(value="rutMascota",required=false) String rutMascota,
             @RequestParam(value="idTipoMascota",required=false) Integer idTipoMascota,
             @RequestParam(value="idRaza",required=false) Integer idRaza,
             @RequestParam(value="rutDueno",required=false) String rutDueno,
             @RequestParam(value="nombre",required=false) String nombre,
             @RequestParam(value="peso",required=false) Integer peso,
-            @RequestParam(value="edad",required=false) Integer edad){
+            @RequestParam(value="edad",required=false) Integer edad,
+            @RequestParam(value="valid",required=false) Integer valid){
         logger.info("editar();");
 
         Map<String, Object> result = new HashMap<String,Object>();
@@ -308,6 +309,10 @@ public class MascotaController {
             enviar = false;
             errores +="edad\n";
         }
+        if(valid==null){
+            enviar = false;
+            errores +="valid\n";
+        }
         if(enviar) {
 
             MascotaDTO mascotaDTO = new MascotaDTO();
@@ -328,7 +333,7 @@ public class MascotaController {
             mascotaDTO.setNombre(nombre);
             mascotaDTO.setPeso(peso);
             mascotaDTO.setEdad(edad);
-            mascotaDTO.setValid(1);
+            mascotaDTO.setValid(valid);
 
             boolean editada = this.mascotaService.editar(mascotaDTO);
             if (editada) {

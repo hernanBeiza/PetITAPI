@@ -178,9 +178,9 @@ public class NotificacionController {
         }
     }
 
-    @RequestMapping(path="", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{idNotificacion}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> editar(@RequestParam(value="idNotificacion",required=false) Integer idNotificacion,
+    public ResponseEntity<Map<String,Object>> editar(@PathVariable(value="idNotificacion",required=false) Integer idNotificacion,
                                                      @RequestParam(value="idUsuario",required=false) Integer idUsuario,
                                                      @RequestParam(value="titulo",required=false) String titulo,
                                                      @RequestParam(value="imagen", required=false) MultipartFile imagen,

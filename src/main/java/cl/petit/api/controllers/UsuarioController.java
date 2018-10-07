@@ -18,10 +18,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 
 @CrossOrigin(origins = "http://localhost", maxAge = 3600)
@@ -66,9 +65,16 @@ public class UsuarioController {
                 // Generar Token
                 String jwtToken = Jwts.builder().setSubject(rut).claim("roles", "user").setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, "SECRETKEY").compact();
                 System.out.println(jwtToken);
-                // Add any additional props that you want to add
+                // Token que expira una hora después de la creación
+                /*
+                Calendar cal = Calendar.getInstance();
+                cal.add(Calendar.HOUR_OF_DAY, 1);
+                DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+                Date horaExpiracion = cal.getTime();
+                logger.info(dateFormat.format(horaExpiracion));
+                String jwtToken = Jwts.builder().setSubject(rut).claim("roles", "user").setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, "SECRETKEY").setExpiration(horaExpiracion).compact();
+                */
                 result.put("token",jwtToken);
-
             } else {
                 result.put("result",false);
                 result.put("errores","No se encontró usuario con estos datos...");
@@ -248,19 +254,19 @@ public class UsuarioController {
         String errores = "Te faltó:\n";
         if(idRol==null){
             enviar = false;
-            errores +="idRol";
+            errores +="\nidRol";
         }
         if(nombre==null){
             enviar = false;
-            errores +="Nombre";
+            errores +="\nNombre";
         }
         if(rut==null){
             enviar = false;
-            errores +="Rut";
+            errores +="\nRut";
         }
         if(password==null){
             enviar = false;
-            errores +="Contraseña";
+            errores +="\nContraseña";
         }
         Map<String, Object> result = new HashMap<String,Object>();
         if(enviar){
@@ -291,14 +297,14 @@ public class UsuarioController {
 
     }
 
-    @RequestMapping(path="/api/usuario", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/api/usuario/{idUsuario}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public ResponseEntity<Map<String,Object>> editar(@RequestParam(value="idUsuario",required=true) Integer idUsuario,
-                                                        @RequestParam(value="idRol",required=true) Integer idRol,
-                                                        @RequestParam(value="nombre",required=true) String nombre,
-                                                        @RequestParam(value="rut",required=true) String rut,
-                                                        @RequestParam(value="password",required=true) String password,
-                                                        @RequestParam(value="valid",required=true) Integer valid,
+    public ResponseEntity<Map<String,Object>> editar(@PathVariable(value="idUsuario",required=false) Integer idUsuario,
+                                                        @RequestParam(value="idRol",required=false) Integer idRol,
+                                                        @RequestParam(value="nombre",required=false) String nombre,
+                                                        @RequestParam(value="rut",required=false) String rut,
+                                                        @RequestParam(value="password",required=false) String password,
+                                                        @RequestParam(value="valid",required=false) Integer valid,
                                                      HttpSession session) {
         logger.debug("UsuarioController: editar();");
         boolean enviar = true;

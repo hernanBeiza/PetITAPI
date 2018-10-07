@@ -1718,3 +1718,51 @@
 2018-10-06 21:28:23 [32mINFO [m EspecialistaDisponibilidadController:293 - eliminar();
 2018-10-06 21:28:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:112 - obtenerConID();
 2018-10-06 21:28:23 [32mINFO [m EspecialistaDisponibilidadDAOIMP:114 - SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = 20
+2018-10-07 17:55:41 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 16262 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 17:55:41 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 17:55:53 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 14.229 seconds (JVM running for 16.311)
+2018-10-07 17:57:04 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 16492 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 17:57:04 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 17:57:14 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.342 seconds (JVM running for 13.02)
+2018-10-07 17:57:57 [33mWARN [m UsuarioDAOIMP:35 - No entity found for query
+2018-10-07 18:00:00 [32mINFO [m UsuarioDAOIMP:94 - UsuarioDAOIMP: guardar();
+2018-10-07 18:00:00 [33mWARN [m UsuarioDAOIMP:61 - No entity found for query
+2018-10-07 18:00:00 [32mINFO [m UsuarioDAOIMP:102 - Usuario rut 33333333-3 no encontrado
+2018-10-07 18:01:23 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 16938 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 18:01:23 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 18:01:31 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.594 seconds (JVM running for 9.973)
+2018-10-07 18:01:56 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 17118 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 18:01:56 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 18:02:04 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.108 seconds (JVM running for 11.126)
+2018-10-07 18:02:13 [32mINFO [m UsuarioDAOIMP:128 - UsuarioDAOIMP: editar();
+2018-10-07 18:02:14 [32mINFO [m UsuarioDAOIMP:132 - UsuarioEntity{idUsuario=6, rolEntity=RolEntity{idRol=3, nombre='Dueno de Mascota', valid=1}, nombre='Usuario Nuevo', rut='33333333-3', password='9040207', valid=1}
+2018-10-07 18:02:14 [32mINFO [m UsuarioDAOIMP:133 - Usuario rut 33333333-3 encontrado
+2018-10-07 18:02:27 [32mINFO [m UsuarioDAOIMP:128 - UsuarioDAOIMP: editar();
+2018-10-07 18:02:27 [32mINFO [m UsuarioDAOIMP:132 - UsuarioEntity{idUsuario=6, rolEntity=RolEntity{idRol=3, nombre='Dueno de Mascota', valid=1}, nombre='Usuario Nuevo', rut='33333333-3', password='9040207', valid=2}
+2018-10-07 18:02:27 [32mINFO [m UsuarioDAOIMP:133 - Usuario rut 33333333-3 encontrado
+2018-10-07 18:02:40 [32mINFO [m UsuarioDAOIMP:165 - UsuarioDAOIMP: eliminar();
+2018-10-07 18:04:25 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 17374 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 18:04:25 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 18:04:36 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 11.778 seconds (JVM running for 13.209)
+2018-10-07 18:05:14 [32mINFO [m DuenoMascotaController:226 - DuenoMascotaController: editar();
+2018-10-07 18:05:39 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 17567 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 18:05:39 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 18:05:48 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 9.738 seconds (JVM running for 11.013)
+2018-10-07 18:05:51 [32mINFO [m DuenoMascotaController:226 - editar();
+2018-10-07 18:05:58 [32mINFO [m DuenoMascotaController:226 - editar();
+2018-10-07 18:06:59 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 17786 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 18:06:59 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 18:07:07 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.417 seconds (JVM running for 9.677)
+2018-10-07 18:07:48 [32mINFO [m MascotaController:276 - editar();
+2018-10-07 18:07:51 [32mINFO [m MascotaController:276 - editar();
+2018-10-07 18:07:59 [32mINFO [m MascotaController:276 - editar();
+2018-10-07 18:08:37 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 17976 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 18:08:37 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 18:08:47 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 10.758 seconds (JVM running for 12.977)
+2018-10-07 18:08:49 [32mINFO [m MascotaController:277 - editar();
+2018-10-07 18:08:53 [32mINFO [m MascotaController:277 - editar();
+2018-10-07 18:09:24 [32mINFO [m PetItapiApplication:50 - Starting PetItapiApplication on ubuntubook with PID 18157 (/home/hb/Documents/GitHub/PetITAPI/target/classes started by hb in /home/hb/Documents/GitHub/PetITAPI)
+2018-10-07 18:09:24 [32mINFO [m PetItapiApplication:659 - No active profile set, falling back to default profiles: default
+2018-10-07 18:09:32 [32mINFO [m PetItapiApplication:59 - Started PetItapiApplication in 8.673 seconds (JVM running for 10.022)
+2018-10-07 18:09:44 [32mINFO [m NotificacionController:190 - editar();
+2018-10-07 18:09:51 [32mINFO [m NotificacionController:190 - editar();

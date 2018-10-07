@@ -112,6 +112,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
             try {
                 entityManager.persist(usuarioEntity);
+                logger.info("Usuario guardado correctamente");
                 return true;
             } catch (Exception e) {
                 logger.error(e.getLocalizedMessage());

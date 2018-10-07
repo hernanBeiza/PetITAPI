@@ -129,7 +129,7 @@ public class DuenoMascotaController {
         @RequestParam(value="direccion",required=false) String direccion,
         @RequestParam(value="telefono",required=false) String telefono,
         @RequestParam(value="correo",required=false) String correo) {
-        logger.info("DuenoMascotaController: guardar();");
+        logger.info("guardar();");
 
         Map<String, Object> result = new HashMap<String,Object>();
 
@@ -210,11 +210,11 @@ public class DuenoMascotaController {
         }
     }
 
-    @RequestMapping(path="", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @RequestMapping(path="/{rutDueno}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> editar(
+        @PathVariable(value="rutDueno",required=false) String rut,
         @RequestParam(value="idUsuario",required=false) Integer idUsuario,
-        @RequestParam(value="rut",required=false) String rut,
         @RequestParam(value="nombres",required=false) String nombres,
         @RequestParam(value="apellidoPaterno",required=false) String paterno,
         @RequestParam(value="apellidoMaterno",required=false) String materno,
@@ -223,7 +223,7 @@ public class DuenoMascotaController {
         @RequestParam(value="telefono",required=false) String telefono,
         @RequestParam(value="correo",required=false) String correo,
         @RequestParam(value="valid",required=false) Integer valid) {
-        logger.info("DuenoMascotaController: editar();");
+        logger.info("editar();");
 
         Map<String, Object> result = new HashMap<String, Object>();
 
