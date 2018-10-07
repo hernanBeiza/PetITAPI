@@ -30,7 +30,7 @@ public class MascotaDTO {
         this.rutMascota = entity.getRutMascota();
         this.tipoMascota = new TipoMascotaDTO(entity.getTipoMascota());
         this.raza = new RazaDTO(entity.getRazaEntity());
-        this.duenoMascota = new DuenoMascotaDTO(entity.getDuenoMascota());
+        this.duenoMascota = new DuenoMascotaDTO(entity.getDuenoMascotaEntity());
         this.nombre = entity.getNombre();
         this.peso = entity.getPeso();
         this.edad = entity.getEdad();

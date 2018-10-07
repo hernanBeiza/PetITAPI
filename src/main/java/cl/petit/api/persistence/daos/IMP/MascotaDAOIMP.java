@@ -88,7 +88,7 @@ public class MascotaDAOIMP implements MascotaDAO {
     public ArrayList<MascotaEntity> obtenerConRutDueno (DuenoMascotaDTO duenoMascotaDTO){
         //TODO Revisar https://www.logicbig.com/tutorials/java-ee-tutorial/jpa/jpql-inner-join.html
         //"SELECT DISTINCT e FROM Employee e INNER JOIN e.tasks t where t.supervisor='Denise'");
-        String query = "SELECT m FROM MascotaEntity AS m INNER JOIN m.duenoMascota AS dm WHERE dm.rutDueno='"+duenoMascotaDTO.getRutDueno()+"'";
+        String query = "SELECT m FROM MascotaEntity AS m INNER JOIN m.duenoMascotaEntity AS dm WHERE dm.rutDueno='"+duenoMascotaDTO.getRutDueno()+"'";
         logger.info(query);
         try {
             return (ArrayList<MascotaEntity>) entityManager.createQuery(query).getResultList();
@@ -118,7 +118,7 @@ public class MascotaDAOIMP implements MascotaDAO {
             DuenoMascotaEntity duenoMascotaEntity = new DuenoMascotaEntity();//this.duenoMascotaDAO.obtenerConRut(mascotaDTO.getDuenoMascota());
             //logger.info(duenoMascotaEntity.toString());
             duenoMascotaEntity.setRutDueno(mascotaDTO.getDuenoMascota().getRutDueno());
-            mascotaEntity.setDuenoMascota(duenoMascotaEntity);
+            mascotaEntity.setDuenoMascotaEntity(duenoMascotaEntity);
 
             mascotaEntity.setNombre(mascotaDTO.getNombre());
             mascotaEntity.setPeso(mascotaDTO.getPeso());
@@ -157,7 +157,7 @@ public class MascotaDAOIMP implements MascotaDAO {
             DuenoMascotaEntity duenoMascotaEntity = new DuenoMascotaEntity();//this.duenoMascotaDAO.obtenerConRut(mascotaDTO.getDuenoMascota());
             //logger.info(duenoMascotaEntity.toString());
             duenoMascotaEntity.setRutDueno(mascotaDTO.getDuenoMascota().getRutDueno());
-            mascotaEntity.setDuenoMascota(duenoMascotaEntity);
+            mascotaEntity.setDuenoMascotaEntity(duenoMascotaEntity);
 
             mascotaEntity.setNombre(mascotaDTO.getNombre());
             mascotaEntity.setPeso(mascotaDTO.getPeso());

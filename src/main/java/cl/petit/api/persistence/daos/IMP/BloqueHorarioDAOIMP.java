@@ -23,7 +23,7 @@ public class BloqueHorarioDAOIMP implements BloqueHorarioDAO {
 
     @Override
     public ArrayList<BloqueHorarioEntity> obtener() {
-        String query = "SELECT r FROM BloqueHorarioEntity AS r";
+        String query = "SELECT b FROM BloqueHorarioEntity AS b";
         logger.info(query);
         try {
             //Object result = entityManager.createQuery(query).getSingleResult();
@@ -37,7 +37,7 @@ public class BloqueHorarioDAOIMP implements BloqueHorarioDAO {
 
     @Override
     public BloqueHorarioEntity obtenerConID(BloqueHorarioDTO bloqueHorarioDTO) {
-        String query = "SELECT r FROM BloqueHorarioEntity AS r WHERE r.idBloqueHorario = "+bloqueHorarioDTO.getIdBloqueHorario();
+        String query = "SELECT b FROM BloqueHorarioEntity AS b WHERE b.idBloqueHorario = "+bloqueHorarioDTO.getIdBloqueHorario();
         logger.info(query);
         try {
             return (BloqueHorarioEntity) entityManager.createQuery(query).getSingleResult();

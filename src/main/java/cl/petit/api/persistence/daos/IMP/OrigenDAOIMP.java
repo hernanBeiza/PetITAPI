@@ -23,7 +23,7 @@ public class OrigenDAOIMP implements OrigenDAO {
     @Override
     public ArrayList<OrigenEntity> obtener() {
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
-        String query = "SELECT r FROM OrigenEntity AS r";
+        String query = "SELECT o FROM OrigenEntity AS o";
         logger.info(query);
         try {
             //Object result = entityManager.createQuery(query).getSingleResult();
@@ -37,7 +37,7 @@ public class OrigenDAOIMP implements OrigenDAO {
 
     @Override
     public OrigenEntity obtenerConID(Long idOrigen) {
-        String query = "SELECT r FROM OrigenEntity AS r WHERE r.idOrigen = "+idOrigen;
+        String query = "SELECT o FROM OrigenEntity AS o WHERE o.idOrigen = "+idOrigen;
         logger.info(query);
         try {
             return (OrigenEntity) entityManager.createQuery(query).getSingleResult();

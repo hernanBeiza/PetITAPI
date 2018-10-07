@@ -41,7 +41,7 @@ public class DuenoMascotaDAOIMP implements DuenoMascotaDAO {
     @Override
     public DuenoMascotaEntity obtenerConRut(DuenoMascotaDTO duenoMascotaDTO) {
         logger.info("DuenoMascotaDAOIMP: obtenerConRut();");
-        String query = "SELECT r FROM DuenoMascotaEntity AS r WHERE r.rutDueno = '"+duenoMascotaDTO.getRutDueno()+"'";
+        String query = "SELECT dm FROM DuenoMascotaEntity AS dm WHERE dm.rutDueno = '"+duenoMascotaDTO.getRutDueno()+"'";
         logger.info(query);
         try {
             return (DuenoMascotaEntity) entityManager.createQuery(query).getSingleResult();
@@ -54,7 +54,7 @@ public class DuenoMascotaDAOIMP implements DuenoMascotaDAO {
     @Override
     public ArrayList<DuenoMascotaEntity> buscarPorNombre(DuenoMascotaDTO duenoMascotaDTO) {
         logger.info("DuenoMascotaDAOIMP: obtenerConNombre();");
-        String query = "SELECT r FROM DuenoMascotaEntity AS r WHERE r.nombres LIKE '%"+duenoMascotaDTO.getNombres()+"%'";
+        String query = "SELECT dm FROM DuenoMascotaEntity AS dm WHERE dm.nombres LIKE '%"+duenoMascotaDTO.getNombres()+"%'";
         logger.info(query);
         try {
             return (ArrayList<DuenoMascotaEntity>) entityManager.createQuery(query).getResultList();

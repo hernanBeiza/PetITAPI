@@ -80,7 +80,7 @@ public class MascotaController {
     @RequestMapping(path="/buscar/{nombre}", method={RequestMethod.GET}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String,Object>> buscarPorNombre(@PathVariable String nombre) {
-        logger.info("obtenerConRut();");
+        logger.info("buscarPorNombre();");
 
         boolean enviar = true;
         String errores = "Te faltó:\n";
@@ -131,7 +131,7 @@ public class MascotaController {
             if(mascotaEncontrada!=null){
                 result.put("result",true);
                 result.put("mascota",mascotaEncontrada);
-                result.put("mensajes","Mascota encontrada con rut" + rutMascota);
+                result.put("mensajes","Mascota encontrada con rut " + rutMascota);
             } else {
                 result.put("result",false);
                 result.put("errores","No se encontró mascota con rut " + rutMascota);

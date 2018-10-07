@@ -22,7 +22,7 @@ public class ProvinciaDAOIMP implements ProvinciaDAO {
 
     @Override
     public ArrayList<ProvinciaEntity> obtener() {
-        String query = "SELECT r FROM ProvinciaEntity AS r";
+        String query = "SELECT p FROM ProvinciaEntity AS p";
         logger.info(query);
         try {
             return (ArrayList<ProvinciaEntity>) entityManager.createQuery(query).getResultList();
@@ -34,7 +34,7 @@ public class ProvinciaDAOIMP implements ProvinciaDAO {
 
     @Override
     public ProvinciaEntity obtenerConID(Long idProvincia) {
-        String query = "SELECT r FROM ProvinciaEntity AS r WHERE r.idProvincia = "+idProvincia;
+        String query = "SELECT p FROM ProvinciaEntity AS p WHERE p.idProvincia = "+idProvincia;
         logger.info(query);
         try {
             return (ProvinciaEntity) entityManager.createQuery(query).getSingleResult();
@@ -46,7 +46,7 @@ public class ProvinciaDAOIMP implements ProvinciaDAO {
 
     @Override
     public ArrayList<ProvinciaEntity> obtenerConIDRegion(Long idRegion) {
-        String query = "SELECT r FROM ProvinciaEntity AS r WHERE r.idRegion = "+idRegion;
+        String query = "SELECT p FROM ProvinciaEntity AS p WHERE p.idRegion = "+idRegion;
         logger.info(query);
         try {
             return (ArrayList<ProvinciaEntity>) entityManager.createQuery(query).getResultList();

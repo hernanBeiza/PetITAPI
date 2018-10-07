@@ -16,10 +16,10 @@ public class MascotaEntity implements Serializable {
     private TipoMascotaEntity tipoMascota;
     @ManyToOne
     @JoinColumn(name="idRaza")
-    private RazaEntity RazaEntity;
+    private RazaEntity razaEntity;
     @ManyToOne
     @JoinColumn(name="rutDueno")
-    private DuenoMascotaEntity duenoMascota;
+    private DuenoMascotaEntity duenoMascotaEntity;
     @Column(name = "nombre")
     private String nombre;
     @Column(name = "peso")
@@ -45,20 +45,20 @@ public class MascotaEntity implements Serializable {
         this.tipoMascota = tipoMascota;
     }
 
-    public cl.petit.api.models.entities.RazaEntity getRazaEntity() {
-        return RazaEntity;
+    public RazaEntity getRazaEntity() {
+        return razaEntity;
     }
 
-    public void setRazaEntity(cl.petit.api.models.entities.RazaEntity razaEntity) {
-        RazaEntity = razaEntity;
+    public void setRazaEntity(RazaEntity razaEntity) {
+        this.razaEntity = razaEntity;
     }
 
-    public DuenoMascotaEntity getDuenoMascota() {
-        return duenoMascota;
+    public DuenoMascotaEntity getDuenoMascotaEntity() {
+        return duenoMascotaEntity;
     }
 
-    public void setDuenoMascota(DuenoMascotaEntity duenoMascota) {
-        this.duenoMascota = duenoMascota;
+    public void setDuenoMascotaEntity(DuenoMascotaEntity duenoMascotaEntity) {
+        this.duenoMascotaEntity = duenoMascotaEntity;
     }
 
     public String getNombre() {
@@ -98,8 +98,8 @@ public class MascotaEntity implements Serializable {
         return "MascotaEntity{" +
                 "rutMascota='" + rutMascota + '\'' +
                 ", tipoMascota=" + tipoMascota +
-                ", RazaEntity=" + RazaEntity +
-                ", duenoMascota=" + duenoMascota +
+                ", razaEntity=" + razaEntity +
+                ", duenoMascotaEntity=" + duenoMascotaEntity +
                 ", nombre='" + nombre + '\'' +
                 ", peso=" + peso +
                 ", edad=" + edad +

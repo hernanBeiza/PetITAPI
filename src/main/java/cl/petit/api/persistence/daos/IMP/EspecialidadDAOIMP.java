@@ -21,7 +21,7 @@ public class EspecialidadDAOIMP implements EspecialidadDAO {
     @Override
     public ArrayList<EspecialidadEntity> obtener() {
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
-        String query = "SELECT r FROM EspecialidadEntity AS r";
+        String query = "SELECT e FROM EspecialidadEntity AS e";
         logger.info(query);
         try {
             //Object result = entityManager.createQuery(query).getSingleResult();
@@ -35,7 +35,7 @@ public class EspecialidadDAOIMP implements EspecialidadDAO {
 
     @Override
     public EspecialidadEntity obtenerConID(Long idEspecialidad) {
-        String query = "SELECT r FROM EspecialidadEntity AS r WHERE r.idEspecialidad = "+idEspecialidad;
+        String query = "SELECT e FROM EspecialidadEntity AS e WHERE e.idEspecialidad = "+idEspecialidad;
         logger.info(query);
         try {
             return (EspecialidadEntity) entityManager.createQuery(query).getSingleResult();

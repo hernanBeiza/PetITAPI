@@ -31,7 +31,7 @@ public class EspecialistaDisponibilidadDAOIMP implements EspecialistaDisponibili
 
         BloqueHorarioEntity bloqueHorarioEntity = new BloqueHorarioEntity();
         bloqueHorarioEntity.setIdBloqueHorario(especialistaDisponibilidadDTO.getBloqueHorarioDTO().getIdBloqueHorario());
-        especialistaDisponibilidadEntity.setBloqueHorario(bloqueHorarioEntity);
+        especialistaDisponibilidadEntity.setBloqueHorarioEntity(bloqueHorarioEntity);
 
         especialistaDisponibilidadEntity.setFecha(especialistaDisponibilidadDTO.getFecha());
         especialistaDisponibilidadEntity.setValid(especialistaDisponibilidadDTO.getValid());
@@ -54,7 +54,7 @@ public class EspecialistaDisponibilidadDAOIMP implements EspecialistaDisponibili
 
             BloqueHorarioEntity bloqueHorarioEntity = new BloqueHorarioEntity();
             bloqueHorarioEntity.setIdBloqueHorario(especialistaDisponibilidadDTO.getBloqueHorarioDTO().getIdBloqueHorario());
-            especialistaDisponibilidadEntity.setBloqueHorario(bloqueHorarioEntity);
+            especialistaDisponibilidadEntity.setBloqueHorarioEntity(bloqueHorarioEntity);
 
             especialistaDisponibilidadEntity.setFecha(especialistaDisponibilidadDTO.getFecha());
             especialistaDisponibilidadEntity.setValid(especialistaDisponibilidadDTO.getValid());
@@ -95,7 +95,7 @@ public class EspecialistaDisponibilidadDAOIMP implements EspecialistaDisponibili
     @Override
     public ArrayList<EspecialistaDisponibilidadEntity> obtener() {
         logger.info("obtener();");
-        String query = "SELECT r FROM EspecialistaDisponibilidadEntity AS r";
+        String query = "SELECT e FROM EspecialistaDisponibilidadEntity AS e";
         logger.info(query);
         try {
             //Object result = entityManager.createQuery(query).getSingleResult();
@@ -110,7 +110,7 @@ public class EspecialistaDisponibilidadDAOIMP implements EspecialistaDisponibili
     @Override
     public EspecialistaDisponibilidadEntity obtenerConID(EspecialistaDisponibilidadDTO especialistaDisponibilidadDTO) {
         logger.info("obtenerConID();");
-        String query = "SELECT r FROM EspecialistaDisponibilidadEntity AS r WHERE r.idEspecialistaDisponibilidad = "+especialistaDisponibilidadDTO.getIdEspecialistaDisponibilidad();
+        String query = "SELECT e FROM EspecialistaDisponibilidadEntity AS e WHERE e.idEspecialistaDisponibilidad = "+especialistaDisponibilidadDTO.getIdEspecialistaDisponibilidad();
         logger.info(query);
         try {
             return (EspecialistaDisponibilidadEntity) entityManager.createQuery(query).getSingleResult();

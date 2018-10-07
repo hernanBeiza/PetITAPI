@@ -26,7 +26,7 @@ public class CitaDAOIMP implements CitaDAO {
     @Override
     public ArrayList<CitaEntity> obtener() {
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
-        String query = "SELECT r FROM CitaEntity AS r";
+        String query = "SELECT c FROM CitaEntity AS c";
         logger.info(query);
         try {
             //Object result = entityManager.createQuery(query).getSingleResult();
@@ -40,7 +40,7 @@ public class CitaDAOIMP implements CitaDAO {
 
     @Override
     public CitaEntity obtenerConID(CitaDTO citaDTO) {
-        String query = "SELECT r FROM CitaEntity AS r WHERE r.idCita = "+citaDTO.getIdCita();
+        String query = "SELECT c FROM CitaEntity AS c WHERE c.idCita = "+citaDTO.getIdCita();
         logger.info(query);
         try {
             return (CitaEntity) entityManager.createQuery(query).getSingleResult();

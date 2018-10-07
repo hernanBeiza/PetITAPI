@@ -23,7 +23,7 @@ public class ComunaDAOIMP implements ComunaDAO {
     @Override
     public ArrayList<ComunaEntity> obtener() {
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
-        String query = "SELECT r FROM ComunaEntity AS r";
+        String query = "SELECT c FROM ComunaEntity AS c";
         logger.info(query);
         try {
             //Object result = entityManager.createQuery(query).getSingleResult();
@@ -37,7 +37,7 @@ public class ComunaDAOIMP implements ComunaDAO {
 
     @Override
     public ComunaEntity obtenerConID(Long idComuna) {
-        String query = "SELECT r FROM ComunaEntity AS r WHERE r.idComuna = "+idComuna;
+        String query = "SELECT c FROM ComunaEntity AS c WHERE c.idComuna = "+idComuna;
         logger.info(query);
         try {
             return (ComunaEntity) entityManager.createQuery(query).getSingleResult();
@@ -50,7 +50,7 @@ public class ComunaDAOIMP implements ComunaDAO {
     @Override
     public ArrayList<ComunaEntity> obtenerConIDProvincia(Long idProvincia) {
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
-        String query = "SELECT r FROM ComunaEntity AS r WHERE idProvincia = "+idProvincia;
+        String query = "SELECT c FROM ComunaEntity AS c WHERE idProvincia = "+idProvincia;
         logger.info(query);
         try {
             //Object result = entityManager.createQuery(query).getSingleResult();

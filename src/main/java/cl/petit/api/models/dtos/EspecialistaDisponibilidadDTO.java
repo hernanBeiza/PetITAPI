@@ -19,7 +19,7 @@ public class EspecialistaDisponibilidadDTO {
         System.out.println(entity);
         this.idEspecialistaDisponibilidad = entity.getIdEspecialistaDisponibilidad();
         this.idEspecialista = entity.getIdEspecialista();
-        this.bloqueHorarioDTO = new BloqueHorarioDTO(entity.getBloqueHorario());
+        this.bloqueHorarioDTO = new BloqueHorarioDTO(entity.getBloqueHorarioEntity());
         this.fecha = entity.getFecha();
         this.valid = entity.getValid();
     }

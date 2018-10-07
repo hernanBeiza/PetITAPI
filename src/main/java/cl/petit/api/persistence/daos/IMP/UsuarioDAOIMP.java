@@ -22,11 +22,10 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public UsuarioEntity buscar(String rut, String contrasena) {
-        logger.debug("UsuarioController(); buscar");
-
+        logger.info("buscar();");
         //Debe buscar por el nombre de la Entidad, no de la tabla de la DB
         String query = "SELECT u FROM UsuarioEntity AS u WHERE u.rut ='"+rut+"' AND u.password='"+contrasena+"'";
-        logger.debug(query);
+        logger.info(query);
         try{
             //Object result = entityManager.createQuery(query).getSingleResult();
             //System.out.println(result.toString());
@@ -39,9 +38,9 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public UsuarioEntity buscarPorNombre(String nombre) {
-        logger.debug("UsuarioController(); buscarPorNombre");
+        logger.info("buscarPorNombre();");
         String query = "SELECT u FROM UsuarioEntity AS u WHERE u.nombre LIKE '%"+nombre+"%'";
-        logger.debug(query);
+        logger.info(query);
         try {
             return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
         } catch (Exception ex){
@@ -52,9 +51,9 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public UsuarioEntity buscarPorRut(String rut) {
-        logger.debug("UsuarioController(); buscarPorRut");
+        logger.info("buscarPorRut();");
         String query = "SELECT u FROM UsuarioEntity AS u WHERE u.rut = '"+rut+"'";
-        logger.debug(query);
+        logger.info(query);
         try {
             return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
         } catch (Exception ex){
@@ -66,9 +65,10 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public ArrayList<UsuarioEntity> obtener() {
+        logger.info("obtener();");
         //String query = "SELECT u FROM UsuarioEntity AS u";
         String query = "SELECT u FROM UsuarioEntity u JOIN u.rolEntity";
-        System.out.println(query);
+        logger.info(query);
         ArrayList<UsuarioEntity> encontrados = (ArrayList<UsuarioEntity>) entityManager.createQuery(query).getResultList();
         if (encontrados.size()>0){
             return encontrados;
@@ -79,8 +79,9 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public UsuarioEntity obtenerConID(int idUsuario) {
+        logger.info("obtenerConID();");
         String query = "SELECT u FROM UsuarioEntity u WHERE idUsuario="+idUsuario;
-        System.out.println(query);
+        logger.info(query);
         try {
             return (UsuarioEntity)entityManager.createQuery(query).getSingleResult();
         } catch (Exception ex){
@@ -91,7 +92,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public boolean guardar(UsuarioDTO model) {
-        logger.info("UsuarioDAOIMP: guardar();");
+        logger.info("guardar();");
         UsuarioEntity encontrado = this.buscarPorRut(model.getRut());
 
         if(encontrado!=null){
@@ -125,7 +126,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public boolean editar(UsuarioDTO model) {
-        logger.info("UsuarioDAOIMP: editar();");
+        logger.info("editar();");
         UsuarioEntity encontrado = this.buscarPorRut(model.getRut());
 
         if(encontrado!=null){
@@ -162,7 +163,7 @@ public class UsuarioDAOIMP implements UsuarioDAO {
 
     @Override
     public boolean eliminar(UsuarioDTO model) {
-        logger.info("UsuarioDAOIMP: eliminar();");
+        logger.info("eliminar();");
         UsuarioEntity usuarioEntity = this.obtenerConID(model.getIdUsuario().intValue());
         if(usuarioEntity!=null){
             try {
@@ -172,7 +173,6 @@ public class UsuarioDAOIMP implements UsuarioDAO {
                 logger.error(ex.getLocalizedMessage());
                 logger.error(ex.getMessage());
                 logger.error(ex.getCause());
-
                 //System.out.println(ex.getLocalizedMessage());
                 return false;
             }

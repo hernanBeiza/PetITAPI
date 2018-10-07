@@ -1,11 +1,8 @@
 package cl.petit.api.models.entities;
 
-import cl.petit.api.models.dtos.BloqueHorarioDTO;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 @Table(name = "EspecialistaDisponibilidad")
@@ -19,7 +16,7 @@ public class EspecialistaDisponibilidadEntity implements Serializable {
     private Long idEspecialista;
     @ManyToOne
     @JoinColumn(name="idBloqueHorario")
-    private BloqueHorarioEntity bloqueHorario;
+    private BloqueHorarioEntity bloqueHorarioEntity;
 
     @Column(name = "fecha")
     private String fecha;
@@ -42,12 +39,12 @@ public class EspecialistaDisponibilidadEntity implements Serializable {
         this.idEspecialista = idEspecialista;
     }
 
-    public BloqueHorarioEntity getBloqueHorario() {
-        return bloqueHorario;
+    public BloqueHorarioEntity getBloqueHorarioEntity() {
+        return bloqueHorarioEntity;
     }
 
-    public void setBloqueHorario(BloqueHorarioEntity bloqueHorario) {
-        this.bloqueHorario = bloqueHorario;
+    public void setBloqueHorarioEntity(BloqueHorarioEntity bloqueHorarioEntity) {
+        this.bloqueHorarioEntity = bloqueHorarioEntity;
     }
 
     public String getFecha() {
@@ -66,16 +63,14 @@ public class EspecialistaDisponibilidadEntity implements Serializable {
         this.valid = valid;
     }
 
-
     @Override
     public String toString() {
         return "EspecialistaDisponibilidadEntity{" +
                 "idEspecialistaDisponibilidad=" + idEspecialistaDisponibilidad +
                 ", idEspecialista=" + idEspecialista +
-                ", bloqueHorario=" + bloqueHorario +
+                ", bloqueHorarioEntity=" + bloqueHorarioEntity +
                 ", fecha='" + fecha + '\'' +
                 ", valid=" + valid +
                 '}';
     }
-
 }

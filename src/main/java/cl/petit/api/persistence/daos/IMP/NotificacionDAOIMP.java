@@ -56,7 +56,7 @@ public class NotificacionDAOIMP implements NotificacionDAO {
 
     @Override
     public ArrayList<NotificacionEntity> obtenerConIDUsuario(UsuarioDTO usuarioDTO) {
-        logger.info("NotificacionDAO: obtenerConIDUsuario();");
+        logger.info("obtenerConIDUsuario();");
         String query = "SELECT u FROM NotificacionEntity u WHERE idUsuario="+usuarioDTO.getIdUsuario();
         logger.info(query);
         ArrayList<NotificacionEntity> encontrados = (ArrayList<NotificacionEntity>) entityManager.createQuery(query).getResultList();
