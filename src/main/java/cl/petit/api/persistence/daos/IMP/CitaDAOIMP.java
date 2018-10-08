@@ -75,6 +75,25 @@ public class CitaDAOIMP implements CitaDAO {
     }
 
     @Override
+    public CitaEntity cambiarEstado(CitaDTO citaDTO) {
+
+        CitaEntity citaEntity = this.obtenerConID(citaDTO);
+        if(citaEntity.getValid()==1){
+            citaEntity.setValid(2);
+        } else {
+            citaEntity.setValid(1);
+        }
+
+        try {
+            entityManager.merge(citaEntity);
+            return this.obtenerConID(citaDTO);
+        } catch (Exception e){
+            logger.error(e.getLocalizedMessage());
+            return null;
+        }
+    }
+
+    @Override
     public boolean guardar(CitaDTO citaDTO) {
         CitaEntity citaEntity = new CitaEntity();
 

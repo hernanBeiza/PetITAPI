@@ -18,6 +18,8 @@ public interface CitaDAO {
 
     CitaEntity obtenerConIDEspecialista(EspecialistaDTO especialistaDTO);
 
+    CitaEntity cambiarEstado(CitaDTO citaDTO);
+
     boolean guardar(CitaDTO citaDTO);
 
     boolean editar(CitaDTO citaDTO);

@@ -16,6 +16,7 @@ public interface CitaService {
 
     CitaDTO obtenerConIDEspecialista(EspecialistaDTO especialistaDTO);
 
+    CitaDTO cambiarEstado(CitaDTO citaDTO);
     boolean guardar(CitaDTO citaDTO);
     boolean editar(CitaDTO citaDTO);
     boolean eliminar(CitaDTO citaDTO);

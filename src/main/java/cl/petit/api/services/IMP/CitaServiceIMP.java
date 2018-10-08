@@ -72,7 +72,17 @@ public class CitaServiceIMP implements CitaService {
             return new CitaDTO(entity);
         } else {
             logger.warn("No se encontró cita con id de especialista " + especialistaDTO.getIdEspecialista());
+            return null;
+        }
+    }
 
+    @Override
+    public CitaDTO cambiarEstado(CitaDTO citaDTO) {
+        CitaEntity entity = this.citaDAO.cambiarEstado(citaDTO);
+        if(entity!=null){
+            return new CitaDTO(entity);
+        } else {
+            logger.warn("NO se pudo cambiar el estado");
             return null;
         }
     }

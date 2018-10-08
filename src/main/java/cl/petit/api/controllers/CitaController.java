@@ -242,7 +242,6 @@ public class CitaController {
         return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
     }
 
-
     @RequestMapping(path="/{idCita}", method={RequestMethod.DELETE}, produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public ResponseEntity<Map<String, Object>> eliminar(@PathVariable Integer idCita){
@@ -269,6 +268,40 @@ public class CitaController {
                 result.put("errores", errores);
             }
             return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(path="/estado/{idCita}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String, Object>> cambiarEstado(@PathVariable Integer idCita){
+        boolean enviar = true;
+        String errores = "Te faltó: \n";
+        if(idCita==null) {
+            enviar = false;
+            errores += "ID de la cita";
         }
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar) {
+            CitaDTO citaDTO = new CitaDTO();
+            citaDTO.setIdCita(idCita.longValue());
+            CitaDTO citaDTOCambiado = this.citaService.cambiarEstado(citaDTO);
+            if (citaDTOCambiado!=null) {
+                result.put("result", true);
+                if(citaDTOCambiado.getValid()==1){
+                    result.put("mensaje", "Cita tomada");
+                } else {
+                    result.put("mensaje", "Cita anulada");
+                }
+            } else {
+                result.put("result", false);
+                result.put("errores", "No se pude tomar la cita con esos datos");
+            }
+        } else {
+            result.put("result", false);
+            result.put("errores", errores);
+        }
+        return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+    }
+
+
 }
 
