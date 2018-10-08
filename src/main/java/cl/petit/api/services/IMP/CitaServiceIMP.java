@@ -26,8 +26,8 @@ public class CitaServiceIMP implements CitaService {
     @Override
     public ArrayList<CitaDTO> obtener() {
         ArrayList<CitaEntity> entities = this.citaDAO.obtener();
-        if(entities!=null){
-            if(entities.size()>0){
+        if (entities != null) {
+            if (entities.size() > 0) {
                 ArrayList<CitaDTO> encontradas = new ArrayList<CitaDTO>();
                 for (CitaEntity entity : entities) {
                     CitaDTO dto = new CitaDTO(entity);
@@ -46,7 +46,7 @@ public class CitaServiceIMP implements CitaService {
     @Override
     public CitaDTO obtenerConID(CitaDTO citaDTO) {
         CitaEntity entity = this.citaDAO.obtenerConID(citaDTO);
-        if(entity!=null){
+        if (entity != null) {
             return new CitaDTO(entity);
         } else {
             logger.warn("No se encontró cita con id " + citaDTO.getIdCita());
@@ -57,7 +57,7 @@ public class CitaServiceIMP implements CitaService {
     @Override
     public CitaDTO obtenerConRutMascota(MascotaDTO mascotaDTO) {
         CitaEntity entity = this.citaDAO.obtenerConRutMascota(mascotaDTO);
-        if(entity!=null){
+        if (entity != null) {
             return new CitaDTO(entity);
         } else {
             logger.warn("No se encontró cita con rut mascota " + mascotaDTO.getRutMascota());
@@ -68,7 +68,7 @@ public class CitaServiceIMP implements CitaService {
     @Override
     public CitaDTO obtenerConIDEspecialista(EspecialistaDTO especialistaDTO) {
         CitaEntity entity = this.citaDAO.obtenerConIDEspecialista(especialistaDTO);
-        if(entity!=null){
+        if (entity != null) {
             return new CitaDTO(entity);
         } else {
             logger.warn("No se encontró cita con id de especialista " + especialistaDTO.getIdEspecialista());
@@ -79,10 +79,32 @@ public class CitaServiceIMP implements CitaService {
     @Override
     public CitaDTO cambiarEstado(CitaDTO citaDTO) {
         CitaEntity entity = this.citaDAO.cambiarEstado(citaDTO);
-        if(entity!=null){
+        if (entity != null) {
             return new CitaDTO(entity);
         } else {
             logger.warn("NO se pudo cambiar el estado");
+            return null;
+        }
+    }
+
+    @Override
+    public CitaDTO tomar(CitaDTO citaDTO) {
+        CitaEntity entity = this.citaDAO.tomar(citaDTO);
+        if (entity != null) {
+            return new CitaDTO(entity);
+        } else {
+            logger.warn("No se pudo tomar la cita");
+            return null;
+        }
+    }
+
+    @Override
+    public CitaDTO liberar(CitaDTO citaDTO) {
+        CitaEntity entity = this.citaDAO.liberar(citaDTO);
+        if (entity != null) {
+            return new CitaDTO(entity);
+        } else {
+            logger.warn("No se pudo liberar la cita");
             return null;
         }
     }

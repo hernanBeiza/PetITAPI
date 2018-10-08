@@ -302,6 +302,64 @@ public class CitaController {
         return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
     }
 
+    @RequestMapping(path="/tomar/{idCita}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String, Object>> tomar(@PathVariable Integer idCita){
+        boolean enviar = true;
+        String errores = "Te faltó: \n";
+        if(idCita==null) {
+            enviar = false;
+            errores += "ID de la cita";
+        }
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar) {
+            CitaDTO citaDTO = new CitaDTO();
+            citaDTO.setIdCita(idCita.longValue());
+            citaDTO.setValid(1);
+            CitaDTO citaDTOCambiado = this.citaService.tomar(citaDTO);
+            if (citaDTOCambiado!=null) {
+                result.put("result", true);
+                result.put("mensaje", "Cita tomada");
+            } else {
+                result.put("result", false);
+                result.put("errores", "No se pude tomar la cita con esos datos");
+            }
+        } else {
+            result.put("result", false);
+            result.put("errores", errores);
+        }
+        return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+    }
+
+    @RequestMapping(path="/liberar/{idCita}", method={RequestMethod.PUT}, produces = {MediaType.APPLICATION_JSON_VALUE})
+    @ResponseBody
+    public ResponseEntity<Map<String, Object>> liberar(@PathVariable Integer idCita){
+        boolean enviar = true;
+        String errores = "Te faltó: \n";
+        if(idCita==null) {
+            enviar = false;
+            errores += "ID de la cita";
+        }
+        Map<String, Object> result = new HashMap<String,Object>();
+        if(enviar) {
+            CitaDTO citaDTO = new CitaDTO();
+            citaDTO.setIdCita(idCita.longValue());
+            citaDTO.setValid(2);
+            CitaDTO citaDTOCambiado = this.citaService.liberar(citaDTO);
+            if (citaDTOCambiado!=null) {
+                result.put("result", true);
+                result.put("mensaje", "Cita liberada");
+            } else {
+                result.put("result", false);
+                result.put("errores", "No se pude tomar la cita con esos datos");
+            }
+        } else {
+            result.put("result", false);
+            result.put("errores", errores);
+        }
+        return new ResponseEntity<Map<String, Object>>(result, HttpStatus.OK);
+    }
+
 
 }
 

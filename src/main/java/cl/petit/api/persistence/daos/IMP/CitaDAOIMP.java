@@ -76,7 +76,6 @@ public class CitaDAOIMP implements CitaDAO {
 
     @Override
     public CitaEntity cambiarEstado(CitaDTO citaDTO) {
-
         CitaEntity citaEntity = this.obtenerConID(citaDTO);
         if(citaEntity.getValid()==1){
             citaEntity.setValid(2);
@@ -84,6 +83,32 @@ public class CitaDAOIMP implements CitaDAO {
             citaEntity.setValid(1);
         }
 
+        try {
+            entityManager.merge(citaEntity);
+            return this.obtenerConID(citaDTO);
+        } catch (Exception e){
+            logger.error(e.getLocalizedMessage());
+            return null;
+        }
+    }
+
+    @Override
+    public CitaEntity tomar(CitaDTO citaDTO) {
+        CitaEntity citaEntity = this.obtenerConID(citaDTO);
+        citaEntity.setValid(citaDTO.getValid());
+        try {
+            entityManager.merge(citaEntity);
+            return this.obtenerConID(citaDTO);
+        } catch (Exception e){
+            logger.error(e.getLocalizedMessage());
+            return null;
+        }
+    }
+
+    @Override
+    public CitaEntity liberar(CitaDTO citaDTO) {
+        CitaEntity citaEntity = this.obtenerConID(citaDTO);
+        citaEntity.setValid(citaDTO.getValid());
         try {
             entityManager.merge(citaEntity);
             return this.obtenerConID(citaDTO);

@@ -20,6 +20,10 @@ public interface CitaDAO {
 
     CitaEntity cambiarEstado(CitaDTO citaDTO);
 
+    CitaEntity tomar(CitaDTO citaDTO);
+
+    CitaEntity liberar(CitaDTO citaDTO);
+
     boolean guardar(CitaDTO citaDTO);
 
     boolean editar(CitaDTO citaDTO);
