@@ -24,7 +24,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableConfigurationProperties({
         ArchivoConfig.class
 })
-public class PetItapiApplication extends SpringBootServletInitializer {
+public class PetItApiApplication extends SpringBootServletInitializer {
 
     @Bean
     public TomcatServletWebServerFactory tomcatEmbeddedServletContainerFactory() {
@@ -46,6 +46,6 @@ public class PetItapiApplication extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(PetItapiApplication.class, args);
+        SpringApplication.run(PetItApiApplication.class, args);
     }
 }
